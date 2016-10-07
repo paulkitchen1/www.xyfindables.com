@@ -81,6 +81,9 @@ XY = XY || {};
         $(".nav" + parseInt(page.replace('page', ''), 10)).addClass("selected");
         $("." + page).css("display", "inline-block");
         curPage = page;
+	if (typeof (ga) != 'undefined') {
+      		ga('send', 'pageview', page);
+        }
       },
       setText: function (params, e) {
         var target, content;
