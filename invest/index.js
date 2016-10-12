@@ -81,8 +81,8 @@ XY = XY || {};
         $(".nav" + parseInt(page.replace('page', ''), 10)).addClass("selected");
         $("." + page).css("display", "inline-block");
         curPage = page;
-	if (typeof (ga) != 'undefined') {
-      		ga('send', 'pageview', page);
+        if (window.ga) {
+          ga('send', 'pageview', page);
         }
       },
       setText: function (params, e) {
@@ -154,10 +154,24 @@ XY = XY || {};
           };
           s.data = JSON.stringify(s.data);
           $.ajax(s).done(
-            function () {
-              actions.showPage(["page6", "true"]);
-              if ($("page6").css("display") !== "none") {
-                localStorage.removeItem("investData");
+            function (response) {
+              console.log(response);
+              if (!response.error) {
+                $(".submissionThanks").text($(".submissionThanks").text().replace("{{num}}", XY.INVEST.data.numShares));
+                actions.showPage(["page6", "true"]);
+                if ($("page6").css("display") !== "none") {
+                  localStorage.removeItem("investData");
+                }
+              } else {
+                actions.showPage(["page7", "true"]);
+                var errorString = "",
+                  e;
+                for (e in response.o.entity) {
+                  if (response.o.entity.hasOwnProperty(e)) {
+                    errorString += e.split("_").join(" ") + " " + response.o.entity[e] + "<br>";
+                  }
+                }
+                $(".submissionErrorMessage").html(errorString);
               }
             }
           );

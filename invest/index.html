@@ -46,17 +46,16 @@
     <script src="../js/jquery.flexslider-min.js"></script>
     <script src="../js/main.js"></script>
     <script src="index.js"></script>
-<script>
-  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+    <script>
+      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+      })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
 
-  ga('create', 'UA-42073870-10', 'auto');
-  ga('send', 'pageview');
+      ga('create', 'UA-42073870-10', 'auto');
+      ga('send', 'pageview');
 
-</script>	
-
+    </script>
 </head>
 
 <body>
@@ -376,7 +375,7 @@
                 </div>
                 <div>
                     <span class="noselect">SSN, SIN, or tax ID*</span>
-                    <input class="gov" placeholder="SSN, SIN, or tax ID" data="person.govId" required="true" />
+                    <input class="gov" placeholder="SSN, SIN, or tax ID" data="person.govId" required="true" maxlength="9"/>
                 </div>
                 <div>
                     <span class="noselect">Date of Birth*</span>
@@ -567,15 +566,17 @@
             </form>
         </div>
         <div class="page page6">
-            <div>Congradulations! Your investment of x Shares has in XY Findables has been submitted.</div>
-            <div>Status: Not Received</div>
+            <div class="submissionThanks">Congradulations! Your investment of {{num}} Shares has in XY Findables has been submitted.</div>
+            <div class="submissionStatus">Status: Not Received</div>
             <div>Thank you for your investment in XY Findables. Spread the word!</div>
+        </div>
+        <div class="page page7">
+            <div>Oops!  Looks there was an error in submitting your investment:</div>
+            <div class="submissionErrorMessage"></div>
+            <button action="showPage:page1,false" class="clickable">Back</button>
         </div>
     </div>
     <footer id="fh5co-footer" style="text-align: left;">
-	<div class="container" style="margin-bottom: 35px;">
-    No money or other consideration is being solicited or accepted at this time. Offers to buy the securities cannot be accepted, and no part of the purchase price can be received, until the Form 1-A is qualified by the U.S. Securities and Exchange Commission and any offer can be withdrawn or revoked at any time before notice of its acceptance is given after the qualification date. An indication of interest involves no obligation or commitment of any kind.
-  </div>	
         <div class="container">
             <div class="row row-bottom-padded-md">
                 <div class="col-md-3 col-sm-6 col-xs-12 animate-box fadeInUp animated">
