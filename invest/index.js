@@ -12,7 +12,7 @@ XY = XY || {};
   };
 
   $(document).ready(function () {
-    var pageInit, dataChange, actions, setupAction, curPage, traverse;
+    var pageInit, dataChange, actions, setupAction, curPage, traverse, validateByType;
     $("#fh5co-offcanvas").css("display", "none");
     $("#fh5co-offcanvas").css("z-index", "20");
     $(".fh5co-nav-toggle").on("click", function () {
@@ -30,7 +30,7 @@ XY = XY || {};
         var target = "." + params[0];
         $(target).html('XY Findables<br>' +
           'a California Corporation<br>' +
-          XY.INVEST.data.numShares + ' Shares at $1.00 Per Share Minimum Investment: 10 Shares ($)<br>' +
+          XY.INVEST.data.numShares + ' Shares at $1.00 Per Share Minimum Investment: 350 Shares ($)<br>' +
           'FOR SOPHISTICATED INVESTORS ONLY<br>' +
           'INSTRUCTIONS FOR SUBSCRIPTION');
       },
@@ -44,6 +44,9 @@ XY = XY || {};
             inputs = $(".page" + j + " input, .page" + j + " select");
             for (i = 0; i < inputs.length; i++) {
               if ($(inputs[i]).attr("required") && ($(inputs[i]).val() === "" || ($(inputs[i]).attr("type") === "checkbox" && !$(inputs[i])[0].checked))) {
+                $(inputs[i]).css("outline", "2px solid red");
+                cont = false;
+              } else if(!validateByType($(inputs[i]).attr("validateType"),$(inputs[i]).val())){
                 $(inputs[i]).css("outline", "2px solid red");
                 cont = false;
               } else if ($(inputs[i]).attr("action") && $(inputs[i]).attr("action").indexOf("confirm") > -1) {
@@ -82,7 +85,7 @@ XY = XY || {};
         $("." + page).css("display", "inline-block");
         curPage = page;
         if (window.ga) {
-          ga('send', 'pageview', page);
+          window.ga('send', 'pageview', page);
         }
       },
       setText: function (params, e) {
@@ -109,6 +112,9 @@ XY = XY || {};
         }
       },
       submit: function () {
+        $(".finalSubmit").prop("disabled",true);
+          $(".finalSubmit").text("Processing...");
+          $(".back").prop("disabled",true);
         $.getJSON('//freegeoip.net/json/?callback=?', function (ipInfo) {
           var s = {
             async: true,
@@ -155,8 +161,10 @@ XY = XY || {};
           s.data = JSON.stringify(s.data);
           $.ajax(s).done(
             function (response) {
-              console.log(response);
               if (!response.error) {
+                $(".finalSubmit").prop("disabled",false);
+                  $(".finalSubmit").text("Continue");
+                  $(".back").prop("disabled",false);
                 $(".submissionThanks").text($(".submissionThanks").text().replace("{{num}}", XY.INVEST.data.numShares));
                 actions.showPage(["page6", "true"]);
                 if ($("page6").css("display") !== "none") {
@@ -164,11 +172,14 @@ XY = XY || {};
                 }
               } else {
                 actions.showPage(["page7", "true"]);
+                  $(".finalSubmit").prop("disabled",false);
+                    $(".finalSubmit").text("Continue");
+                    $(".back").prop("disabled",false);
                 var errorString = "",
                   e;
-                for (e in response.o.entity) {
-                  if (response.o.entity.hasOwnProperty(e)) {
-                    errorString += e.split("_").join(" ") + " " + response.o.entity[e] + "<br>";
+                for (e in response.o) {
+                  if (response.o.hasOwnProperty(e)) {
+                    errorString += JSON.stringify(response.o[e]).split("{").join("").split("}").join("").split("[").join("").split("]").join("").split("_").join(" ").split('"').join("").split(":").join(": ") + "<br>";
                   }
                 }
                 $(".submissionErrorMessage").html(errorString);
@@ -229,6 +240,19 @@ XY = XY || {};
         if (func) {
           func(objName, jsonObj);
         }
+      }
+    };
+
+    validateByType = function(type,val){
+      switch(type){
+        case "email":
+          return (val.indexOf("@") > -1) && (val.indexOf(".") > -1);
+        case "phone":
+          return val.length > 7;
+        case "fullName":
+          return val.indexOf(" ") > -1;
+        default:
+          return true;
       }
     };
 

@@ -40,6 +40,7 @@
     <link rel="stylesheet" href="style.css">
 
     <script src="../js/jquery.min.js"></script>
+    <script src="jquery.validate.min.js"></script>
     <script src="../js/jquery.easing.1.3.js"></script>
     <script src="../js/bootstrap.min.js"></script>
     <script src="../js/jquery.waypoints.min.js"></script>
@@ -107,17 +108,18 @@
             <hr>
             <div class="noselect investorLabel">Personal Info</div>
             <form class="form individual">
+              <fieldset>
                 <div>
-                    <span class="noselect">Email*</span>
-                    <input class="email" placeholder="Email" type="email" data="person.email" required="true" />
+                    <label class="noselect" for="email">Email*</label>
+                    <input class="email" placeholder="Email" name="email" type="email" data="person.email" required="true" validateType="email"/>
                 </div>
                 <div>
-                    <span class="noselect">First Name*</span>
-                    <input class="firstName" placeholder="First Name" data="person.firstName" required="true" />
+                    <label class="noselect" for="firstName">First Name*</label>
+                    <input class="firstName" placeholder="First Name" data="person.firstName" required="true" name="firstName"/>
                 </div>
                 <div>
-                    <span class="noselect">Last Name*</span>
-                    <input class="lastName" placeholder="Last Name" data="person.lastName" required="true" />
+                    <label class="noselect" for="lastName">Last Name*</label>
+                    <input class="lastName" placeholder="Last Name" data="person.lastName" required="true" name="lastName"/>
                 </div>
                 <div>
                     <span class="noselect">Country*</span>
@@ -374,20 +376,20 @@
                     </select>
                 </div>
                 <div>
-                    <span class="noselect">SSN, SIN, or tax ID*</span>
-                    <input class="gov" placeholder="SSN, SIN, or tax ID" data="person.govId" required="true" maxlength="9"/>
+                    <label class="noselect" for="govId">SSN, SIN, or tax ID*</label>
+                    <input class="gov" placeholder="SSN, SIN, or tax ID" data="person.govId" required="true" maxlength="9" name="govId"/>
                 </div>
                 <div>
-                    <span class="noselect">Date of Birth*</span>
+                    <label class="noselect" for="dob">Date of Birth*</label>
                     <input class="dob" type="date" data="person.dob" required="true" />
                 </div>
                 <div>
-                    <span class="noselect">Address*</span>
-                    <input class="add1" placeholder="Address Line 1 (required)" data="person.address.address1" required="true" />
+                    <label class="noselect" for="address1">Address*</label>
+                    <input class="add1" placeholder="Address Line 1 (required)" data="person.address.address1" required="true"  name="address1"/>
                 </div>
                 <div>
-                    <span class="invisible"> - </span>
-                    <input class="add2" placeholder="Address Line 2" data="person.address.address2" />
+                    <label class="invisible" for="address2"> - </label>
+                    <input class="add2" placeholder="Address Line 2" data="person.address.address2" name="address2"/>
                 </div>
                 <div>
                     <span class="invisible"> - </span>
@@ -396,10 +398,11 @@
                     <input class="zip col3" placeholder="Postal Code (required)" data="person.address.zip" required="true" />
                 </div>
                 <div>
-                    <span class="noselect">Phone*</span>
-                    <input class="phone" placeholder="Phone" data="person.phone" required="true" />
+                    <label class="noselect">Phone*</label>
+                    <input class="phone" placeholder="Phone" data="person.phone" required="true"  validateType="phone"/>
                 </div>
                 <button action="showPage:page2,true" class="submit clickable">Continue</button>
+              </fieldset>
             </form>
         </div>
         <div class="page page2">
@@ -428,7 +431,7 @@
                 </div>
                 <div>
                     <span class="noselect">Net Worth*</span>
-                    <input class="netWorth" placeholder="Net Worth" type="" data="investor.netWorth" required="true" type="number" />
+                    <input class="netWorth" placeholder="Net Worth" data="investor.netWorth" required="true" type="number" />
                 </div>
                 <div>
                     <span class="noselect">Are you a US citizen or other US person?*</span>
@@ -444,7 +447,7 @@
                 </div>
                 <div>Sign your name in the field below by typeing your full name</div>
                 <div>
-                    <input style="width:100%;" data="investor.signature" required="true">
+                    <input style="width:100%;" data="investor.signature" required="true" validateType="fullName">
                 </div>
                 <div>
                     <span>I have read and understand the <a href="https://startenginebetadev.s3.amazonaws.com/production/assets/StartEngine_InvestorGuides-eeb3e16141fe358ac5dffc1ddd1ab691.pdf" target="_blank">Educational Material</a></span>
@@ -457,15 +460,15 @@
         <div class="page page3">
             <div class="title noselect">Invest in XY Findables</div>
             <div class="message noselect shareInfo">
-                <span>Minimum 10 shares</span>
+                <span>Minimum 350 shares</span>
                 <span>$1 per share</span>
             </div>
             <form class="form">
                 <div>
                     <span class="noselect">How many shares would you like to purchase?</span>
-                    <input class="shares" type="number" placeholder="Number of Shares" data="invest.shareCount" required="true" min="10" value="10" action="setTotal:investTotal,{{val}} shares selected for ${{val}}" />
+                    <input class="shares" type="number" placeholder="Number of Shares" data="invest.shareCount" required="true" min="350" value="350" action="setTotal:investTotal,{{val}} shares selected for ${{val}}" />
                 </div>
-                <div class="message noselect investTotal">10 shares selected for $10</div>
+                <div class="message noselect investTotal">350 shares selected for $350</div>
                 <div>Payment Method:</div>
                 <select class="paymentMethod" data="invest.paymentMethod" style="width:100%;">
                   <option value="ach">No Cost Bank Transfer(ACH-Automatic Clearing House)</option>
@@ -493,7 +496,7 @@
             <form class="form">
                 <div>
                     <span class="noselect">Name on Account*</span>
-                    <input class="name" placeholder="Name on Account" data="bank.name" required="true" />
+                    <input class="name" placeholder="Name on Account" data="bank.name" required="true" validateType="fullName"/>
                 </div>
                 <div>
                     <span class="noselect">Account Type:</span>
@@ -511,27 +514,27 @@
                 </div>
                 <div>
                     <span class="noselect">Routing Number*</span>
-                    <input class="routingNum" placeholder="Routing Number" data="bank.routing" required="true" />
+                    <input class="routingNum" placeholder="Routing Number" data="bank.routing" type="number" required="true" />
                 </div>
                 <div>
                     <span class="noselect">Account Number*</span>
-                    <input class="accountNum" placeholder="Account Number" data="bank.account" required="true" />
+                    <input class="accountNum" placeholder="Account Number" data="bank.account" type="number" required="true" />
                 </div>
                 <div>
                     <span class="noselect">Confirm Account Number*</span>
-                    <input class="accountNumConf" placeholder="Confirm account Number" data="bank.accountConfirm" required="true" action="confirm:accountNum"/>
+                    <input class="accountNumConf" placeholder="Confirm account Number" data="bank.accountConfirm" required="true" type="number" action="confirm:accountNum"/>
                 </div>
                 <div>
                     <span class="noselect">Person to Contact Name*</span>
-                    <input class="contactName" placeholder="Person to Contact Name" data="bank.contact" required="true" />
+                    <input class="contactName" placeholder="Person to Contact Name" data="bank.contact" required="true" validateType="fullName"/>
                 </div>
                 <div>
                     <span class="noselect">Email*</span>
-                    <input class="bankEmail" placeholder="Email" data="bank.email" required="true" type="email" />
+                    <input class="bankEmail" placeholder="Email" data="bank.email" required="true" type="email" validateType="email"/>
                 </div>
                 <div>
                     <span class="noselect">Signature*</span>
-                    <input class="bankSignature" placeholder="Signature" data="bank.signature" required="true" />
+                    <input class="bankSignature" placeholder="Signature" data="bank.signature" required="true" validateType="fullName"/>
                 </div>
                 <button action="showPage:page5,true;receipt:receipt" class="submit clickable">Continue</button>
                 <button action="showPage:page3,false" class="clickable">Back</button>
@@ -551,18 +554,18 @@
             <form class="form">
                 <div>
                     <span class="noselect">Name*</span>
-                    <input class="name" placeholder="Name" data="subscription.name" required="true" />
+                    <input class="name" placeholder="Name" data="subscription.name" required="true" validateType="fullName"/>
                 </div>
                 <div>
                     <span class="noselect">Email*</span>
-                    <input class="email" placeholder="Email" data="subscription.email" required="true" type="email" />
+                    <input class="email" placeholder="Email" data="subscription.email" required="true" type="email" validateType="email"/>
                 </div>
                 <div>
                     <span class="noselect">Signature*</span>
-                    <input class="signature" placeholder="Signature" data="subscription.signature" required="true" />
+                    <input class="signature" placeholder="Signature" data="subscription.signature" required="true" validateType="fullName"/>
                 </div>
-                <button action="submit:true" class="submit clickable">Continue</button>
-                <button action="showPage:page4,false" class="clickable">Back</button>
+                <button action="submit:true" class="submit clickable finalSubmit">Continue</button>
+                <button action="showPage:page4,false" class="clickable back">Back</button>
             </form>
         </div>
         <div class="page page6">
