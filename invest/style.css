@@ -90,7 +90,6 @@ a:hover, a:active, a:focus {
 
 .mainTitle {
     color: rgb(255, 255, 255);
-    font-family: Roboto, Arial, sans-serif;
     font-size: 70px;
     font-weight: 100;
     line-height: 87px;
@@ -100,7 +99,6 @@ a:hover, a:active, a:focus {
 
 .subTitle {
     color: rgb(255, 255, 255);
-    font-family: Roboto, Arial, sans-serif;
     font-size: 30px;
     font-weight: 100;
     line-height: 45px;
@@ -323,7 +321,6 @@ form div span a, form div label a {
 
 h1, h2, h3, h4, h5, h6 {
     color: #484c50;
-    font-family: "Roboto", Arial, sans-serif;
     font-weight: 400;
     margin: 0 0 30px 0;
 }
