@@ -1,0 +1,72 @@
+<html>
+
+<head>
+    <script src="../../js/jquery.min.js"></script>
+    <script src="jquery.panelSnap.js"></script>
+    <link href="style.css" rel="stylesheet" />
+    <script type="text/javascript" src="js/lib/highlight.pack.js"></script>
+    <script type="text/javascript" src="js/lib/modernizr.custom.min.js"></script>
+    <script type="text/javascript" src="js/examples.js"></script>
+
+    <script type="text/javascript" src="js/lib/greensock/TweenMax.min.js"></script>
+    <script type="text/javascript" src="scrollmagic/uncompressed/ScrollMagic.js"></script>
+    <script type="text/javascript" src="scrollmagic/uncompressed/plugins/animation.gsap.js"></script>
+    <script type="text/javascript" src="scrollmagic/uncompressed/plugins/debug.addIndicators.js"></script>
+</head>
+
+<body style="height:5000px;">
+    <div id="main">
+        <img id="myimg" src="img/Frame0001.png"><br>
+        <div class="text" id="text1" style="opacity:1">
+            <h1>Bluetooth only</h1>
+            <span>Lasts about 3 months</span>
+            <span>For when the device is near a phone or tablet</span>
+        </div>
+        <div class="text" id="text2">
+            <h1>GPS + Bluetooth</h1>
+            <span>Lasts about 1 month</span>
+            <span>For when the device is in and out of range of a phone or tablet</span>
+        </div>
+        <div class="text" id="text3">
+            <h1>GPS only</h1>
+            <span>Lasts about 1 day</span>
+            <span>For when the device entirely leaves</span>
+        </div>
+        <div class="text" id="text4">
+            <h1>GPS + Battery Pack</h1>
+            <span>Lasts about 1 day for every 12 mAh</span>
+            <span>For larger items that are out of range often</span>
+        </div>
+    </div>
+    <script>
+        var lastScrollTop, numFrames, numText, percent, backgroundPosition, textPosition, textArray;
+        lastScrollTop = 0;
+        numFrames = 60;
+        position = 1;
+        textPosition = 0;
+        numText = 4;
+        $(window).scroll(function(event) {
+            var st = $(this).scrollTop();
+            if (st > lastScrollTop) {} else {}
+            lastScrollTop = st;
+            percent = lastScrollTop / document.body.scrollHeight;
+            backgroundPosition = Math.min(Math.floor(percent * numFrames) + 1, numFrames);
+            $(".text").css("opacity","0");
+            $(".text").css("pointer-events","none");
+            textPosition = Math.min(Math.floor(percent * numText) + 1, numText);
+            if (backgroundPosition < 10) {
+                $("#myimg").attr("src", "img/Frame000" + backgroundPosition + ".png");
+            } else if (backgroundPosition < 100) {
+                $("#myimg").attr("src", "img/Frame00" + backgroundPosition + ".png");
+            } else if (backgroundPosition < 1000) {
+                $("#myimg").attr("src", "img/Frame0" + backgroundPosition + ".png");
+            } else {
+                $("#myimg").attr("src", "img/Frame" + backgroundPosition + ".png");
+            }
+            $("#text" + textPosition).css("opacity","1");
+            $("#text" + textPosition).css("pointer-events","all");
+        });
+    </script>
+</body>
+
+</html>
