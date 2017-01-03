@@ -6,6 +6,7 @@
 #spacer{
   height: 0px;
   position: relative;
+  background-color: white;
 }
 
 #mainScroll {
@@ -14,7 +15,6 @@
     top: 0;
     bottom: 0px;
     height: 100vh;
-    overflow-x: hidden;
 }
 
 #myimg {
@@ -28,7 +28,7 @@
     position: absolute;
     width: 300px;
     opacity: 0;
-    top: calc(50% - 250px);
+    top: calc(50% - 300px);
     transition: 0.5s opacity;
     padding: 15px;
     right: 0;
@@ -52,11 +52,11 @@
   #spacer{
     position: relative;
     height: auto;
-    background-color: white;
   }
   #mainScroll{
     height: auto;
     position: relative;
+    overflow-x: hidden;
   }
   .text{
     position: relative;
