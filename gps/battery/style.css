@@ -3,29 +3,64 @@
     src: url(../../fonts/Quicksand-Regular.otf);
 }
 
-body{
-  margin: 0;
-  font-family:'Quicksand';
-  overflow-x: hidden;
+#spacer{
+  height: 0px;
+  position: relative;
 }
 
-#main{
-  position:fixed;
-  width: 100%;
-  height: 100vh;
+#mainScroll {
+    position: relative;
+    width: 100%;
+    top: 0;
+    bottom: 0px;
+    height: 100vh;
+    overflow-x: hidden;
 }
 
-#myimg{
-  position: absolute;
-  height: 100vh;
-  left: calc(50vw - 960px);
-  filter: grayscale(100%);
+#myimg {
+    position: absolute;
+    height: 100vh;
+    left: -100px;
+    filter: grayscale(100%);
 }
 
-.text{
-  position:absolute;
-  right: 50px;
-  opacity: 0;
-  top: calc(50% - 250px);
-  transition: 0.5s opacity;
+.text {
+    position: absolute;
+    width: 300px;
+    opacity: 0;
+    top: calc(50% - 250px);
+    transition: 0.5s opacity;
+    padding: 15px;
+    right: 0;
+    background-color: rgba(255, 255, 255, 0.8);
+    position: absolute;
+}
+.text h1 {
+  padding: 15px;
+  font-size: 30px;
+  background-color: rgba(0, 137, 255, 0.51);
+  cursor: pointer;
+}
+
+.text h2 {
+  padding: 15px;
+  background-color: rgba(202, 202, 202, 0.21);
+  color: rgba(0,0,0,0.3);
+  cursor: pointer;
+}
+@media(max-width:360px){
+  #spacer{
+    position: relative;
+    height: auto;
+    background-color: white;
+  }
+  #mainScroll{
+    height: auto;
+    position: relative;
+  }
+  .text{
+    position: relative;
+    height: auto;
+    display: none;
+  }
 }
