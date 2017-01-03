@@ -1,309 +1,383 @@
 <!DOCTYPE html>
-<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
-<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
-<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
-<!--[if gt IE 8]><!-->
-<html class="no-js">
-<!--<![endif]-->
+<html>
 
 <head>
     <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>XY GPS - Range</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="We make Everything Findable" />
-    <meta name="keywords" content="XY Findables Bluetooth Item Finder" />
-    <meta name="author" content="XYFindables.com" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GPS Battery And Range - XY | The Findables&trade; Company</title>
+    <meta name="google-site-verification" content="N5P1Qy3zIT05DpfnVPsNP8wadzkhfZ9UgVgq2eyWdcg" />
+    <link href="http://www.xyfindit.com/Content/css/bootstrap.min.css" rel="stylesheet">
+    <link href="http://www.xyfindit.com/Content/css/font-awesome.min.css" rel="stylesheet">
+    <link href="http://www.xyfindit.com/Content/css/animate.min.css" rel="stylesheet">
+    <link href="http://www.xyfindit.com/Content/css/prettyPhoto.css" rel="stylesheet">
+    <link href="http://www.xyfindit.com/Content/css/main_xyfindit.css" rel="stylesheet">
+    <link href="http://www.xyfindit.com/Content/css/site.css" rel="stylesheet">
+    <link href="http://www.xyfindit.com/Content/css/responsive.css" rel="stylesheet">
+    <script src="http://www.xyfindit.com/Scripts/js/jquery.js"></script>
+    <script src="http://www.xyfindit.com/bundles/xy?v=tXsMd-04jwJ40Ho--h_iIu1u9lYzFZwlkm1Xk0f3hwM1"></script>
 
-  	<!-- Facebook and Twitter integration -->
-  	<meta property="og:title" content="" />
-  	<meta property="og:image" content="" />
-  	<meta property="og:url" content="" />
-  	<meta property="og:site_name" content="" />
-  	<meta property="og:description" content="" />
-  	<meta name="twitter:title" content="" />
-  	<meta name="twitter:image" content="" />
-  	<meta name="twitter:url" content="" />
-  	<meta name="twitter:card" content="" />
+    <script>
+        (function(i, s, o, g, r, a, m) {
+            i['GoogleAnalyticsObject'] = r;
+            i[r] = i[r] || function() {
+                (i[r].q = i[r].q || []).push(arguments)
+            }, i[r].l = 1 * new Date();
+            a = s.createElement(o),
+                m = s.getElementsByTagName(o)[0];
+            a.async = 1;
+            a.src = g;
+            m.parentNode.insertBefore(a, m)
+        })(window, document, 'script', 'https://www.google-analytics.com/analytics.js', 'ga');
 
-  	<!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
-  	<link rel="shortcut icon" href="../../favicon.ico">
+        ga('create', 'UA-42073870-11', 'auto', {
+            'allowLinker': true
+        });
 
-  	<link href='https://fonts.googleapis.com/css?family=Roboto:400,100,300,600,400italic,700' rel='stylesheet' type='text/css'>
+        ga('require', 'linker');
+        ga('linker:autoLink', ['xyfindit.com', 'www.xyfindit.com', 'shopxyfindit.com', 'shopify.com', 'xyproducts.myshopify.com', 'checkout.shopify.com']);
+        ga('send', 'pageview');
+    </script>
+    <!--[if lt IE 9]>
+    <script src="http://www.xyfindit.com/js/html5shiv.js"></script>
+    <script src="http://www.xyfindit.com/js/respond.min.js"></script>
+    <![endif]-->
+    <link rel="shortcut icon" href="/img/v2/xy/favicon.png">
+    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="http://www.xyfindit.com/img/v2/ico/apple-touch-icon-144-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="http://www.xyfindit.com/img/v2/ico/apple-touch-icon-114-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" sizes="72x72" href="http://www.xyfindit.com/img/v2/ico/apple-touch-icon-72-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" href="http://www.xyfindit.com/img/v2/ico/apple-touch-icon-57-precomposed.png">
 
-    <!-- Animate.css -->
-    <link rel="stylesheet" href="../../css/animate.css">
-    <!-- Flexslider -->
-    <link rel="stylesheet" href="../../css/flexslider.css">
-    <!-- Icomoon Icon Fonts-->
-    <link rel="stylesheet" href="../../css/icomoon.css">
-    <!-- Magnific Popup -->
-    <link rel="stylesheet" href="../../css/magnific-popup.css">
-    <!-- Bootstrap  -->
-    <link rel="stylesheet" href="../../css/bootstrap.css">
-    <link href="../../css/style.css" rel="stylesheet" />
+    <style type="text/css">
+        .no-desktop {
+            display: none !important
+        }
+    </style>
 
-    <link href="style.css" rel="stylesheet" />
+    <meta name="title" title="XY - How does XY Find It work with the XY finders | XY - The Findables&trade; Company" />
+    <meta name="description" content="Learn how simple it is to set up the XY Find It app with your XY finders.  Ring your XY finders, ring your phone, check last known locations.  It's easy to keep track of your important things." />
+    <link href="https://www.xyfindit.com/compare" rel="canonical" />
 
-    <!-- Modernizr JS -->
-    <script src="../../js/modernizr-2.6.2.min.js"></script>
+    <style>
+        .service-item img.img-responsive {
+            max-width: 100px;
+            display: inline-block;
+            margin-bottom: 12px;
+        }
+    </style>
+
 </head>
+<!--/head-->
 
-<body>
-    <!-- Loader -->
-    <div class="fh5co-loader"></div>
-    <div id="fh5co-page">
-        <section id="fh5co-header">
+<body class="homepage">
+    <header id="header">
+        <nav class="navbar navbar-inverse" role="banner">
             <div class="container">
-                <nav role="navigation">
-                    <ul class="pull-left left-menu">
-                        <li><a href="https://www.xyfindables.com/invest/" target="_blank">Become An Owner</a></li>
-                        <li><a href="//www.xyfindables.com/developer">Developer</a></li>
-                    </ul>
-                    <h1 id="fh5co-logo"><a href="//www.xyfindables.com/"><img src="../../images/logo.svg" class="hidden-sm hidden-xs" style="height:28.5px;" /></a></h1>
-                    <ul class="pull-right right-menu">
-                        <li><a href="//www.xyfindables.com/branding">Branding</a></li>
-                    </ul>
-                </nav>
-            </div>
-        </section>
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <a href="http://www.xyfindit.com/shop/" class="_btn_cart pull-right visible-xs" style="color: #5aa72b; margin-right: 10px; margin-top: 10px;"><i class="fa fa-shopping-cart fa-2x"></i></a>
+                    <a class="navbar-brand hidden-xs" href="/">
+                        <img src="http://www.xyfindit.com/img/v2/xy/XYFindables_Secondary.png" alt="logo">
+                    </a>
 
-        <section id="fh5co-hero" class="js-fullheight" style="background-image: url(../../images/xy3-header.jpg);" data-next="yes">
-            <div class="fh5co-overlay"></div>
-            <div class="container">
-                <div class="fh5co-intro js-fullheight">
-                    <div class="fh5co-intro-text">
+                    <a class="navbar-brand visible-xs" href="/">
+                        <img src="http://www.xyfindit.com/img/v2/xy/XYFindables_Secondary.png" alt="logo" style="width: 200px;">
+                    </a>
+                </div>
 
-                        <div class="fh5co-left-position">
-                            <h2 class="animate-box">XY GPS - Ranges and Battery</h2>
-                            <p class="animate-box">
-                                <a href="http://store.xyfindit.com" target="_blank" class="btn btn-primary">Reserve Now!</a></p>
-                        </div>
-                    </div>
+                <div class="collapse navbar-collapse navbar-right">
+                    <ul class="nav navbar-nav">
+                        <li class="text-center"><a href="http://www.xyfindit.com/how_it_works">How it Works</a></li>
+                        <li class="text-center"><a href="http://www.xyfindit.com/compare">Compare</a></li>
+                        <li class="text-center"><a href="http://support.xyfindit.com/hc/en-us">Help</a></li>
+                        <li class="text-center"><a href="https://my.xyfindit.com">Sign In</a></li>
+                        <li class="text-center div-green"><a class="btn btn-default _btn_buy " href="http://www.xyfindit.com/shop/">Buy Now</a></li>
+
+                    </ul>
+                    <a href="/shop/" class="_btn_cart pull-right hidden-xs no-desktop" style="color: #5aa72b; margin-top: 13px;"><i class="fa fa-shopping-cart fa-2x"></i></a>
                 </div>
             </div>
-            <div class="fh5co-learn-more animate-box">
-                <a href="#" class="scroll-btn">
-                    <span class="text">Explore the Findables Ecosystem</span>
-                    <span class="arrow"><i class="icon-chevron-down"></i></span>
-                </a>
-            </div>
-        </section>
-        <section id="spacer">
-            <div id="mainScroll">
-                <img id="myimg" src="img/Frame0001.png"><br>
-                <div class="text" id="text1" style="opacity:1;display:block;">
-                    <h1>Bluetooth only</h1>
-                    <ul>
-                        <li>Lasts about 3 months</li>
-                        <li>Device is near a phone or tablet</li>
-                    </ul>
-                    <h2 target="2">GPS + Bluetooth</h2>
-                    <h2 target="3">GPS only</h2>
-                    <h2 target="4">GPS + Battery Pack</h2>
-                    <h2 target="5">GPS + External Power</h2>
-                </div>
-                <div class="text" id="text2">
-                    <h2 target="1">Bluetooth only</h2>
-                    <h1>GPS + Bluetooth</h1>
-                    <ul>
-                        <li>Lasts about 1 month</li>
-                        <li>Device is in and out of range of a phone or tablet</li>
-                    </ul>
-                    <h2 target="3">GPS only</h2>
-                    <h2 target="4">GPS + Battery Pack</h2>
-                    <h2 target="5">GPS + External Power</h2>
-                </div>
-                <div class="text" id="text3">
-                    <h2 target="1">Bluetooth only</h2>
-                    <h2 target="2">GPS + Bluetooth</h2>
-                    <h1>GPS only</h1>
-                    <ul>
-                        <li>Lasts about 1 day</li>
-                        <li>Device is far from phone or tablet</li>
-                    </ul>
-                    <h2 target="4">GPS + Battery Pack</h2>
-                    <h2 target="5">GPS + External Power</h2>
-                </div>
-                <div class="text" id="text4">
-                    <h2 target="1">Bluetooth only</h2>
-                    <h2 target="2">GPS + Bluetooth</h2>
-                    <h2 target="3">GPS only</h2>
-                    <h1>GPS + Battery Pack</h1>
-                    <ul>
-                        <li>Lasts about 1 day for every 12 mAh</li>
-                        <li>Recommended for larger items that may go out of range often</li>
-                    </ul>
-                    <h2 target="5">GPS + External Power</h2>
-                </div>
-                <div class="text" id="text5">
-                    <h2 target="1">Bluetooth only</h2>
-                    <h2 target="2">GPS + Bluetooth</h2>
-                    <h2 target="3">GPS only</h2>
-                    <h2 target="4">GPS + Battery Pack</h2>
-                    <h1 target="5">GPS + External Power</h1>
-                    <ul>
-                        <li>Lasts as long as necessary</li>
-                        <li>Connect the XY GPS via a micro USB to external power</li>
-                    </ul>
-                </div>
-            </div>
-        </section>
-        <footer id="fh5co-footer">
-            <div class="container">
-                <div class="row row-bottom-padded-md">
-                    <div class="col-md-3 col-sm-6 col-xs-12 animate-box">
-                    </div>
-                    <div class="col-md-3 col-sm-6 col-xs-12 animate-box">
-                        <div class="fh5co-footer-widget">
-                            <h3>Support</h3>
-                            <ul class="fh5co-links">
-                                <li><a href="http://support.xyfindit.com" target="_blank">Customer Support</a></li>
-                                <li><a href="http://store.xyfindit.com/pages/terms" target="_blank">Terms of Use</a></li>
-                                <li><a href="http://store.xyfindit.com/pages/privacy-policy" target="_blank">Privacy Policy</a></li>
-                            </ul>
-                        </div>
-                    </div>
-                    <div class="col-md-3 col-sm-6 col-xs-12 animate-box">
-                        <div class="fh5co-footer-widget">
-                            <h3>Contact Us</h3>
-                            <p>
-                                <a href="mailto:contact@xyfindables.com">contact@xyfindables.com</a> <br> 1133 Columbia Street, <br> Suite 205, San Diego, CA 92101 <br>
-                                <a href="tel:+123456789">(619)-456-0936</a>
-                            </p>
-                        </div>
-                    </div>
-                    <div class="col-md-3 col-sm-6 col-xs-12 animate-box">
-                        <div class="fh5co-footer-widget">
-                            <h3>Follow Us</h3>
-                            <ul class="fh5co-social">
-                                <li><a href="https://twitter.com/XYFindIt?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor"><i class="icon-twitter"></i></a></li>
-                                <li><a href="https://www.facebook.com/xyfindit/"><i class="icon-facebook"></i></a></li>
-                                <li><a href="https://www.instagram.com/xyfindit/"><i class="icon-instagram"></i></a></li>
-                                <li><a href="https://www.youtube.com/channel/UCNxDJE1gGsY8lU7xSG7IpHw"><i class="icon-youtube-play"></i></a></li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="fh5co-copyright animate-box">
-                <div class="container">
-                    <div class="row">
-                        <div class="col-md-12">
-                            <p class="fh5co-left"><small>&copy; 2016 <a href="index.html">XY Findables</a> All Rights Reserved.</small></p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </footer>
-        <!-- END #fh5co-footer -->
+            <!--/.container-->
+        </nav>
+        <!--/nav-->
+    </header>
+
+    <!--/header-->
+
+    <div class="center" style="margin-top:70px; padding-bottom:0">
+        <h2 class="_header_find">XY GPS Battery & Range</h2>
+        <p>The XY GPS is designed to maximize battery life in a number of different situations.
+            <br/> It will automatically switch modes depending on the distance to a connected phone or tablet.
+            <br/> Each setting is described in detail below, along with the aproximate battery life if the device were to remain in that situation.
+        </p>
     </div>
 
-  	<!-- jQuery -->
-  	<script src="../../js/jquery.min.js"></script>
-  	<!-- jQuery Easing -->
-  	<script src="../../js/jquery.easing.1.3.js"></script>
-  	<!-- Bootstrap -->
-  	<script src="../../js/bootstrap.min.js"></script>
-  	<!-- Waypoints -->
-  	<script src="../../js/jquery.waypoints.min.js"></script>
-  	<!-- Flexslider -->
-  	<script src="../../js/jquery.flexslider-min.js"></script>
-  	<!-- Magnific Popup -->
-  	<script src="../../js/jquery.magnific-popup.min.js"></script>
-  	<script src="../../js/magnific-popup-options.js"></script>
+    <section class="service-item hidden-xs">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-8 vcenter">
+                    <div data-wow-delay="600ms" data-wow-duration="1000ms" class="contact-info wow fadeInDown animated" style="visibility: visible; animation-duration: 1000ms; animation-delay: 600ms; animation-name: fadeInDown;">
+                        <h2>Bluetooth Only</h2>
+                        <p>
+                            When the XY GPS is constantly in range of a phone or tablet, it will remain in Bluetooth mode.
+                            <br/> Lasts about 3 months.
+                            <br />
+                        </p>
+                    </div>
+                </div>
+                <div class="col-sm-3 vcenter">
+                    <img alt="" class="img-responsive" src="http://simpleicon.com/wp-content/uploads/bluetooth.png">
+                </div>
+            </div>
+            <hr />
 
-  	<!-- Main JS (Do not remove) -->
-  	<script src="../../js/main.js"></script>
+            <div class="row ">
+                <div class="col-sm-3 col-xs-12 vcenter">
+                    <img alt="" class="img-responsive" src="https://d30y9cdsu7xlg0.cloudfront.net/png/625-200.png">
+                    <img alt="" class="img-responsive" src="http://simpleicon.com/wp-content/uploads/bluetooth.png">
+                </div>
+                <div class="col-sm-8 col-xs-12 vcenter">
+                    <div data-wow-delay="600ms" data-wow-duration="1000ms" class="contact-info wow fadeInDown animated" style="visibility: visible; animation-duration: 1000ms; animation-delay: 600ms; animation-name: fadeInDown;">
+                        <h2>GPS + Bluetooth</h2>
+                        <p>
+                            When the XY GPS is in and out of range, it will switch between GPS and Bluetooth to maintain optimal location services.
+                            <br/> Lasts about 1 month
+                            <br/>
+                        </p>
+                    </div>
+                </div>
 
-    <script>
-        var lastScrollTop, numFrames, numText, percent, backgroundPosition, textPosition, textArray;
-        lastScrollTop = 0;
-        numFrames = 80;
-        position = 1;
-        textPosition = 0;
-        numText = 5;
-        if (screen.width > 360) {
-            $(".text").on('click', function(e) {
-                if ($(e.target).attr("target")) {
-                    var pos = parseInt($(e.target).attr("target"));
-                    var pageSize = (document.body.scrollHeight - 689) / numText;
-                    window.scrollTo(0, 689 + pageSize * pos - 300);
-                }
-            });
-            $(window).scroll(function(event) {
-                var st = $(this).scrollTop();
-                if (st > 689 && st < 10000) {
-                    $("#mainScroll").css("position", "fixed");
-                    $("#spacer").css("height", "10000px");
-                    $("#mainScroll").css("top", "calc(100% - 100vh)");
-                    st = st - 689;
-                    lastScrollTop = st;
-                    percent = lastScrollTop / (document.body.scrollHeight - 689);
-                    backgroundPosition = Math.min(Math.floor(percent * numFrames) + 1, numFrames);
-                    $(".text").css("opacity", "0");
-                    $(".text").css("pointer-events", "none");
-                    textPosition = Math.min(Math.floor(percent * numText) + 1, numText);
-                    if (backgroundPosition < 10) {
-                        $("#myimg").attr("src", "img/Frame000" + backgroundPosition + ".png");
-                    } else if (backgroundPosition < 100) {
-                        $("#myimg").attr("src", "img/Frame00" + backgroundPosition + ".png");
-                    } else if (backgroundPosition < 1000) {
-                        $("#myimg").attr("src", "img/Frame0" + backgroundPosition + ".png");
-                    } else {
-                        $("#myimg").attr("src", "img/Frame" + backgroundPosition + ".png");
-                    }
-                    $("#text" + textPosition).css("opacity", "1");
-                    $("#text" + textPosition).css("pointer-events", "all");
-                } else if (st >= 10000) {
-                    $("#mainScroll").css("position", "absolute");
-                    $("#mainScroll").css("top", "calc(100% - 100vh)");
-                } else {
-                    $("#mainScroll").css("position", "relative");
-                    $("#spacer").css("top", "0");
-                    $("#spacer").css("height", "100vh");
-                }
-            });
+            </div>
+            <hr />
+
+            <div class="row">
+                <div class="col-sm-8 vcenter">
+                    <div data-wow-delay="600ms" data-wow-duration="1000ms" class="contact-info wow fadeInDown animated" style="visibility: visible; animation-duration: 1000ms; animation-delay: 600ms; animation-name: fadeInDown;">
+                        <h2>GPS Only</h2>
+                        <p>
+                            When the XY GPS is not in range, it will report its location using GPS.
+                            <br/> Lasts about 1 day
+                            <br/>
+                        </p>
+                    </div>
+                </div>
+                <div class="col-sm-3 vcenter">
+                    <img alt="" class="img-responsive" src="https://d30y9cdsu7xlg0.cloudfront.net/png/625-200.png">
+                </div>
+            </div>
+            <hr />
+
+            <div class="row ">
+                <div class="col-sm-3 col-xs-12 vcenter">
+                    <img alt="" class="img-responsive" src="https://d30y9cdsu7xlg0.cloudfront.net/png/625-200.png">
+                    <img alt="" class="img-responsive" src="http://icon-icons.com/icons2/390/PNG/512/battery-pack_38704.png">
+                </div>
+                <div class="col-sm-8 col-xs-12 vcenter">
+                    <div data-wow-delay="600ms" data-wow-duration="1000ms" class="contact-info wow fadeInDown animated" style="visibility: visible; animation-duration: 1000ms; animation-delay: 600ms; animation-name: fadeInDown;">
+                        <h2>GPS + Battery Pack (not included)</h2>
+                        <p>
+                            If the device cannot be recharged about once a month, we recommend a separate battery pack.
+                            <br/> Lasts +1 day for every 12 mAh
+                            <br/>
+                        </p>
+                    </div>
+                </div>
+
+            </div>
+            <hr />
+
+            <div class="row ">
+                <div class="col-sm-8 col-xs-12 vcenter">
+                    <div data-wow-delay="600ms" data-wow-duration="1000ms" class="contact-info wow fadeInDown animated" style="visibility: visible; animation-duration: 1000ms; animation-delay: 600ms; animation-name: fadeInDown;">
+                        <h2>GPS + External Power (not included)</h2>
+                        <p>
+                            The XY GPS can remained pulled in to an external power supply (like in a car)
+                            <br/> N/A
+                            <br/>
+                        </p>
+                    </div>
+                </div>
+                <div class="col-sm-3 col-xs-12 vcenter">
+                    <img alt="" class="img-responsive" src="https://d30y9cdsu7xlg0.cloudfront.net/png/625-200.png">
+                    <img alt="" class="img-responsive" src="http://www.iconshock.com/img_vista/IPHONE/construction/jpg/battery_pack_icon.jpg">
+                </div>
+
+            </div>
+
+        </div>
+    </section>
+
+
+    <section class="service-item visible-xs" style="padding:0">
+        <div class="container">
+
+            <div class="row">
+                <div class="col-sm-3 col-xs-12 text-center">
+                    <img alt="" class="img-responsive" src="http://simpleicon.com/wp-content/uploads/bluetooth.png">
+                </div>
+                <div class="col-sm-8 col-xs-12 text-center">
+                    <div data-wow-delay="300ms" data-wow-duration="1000ms" class="contact-info wow fadeInDown animated" style="visibility: visible; animation-duration: 1000ms; animation-delay: 600ms; animation-name: fadeInDown;">
+                        <h2>Bluetooth Only</h2>
+                        <p>
+                            When the XY GPS is constantly in range of a phone or tablet, it will remain in Bluetooth mode.
+                            <br/> Lasts about 3 months.
+                            <br />
+                        </p>
+                    </div>
+                </div>
+
+            </div>
+            <hr />
+
+            <div class="row">
+                <div class="col-sm-3 col-xs-12 text-center">
+                    <img alt="" class="img-responsive" src="https://d30y9cdsu7xlg0.cloudfront.net/png/625-200.png">
+                    <img alt="" class="img-responsive" src="http://simpleicon.com/wp-content/uploads/bluetooth.png">
+                </div>
+                <div class="col-sm-8 col-xs-12 text-center">
+                    <div data-wow-delay="300ms" data-wow-duration="1000ms" class="contact-info wow fadeInDown animated" style="visibility: visible; animation-duration: 1000ms; animation-delay: 600ms; animation-name: fadeInDown;">
+                        <h2>GPS + Bluetooth</h2>
+                        <p>
+                            When the XY GPS is in and out of range, it will switch between GPS and Bluetooth to maintain optimal location services.
+                            <br/> Lasts about 1 month
+                            <br/>
+                        </p>
+                    </div>
+                </div>
+
+            </div>
+            <hr />
+
+            <div class="row ">
+                <div class="col-sm-3 col-xs-12 text-center">
+                    <img alt="" class="img-responsive" src="https://d30y9cdsu7xlg0.cloudfront.net/png/625-200.png">
+                </div>
+                <div class="col-sm-8 col-xs-12 text-center">
+                    <div data-wow-delay="300ms" data-wow-duration="1000ms" class="contact-info wow fadeInDown animated" style="visibility: visible; animation-duration: 1000ms; animation-delay: 600ms; animation-name: fadeInDown;">
+                        <h2>GPS Only</h2>
+                        <p>
+                            When the XY GPS is not in range, it will report its location using GPS.
+                            <br/> Lasts about 1 day
+                            <br/>
+                        </p>
+                    </div>
+                </div>
+
+
+            </div>
+            <hr />
+
+            <div class="row ">
+                <div class="col-sm-3 col-xs-12 text-center">
+                    <img alt="" class="img-responsive" src="https://d30y9cdsu7xlg0.cloudfront.net/png/625-200.png">
+                    <img alt="" class="img-responsive" src="http://icon-icons.com/icons2/390/PNG/512/battery-pack_38704.png">
+                </div>
+                <div class="col-sm-8 col-xs-12 text-center">
+                    <div data-wow-delay="300ms" data-wow-duration="1000ms" class="contact-info wow fadeInDown animated" style="visibility: visible; animation-duration: 1000ms; animation-delay: 600ms; animation-name: fadeInDown;">
+                        <h2>GPS + Battery Pack (not included)</h2>
+                        <p>
+                            If the device cannot be recharged about once a month, we recommend a separate battery pack.
+                            <br/> Lasts +1 day for every 12 mAh
+                            <br/>
+                        </p>
+                    </div>
+                </div>
+
+            </div>
+            <hr />
+
+            <div class="row ">
+                <div class="col-sm-3 col-xs-12 text-center">
+                    <img alt="" class="img-responsive" src="https://d30y9cdsu7xlg0.cloudfront.net/png/625-200.png">
+                    <img alt="" class="img-responsive" src="http://www.iconshock.com/img_vista/IPHONE/construction/jpg/battery_pack_icon.jpg">
+                </div>
+                <div class="col-sm-8 col-xs-12 text-center">
+                    <div data-wow-delay="300ms" data-wow-duration="1000ms" class="contact-info wow fadeInDown animated" style="visibility: visible; animation-duration: 1000ms; animation-delay: 600ms; animation-name: fadeInDown;">
+                        <h2>GPS + External Power (not included)</h2>
+                        <p>
+                            The XY GPS can remained pulled in to an external power supply (like in a car)
+                            <br/> N/A
+                            <br/>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <footer id="footer" class="midnight-blue">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-12 col-xs-12">
+                    <div class="social" style="text-align:center;">
+                        <ul class="social-share">
+                            <li><a target="_blank" href="https://www.facebook.com/xyfindit"><i class="fa fa-facebook"></i></a></li>
+                            <li><a target="_blank" href="https://twitter.com/xyfindit"><i class="fa fa-twitter"></i></a></li>
+                            <li><a target="_blank" href="https://www.youtube.com/channel/UCNxDJE1gGsY8lU7xSG7IpHw"><i class="fa fa-youtube"></i></a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-sm-6" style="margin-top:7px;">
+                    Copyright &copy; 2017
+                    <a href="http://www.xyfindables.com" target="_blank">
+                        <nobr>XY - The Findables Company</nobr>
+                    </a>
+                </div>
+                <div class="col-sm-6" style="margin-top:7px;">
+                    <ul class="pull-right">
+                        <li><a href="http://www.xyfindit.com/product">Products</a></li>
+                        <li><a href="http://www.xyfindit.com/invest" target="_blank">Invest in XY</a></li>
+                        <li><a href="http://support.xyfindit.com/hc/en-us" target="_blank">Help</a></li>
+                        <li><a href="http://www.xyfindit.com/privacy">Privacy</a></li>
+                        <li><a href="http://www.xyfindit.com/terms">Terms</a></li>
+                        <li><a href="http://www.xyfindables.com/developer" target="_blank">Developer</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!--/#footer-->
+
+    <form id="frmData">
+        <input type="hidden" id="visitor_id" name="visitor_id" value="34a7af23-8614-45d1-8167-9f01258c6ea2" />
+        <input type="hidden" id="page_id" name="page_id" value="xyfindit.com" />
+        <input type="hidden" id="url-referrer" name="url-referrer" value="https://www.xyfindit.com/" />
+
+    </form>
+    <script type="text/javascript">
+        if (Utils.readCookie('visitor_id') && Utils.readCookie('visitor_id') != null) {
+            var vid = Utils.readCookie('visitor_id');
+            if (vid && vid != null)
+                $("#frmData #visitor_id").val(vid);
         } else {
-            $("#spacer").css("height", "auto");
-            $(".text").on('click', function(e) {
-                if ($(e.target).attr("target")) {
-                    $(".text").css("opacity", "0");
-                    $(".text").css("pointer-events", "none");
-                    $(".text").css("display","none");
-                    $("#text" + $(e.target).attr("target")).css("opacity", "1");
-                    $("#text" + $(e.target).attr("target")).css("pointer-events", "all");
-                    $("#text" + $(e.target).attr("target")).css("display","block");
-                }
-            });
+            var vid = $("#frmData #visitor_id").val();
+            Utils.createCookie('visitor_id', vid, 100);
         }
     </script>
-    <script src="../../js/jquery.cookie.js"></script>
-    <script>
-        $(function() {
+    <script src="http://www.xyfindit.com/Scripts/js/bootstrap.min.js"></script>
+    <script src="http://www.xyfindit.com/Scripts/js/jquery.prettyPhoto.js"></script>
+    <script src="http://www.xyfindit.com/Scripts/js/jquery.isotope.min.js"></script>
+    <script src="http://www.xyfindit.com/Scripts/js/main.js"></script>
+    <script src="http://www.xyfindit.com/Scripts/js/wow.min.js"></script>
 
-            if ($.cookie('layoutCookie') != '') {
-                $('body').addClass($.cookie('layoutCookie'));
-            }
 
-            $('a[data-layout="boxed"]').click(function(event) {
-                event.preventDefault();
-                $.cookie('layoutCookie', 'boxed', {
-                    expires: 7,
-                    path: '/'
-                });
-                $('body').addClass($.cookie('layoutCookie')); // the value is boxed.
-            });
 
-            $('a[data-layout="wide"]').click(function(event) {
-                event.preventDefault();
-                $('body').removeClass($.cookie('layoutCookie')); // the value is boxed.
-                $.removeCookie('layoutCookie', {
-                    path: '/'
-                }); // remove the value of our cookie 'layoutCookie'
-            });
-        });
-    </script>
+
+
+
+
+    <noscript>
+            <img height="1" width="1" style="display:none"
+                 src="https://www.facebook.com/tr?id=1738550356412303&ev=PageView&noscript=1" />
+        </noscript>
+
 </body>
 
 </html>
