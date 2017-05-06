@@ -99,7 +99,7 @@ jQuery(function ($) {
 function CheckDiscountCode2() {
     var c = $("[name=discount_code]").val();
     var senddata = '{ discount: { code: "' + c + '", cart: "' + $("#frmCart #cart_token").val() + '" } }';
-    $.ajax({ url: "/api/checkdiscount", method: "post", headers: { "content-type": "application/json", "x-api-key": "nJUi4EOxR93mCwrSt4H6S6mpSeg2jSByzQGww8z5" }, data: senddata, success: function (e) { ApplyCode(e) }, error: function (e) { console.log(e);  } });
+    $.ajax({ url: "https://www.xyfindit.com/api/checkdiscount", method: "post", headers: { "content-type": "application/json", "x-api-key": "nJUi4EOxR93mCwrSt4H6S6mpSeg2jSByzQGww8z5" }, data: senddata, success: function (e) { ApplyCode(e) }, error: function (e) { console.log(e);  } });
     Utils.sendGA('CheckDiscount');
     Utils.sevt('CheckDiscount', c);
 }
@@ -157,7 +157,7 @@ function SendShipping() {
     } catch (ex) { console.log(ex) }
 
     $.ajax({
-        url: "/api/shipping",
+        url: "https://www.xyfindit.com/api/shipping",
         type: "POST",
         timeout: 15000,
         data: senddata,

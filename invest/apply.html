@@ -9,14 +9,14 @@
     <link href="https://www.xyfindit.com/invest/apply" rel="canonical" />
     <!-- core CSS -->
 
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
     <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" type="text/javascript"></script>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
     <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Quicksand:300italic,400italic,600italic,700italic,800italic,400,600,700,300,800" />
     <link rel="stylesheet" type="text/css" href="/css/main.css">
     <link rel="stylesheet" type="text/css" href="/css/responsive.css">
-
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 
     <meta property="og:title" content="Own a piece of the XY Findables Company" />
     <meta property="og:description" content="XY Findables is going above and beyond by expanding on that idea and inviting users to have an even stronger hand in defining the future of Findables. With past success in crowdfunding, a diverse sales channel mix, and a loyal consumer base eagerly awaiting the rollout of new products, XY Findables' leadership team is already a big leap ahead of the competition. XY Findables is inviting their current consumer fan base to own a part of the company they helped create and believes it can dominate the Findables market as the company continues to grow." />
@@ -1128,7 +1128,7 @@ ecomm_pagetype: 'Application'
                     var senddata = 'visitor_id=' + vid + '&event_type=invest_email';
                     senddata += '&event_value=' + $("[name=first_name]").val() + "~" + $("[name=last_name]").val() + "~" + $("[name=email_address]").val();
                     $.ajax({
-                        url: "/api/event",
+                        url: "https://www.xyfindit.com/api/event",
                         type: "POST",
                         timeout: 2000,
                         data: senddata
@@ -1198,7 +1198,7 @@ ecomm_pagetype: 'Application'
                 event.stopPropagation();
 
                     $.ajax({
-                        url: "/api/invest",
+                        url: "https://www.xyfindit.com/api/invest",
                         type: "POST",
                         timeout: 25000,
                         data: $("#frmInvest").serialize() + (Utils.readCookie('invest-qs') != null && Utils.readCookie('invest-qs') != '' ? '&' + Utils.readCookie('invest-qs') : ''),
@@ -1222,7 +1222,7 @@ ecomm_pagetype: 'Application'
 
         function investParts() {
             $.ajax({
-                url: "/api/investpart",
+                url: "https://www.xyfindit.com/api/investpart",
                 type: "POST",
                 timeout: 5000,
                 data: $("#frmInvest").serialize() + (Utils.readCookie('invest-qs') != null && Utils.readCookie('invest-qs') != '' ? '&' + Utils.readCookie('invest-qs') : ''),
@@ -1473,7 +1473,7 @@ var submit = document.querySelector('.btn-credit');
     else
         Utils.createCookie("xy-invest", JSON.stringify(data));
     $.ajax({
-        url: "/api/ITag",
+        url: "https://www.xyfindit.com/api/ITag",
         type: "POST",
         timeout: 5000,
         data: "uid=" + data.uid + "&p=http://ec2-52-45-37-203.compute-1.amazonaws.com/invest/apply",

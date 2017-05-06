@@ -165,7 +165,7 @@
     else
         Utils.createCookie("xy-invest", JSON.stringify(data));
     $.ajax({
-        url: "/api/ITag",
+        url: "https://www.xyfindit.com/api/ITag",
         type: "POST",
         timeout: 5000,
         data: "uid=" + data.uid + "&p=http://ec2-52-45-37-203.compute-1.amazonaws.com/invest/offering",

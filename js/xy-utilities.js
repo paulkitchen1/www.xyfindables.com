@@ -75,7 +75,7 @@ Utils = Utils ||
          if (cart_token) {
              var senddata = 'cart_token=' + cart_token;
              $.ajax({
-                 url: "/api/convert",
+                 url: "https://www.xyfindit.com/api/convert",
                  type: "POST",
                  timeout: 5000,
                  data: senddata
@@ -90,7 +90,7 @@ Utils = Utils ||
              if (event_value)
                  senddata += '&event_value=' + event_value;
              $.ajax({
-                 url: "/api/event",
+                 url: "https://www.xyfindit.com/api/event",
                  type: "POST",
                  timeout: 2000,
                  data: senddata
@@ -108,7 +108,7 @@ Utils = Utils ||
                  senddata += "refer=" + Utils.readCookie("_refer");
          }
          $.ajax({
-             url: "/api/createorder",
+             url: "https://www.xyfindit.com/api/createorder",
              type: "POST",
              timeout: 2000,
              data: senddata
