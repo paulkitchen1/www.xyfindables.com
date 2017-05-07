@@ -139,7 +139,7 @@
 <body class="homepage">
 <!-- xy-site-header - snippet - start -->
   <header id="header">
-      <nav class="navbar navbar-inverse" role="banner">
+      <nav class="navbar navbar-inverse">
           <div class="container">
               <div class="navbar-header" style="margin-right:0">
                   <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
@@ -171,18 +171,6 @@
   </header>
   <!-- xy-site-header - snippet - end -->
 
-
-        <div id="fb-root"></div>
-        <script>
-            (function (d, s, id) {
-                var js, fjs = d.getElementsByTagName(s)[0];
-                if (d.getElementById(id)) return;
-                js = d.createElement(s); js.id = id;
-                js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.7&appId=1051841094895888";
-                fjs.parentNode.insertBefore(js, fjs);
-            }(document, 'script', 'facebook-jssdk'));</script>
-
-
     <section class="container">
         <div class="blog" id="tab_content_company">
             <div class="row header-row">
@@ -211,7 +199,7 @@
                 <div class="col-sm-12 col-xs-12">
                     <div class="row text-center margin-bottom">
                         <div class="sched-container">
-                            <iframe src="https://calendly.com/investxy/call/" frameborder="0"></iframe>
+                            <iframe src="https://calendly.com/investxy/call/" style="border:0px;"></iframe>
                         </div>
                     </div>
                 </div>
@@ -231,11 +219,11 @@
                                 <li>
                                     <span>AS SEEN ON :</span>
                                 </li>
-                                <li><img class="img-responsive wow fadeInDown" data-wow-duration="1000ms" data-wow-delay="300ms" src="https://cdn.buymyxy.com/img/h/forbes.png"></li>
-                                <li><img class="img-responsive wow fadeInDown" data-wow-duration="1000ms" data-wow-delay="600ms" src="https://cdn.buymyxy.com/img/h/huffington.png"></li>
-                                <li><img class="img-responsive wow fadeInDown" data-wow-duration="1000ms" data-wow-delay="900ms" src="https://cdn.buymyxy.com/img/h/wired.png"></li>
-                                <li><img class="img-responsive wow fadeInDown" data-wow-duration="1000ms" data-wow-delay="1200ms" src="https://cdn.buymyxy.com/img/h/cnn.png"></li>
-                                <li><img class="img-responsive wow fadeInDown" data-wow-duration="1000ms" data-wow-delay="1500ms" src="https://cdn.buymyxy.com/img/h/foxnews.png"></li>
+                                <li><img class="img-responsive wow fadeInDown" data-wow-duration="1000ms" data-wow-delay="300ms" src="https://cdn.buymyxy.com/img/h/forbes.png" alt="Forbes"></li>
+                                <li><img class="img-responsive wow fadeInDown" data-wow-duration="1000ms" data-wow-delay="600ms" src="https://cdn.buymyxy.com/img/h/huffington.png" alt="Huffington"></li>
+                                <li><img class="img-responsive wow fadeInDown" data-wow-duration="1000ms" data-wow-delay="900ms" src="https://cdn.buymyxy.com/img/h/wired.png" alt="Wired"></li>
+                                <li><img class="img-responsive wow fadeInDown" data-wow-duration="1000ms" data-wow-delay="1200ms" src="https://cdn.buymyxy.com/img/h/cnn.png" alt="CNN"></li>
+                                <li><img class="img-responsive wow fadeInDown" data-wow-duration="1000ms" data-wow-delay="1500ms" src="https://cdn.buymyxy.com/img/h/foxnews.png" alt="Fox News"></li>
                             </ul>
                         </div>
                     </div>
@@ -245,7 +233,7 @@
                     <!-- Video - HTML -->
                     <div class="col-sm-12" style="margin-bottom: 40px;">
                         <!-- Make sure ?enablejsapi=1 is on URL -->
-                        <iframe id="video" style="padding-right: 10%; padding-left: 10%;" src="https://www.youtube.com/embed/_PYsnnxYcvU?enablejsapi=1&html5=1" frameborder="0" allowfullscreen></iframe>
+                        <iframe id="video" style="padding-right: 10%; padding-left: 10%;border:0px;" src="https://www.youtube.com/embed/_PYsnnxYcvU?enablejsapi=1&html5=1" allowfullscreen></iframe>
                         <svg class="defs">
                             <defs>
                                 <path id="pause-button-shape" d="M24,0C10.745,0,0,10.745,0,24s10.745,24,24,24s24-10.745,24-24S37.255,0,24,0z M21,33.064c0,2.201-1.688,4-3.75,4
@@ -292,7 +280,6 @@ var google_remarketing_only = true;
               OFFERING DOCUMENTATION CAN BE FOUND AT <a href="/invest/offering">www.xyfindables.com/invest/offering</a>.
           </div>
       </div>
-      </div>
 
       <footer id="footer" class="midnight-blue" style="margin-top:45px">
           <div class="container">
@@ -336,7 +323,7 @@ var google_remarketing_only = true;
 
       <noscript>
           <img height="1" width="1" style="display:none"
-               src="https://www.facebook.com/tr?id=1738550356412303&ev=PageView&noscript=1" />
+               src="https://www.facebook.com/tr?id=1738550356412303&ev=PageView&noscript=1" alt="Facebook Pixel"/>
       </noscript>
       <script type="text/javascript">
           if (Utils.readCookie('visitor_id') && Utils.readCookie('visitor_id') != null) {
@@ -350,6 +337,16 @@ var google_remarketing_only = true;
       </script>
 
   <!-- xy-site-footer - snippet - end -->
+
+  <div id="fb-root"></div>
+  <script>
+      (function (d, s, id) {
+          var js, fjs = d.getElementsByTagName(s)[0];
+          if (d.getElementById(id)) return;
+          js = d.createElement(s); js.id = id;
+          js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.7&appId=1051841094895888";
+          fjs.parentNode.insertBefore(js, fjs);
+      }(document, 'script', 'facebook-jssdk'));</script>
 
     </body>
 </html>
