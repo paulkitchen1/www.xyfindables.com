@@ -1,0 +1,14 @@
+'.text.html':
+  'Folder Head[/]':
+    'prefix': 'xy-folder[invest]-head'
+    'body': '''
+        <!-- xy-folder[invest]-head - snippet - start -->
+          <!-- Facebook Share Meta - Start -->
+          <meta property="og:title" content="Own a piece of the XY Findables Company" />
+          <meta property="og:description" content="XY Findables is going above and beyond by expanding on that idea and inviting users to have an even stronger hand in defining the future of Findables. With past success in crowdfunding, a diverse sales channel mix, and a loyal consumer base eagerly awaiting the rollout of new products, XY Findables' leadership team is already a big leap ahead of the competition. XY Findables is inviting their current consumer fan base to own a part of the company they helped create and believes it can dominate the Findables market as the company continues to grow." />
+          <meta property="og:image" content="https://www.xyfindables.com/img/invest/XYFindIt_SE_productimages.png" />
+          <meta property="og:url" content="https://www.xyfindables.com/invest" />
+          <!-- Facebook Share Meta - End -->
+
+        <!-- xy-folder[invest]-head - snippet - end -->
+    '''
