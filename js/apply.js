@@ -48,11 +48,13 @@ Apply = Apply || {
     if (Apply.checkInputs(".container")) {
       event.stopPropagation();
 
+      var postData = $("#frmInvest").serialize();
+
       $.ajax({
         url: "https://www.xyfindit.com/api/invest",
         type: "POST",
         timeout: 25000,
-        data: $("#frmInvest").serialize() + (Utils.readCookie('invest-qs') != null && Utils.readCookie('invest-qs') != '' ? '&' + Utils.readCookie('invest-qs') : ''),
+        data: postData,
         dataType: "json",
         success: function(data) {
           Utils.log("Apply.saveInvest:Success")
