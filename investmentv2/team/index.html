@@ -319,13 +319,11 @@
     drawTeam("teamList", 4, data.team_detailed);
     drawTeam("managementList", 6, data.management_detailed);
     $(".teamMember").on("click", function() {
+      $(".teamMember .description").fadeOut();
       var div = $(this).find(".description");
-      div.toggleClass("active");
-      if (div.hasClass("active")) {
-        div.fadeIn();
-      } else {
-        div.fadeOut();
-      }
+      var show = !div.hasClass("active");
+      $(".teamMember .description").removeClass("active");
+      if(show) div.fadeIn();
     });
 
     if (Utils.readCookie('visitor_id') && Utils.readCookie('visitor_id') != null) {
