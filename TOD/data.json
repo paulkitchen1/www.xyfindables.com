@@ -1,0 +1,43 @@
+[{
+  "title": "Order XY3",
+  "message": "Get your XY3 today",
+  "button": "Order",
+  "image": "https://www.xyfindables.com/images/TOD/cart.png?cb=1",
+  "link": "https://store.xyfindit.com"
+}, {
+  "title": "How It Works",
+  "message": "Learn how to use your Finders",
+  "button": "Learn more",
+  "image": "https://www.xyfindables.com/images/TOD/howItWorks.png?cb=1",
+  "link": "https://www.xyfindit.com/pages/how-it-works"
+}, {
+  "title": "Share",
+  "message": "Let your friends know about XY",
+  "button": "Share",
+  "image": "https://www.xyfindables.com/images/TOD/share.png?cb=1",
+  "link": "https://my.xyfindit.com?activity=share"
+}, {
+  "title": "Ring your phone",
+  "message": "XY3 Finders can ring your phone",
+  "button": "Get XY 3",
+  "image": "https://www.xyfindables.com/images/TOD/ring.png?cb=1",
+  "link": "https://store.xyfindit.com"
+}, {
+  "title": "IOT - IFTTT",
+  "message": "XY3 Finders can connect to IFTTT",
+  "button": "Learn More",
+  "image": "https://www.xyfindables.com/images/TOD/ifttt.png?cb=1",
+  "link": "https://ifttt.com/xyfindables"
+},{
+  "title": "IOT - Zapier",
+  "message": "XY3 Finders can connect to Zapier",
+  "button": "Learn More",
+  "image": "https://www.xyfindables.com/images/TOD/zapier.png?cb=1",
+  "link": "https://zapier.com/app/explore"
+},{
+  "title": "Find It. Fund It. Own It.",
+  "message": "Own part of XY for as little as $350",
+  "button": "Learn More",
+  "image": "https://www.xyfindables.com/images/TOD/invest.png?cb=1",
+  "link": "https://www.startengine.com/startup/xy-findables"
+}]
