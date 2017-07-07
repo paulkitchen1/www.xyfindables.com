@@ -1,0 +1,191 @@
+var data = {
+  "team": [
+    "Alex M.",
+    "Arie T.",
+    "Belzasar C.",
+    "Bob P.",
+    "Bryan V.",
+    "Caroline W.",
+    "Christine S.",
+    "Donald P.",
+    "Emily M.",
+    "Gabriela D.",
+    "John M.",
+    "John P.",
+    "Johnny K.",
+    "Jordan T.",
+    "Josh P.",
+    "Lee K.",
+    "Louie T.",
+    "Maria K.",
+    "Marissa O.",
+    "Maryann C.",
+    "Patrick P.",
+    "Patrick T.",
+    "Paul K."
+  ],
+  "team_detailed": [{
+      "name": "Alex M.",
+      "img": "https://ssl.gstatic.com/images/branding/product/1x/avatar_square_grey_512dp.png",
+      "icon": "",
+      "description": "",
+      "title": ""
+    },
+    {
+      "name": "Belzasar C.",
+      "img": "https://ssl.gstatic.com/images/branding/product/1x/avatar_square_grey_512dp.png",
+      "icon": "",
+      "description": "",
+      "title": ""
+    },
+    {
+      "name": "Bryan V.",
+      "img": "",
+      "icon": "",
+      "description": "",
+      "title": ""
+    },
+    {
+      "name": "Caroline W.",
+      "img": "",
+      "icon": "",
+      "description": "",
+      "title": ""
+    },
+    {
+      "name": "Christine S.",
+      "img": "",
+      "icon": "",
+      "description": "",
+      "title": ""
+    },
+    {
+      "name": "Donald P.",
+      "img": "",
+      "icon": "",
+      "description": "",
+      "title": ""
+    },
+    {
+      "name": "Emily M.",
+      "img": "",
+      "icon": "",
+      "description": "",
+      "title": ""
+    },
+    {
+      "name": "Gabriela D.",
+      "img": "",
+      "icon": "",
+      "description": "",
+      "title": ""
+    },
+    {
+      "name": "John M.",
+      "img": "",
+      "icon": "",
+      "description": "",
+      "title": ""
+    },
+    {
+      "name": "John P.",
+      "img": "",
+      "icon": "",
+      "description": "",
+      "title": ""
+    },
+    {
+      "name": "Johnny K.",
+      "img": "",
+      "icon": "",
+      "description": "",
+      "title": ""
+    },
+    {
+      "name": "Jordan T.",
+      "img": "",
+      "icon": "",
+      "description": "",
+      "title": ""
+    },
+    {
+      "name": "Josh P.",
+      "img": "",
+      "icon": "",
+      "description": "",
+      "title": ""
+    },
+    {
+      "name": "Lee K.",
+      "img": "",
+      "icon": "",
+      "description": "",
+      "title": ""
+    },
+    {
+      "name": "Louie T.",
+      "img": "",
+      "icon": "",
+      "description": "",
+      "title": ""
+    },
+    {
+      "name": "Maria K.",
+      "img": "",
+      "icon": "",
+      "description": "",
+      "title": ""
+    },
+    {
+      "name": "Marissa O.",
+      "img": "",
+      "icon": "",
+      "description": "",
+      "title": ""
+    },
+    {
+      "name": "Maryann C.",
+      "img": "",
+      "icon": "",
+      "description": "",
+      "title": ""
+    },
+    {
+      "name": "Patrick P.",
+      "img": "",
+      "icon": "",
+      "description": "",
+      "title": ""
+    },
+    {
+      "name": "Patrick T.",
+      "img": "",
+      "icon": "",
+      "description": "",
+      "title": ""
+    },
+    {
+      "name": "Paul K.",
+      "img": "",
+      "icon": "",
+      "description": "",
+      "title": ""
+    }
+  ],
+  "management_detailed": [
+    {
+      "name": "Arie T.",
+      "img": "https://ssl.gstatic.com/images/branding/product/1x/avatar_square_grey_512dp.png",
+      "icon": "",
+      "description": "",
+      "title": "CEO"
+    },
+    {
+      "name": "Bob P.",
+      "img": "",
+      "icon": "",
+      "description": "",
+      "title": "Controller"
+    }
+  ]
+};
