@@ -1,0 +1,17 @@
+var data = [{
+    "question": "Why can I invest now?",
+    "answer": "Easy answer: Because the government lets us sell you shares! Startups are normally legally required to go to millionaires, literally a person with at least a 6-figure salary, for investments in their company. We went through a 6-month audit for an exemption from this rule. Now, it’s your turn to invest in a startup and see potentially huge returns."
+  },
+  {
+    "question": "What does this investment mean for me?",
+    "answer": "This investment is your opportunity to get to the future you’ve always wanted. Ever worried about something in the future? The future of your family? Your kids? Investing in a startup means you can make changes in your financials today that can affect your future forever."
+  },
+  {
+    "question": "What do I get?",
+    "answer": "When you become an investor, you receive exclusive access to the XY Investor Store, where they can see our newest products and buy them at a reduced cost. You will receive SEC documents by email, as well as a stock certificate with your name in the mail."
+  },
+  {
+    "question": "How do I make money?",
+    "answer": "Right now, our shares are mini-IPO, meaning they aren’t traded on the public stock market. We are hoping to IPO in the next 2-3 years, and at that point, you’ll be able to sell your stocks on the regulated market. Normally when a company IPOs, the stock can be around $15-$30, which already is a huge return! Sometimes, they can even trade higher!"
+  }
+];
