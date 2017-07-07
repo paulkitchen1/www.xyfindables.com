@@ -1,0 +1,75 @@
+'.text.html':
+  'Site Footer':
+    'prefix': 'xy-site-footer'
+    'body': '''
+      <!-- xy-site-footer - snippet - start -->
+            <div class="row" style="margin-top:55px;font-size:13px">
+                <div class="col-xs-12">
+                    SEC Disclaimer and Forward-Looking Statements
+                    <br/><br/>
+                    AN OFFERING STATEMENT REGARDING THIS OFFERING HAS BEEN FILED WITH THE SEC. THE SEC HAS QUALIFIED THAT OFFERING STATEMENT, WHICH ONLY MEANS THAT THE COMPANY MAY MAKE SALES OF THE SECURITIES DESCRIBED BY THE OFFERING STATEMENT. IT DOES NOT MEAN THAT THE SEC HAS APPROVED, PASSED UPON THE MERITS OR PASSED UPON THE ACCURACY OR COMPLETENESS OF THE INFORMATION IN THE OFFERING STATEMENT. YOU MAY OBTAIN A COPY OF THE OFFERING CIRCULAR THAT IS PART OF THAT OFFERING STATEMENT FROM https://goo.gl/oMt3JT.
+                    <br /><br />
+                    YOU SHOULD READ THE OFFERING CIRCULAR BEFORE MAKING ANY INVESTMENT.
+                    <br /><br />
+                    OFFERING DOCUMENTATION CAN BE FOUND AT <a href="/invest/offering">www.xyfindables.com/invest/offering</a>.
+                </div>
+            </div>
+            </div>
+
+            <footer id="footer" class="midnight-blue" style="margin-top:45px">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-sm-12 col-xs-12">
+                            <div class="social" style="text-align:center;">
+                                <ul class="social-share">
+                                    <li><a target="_blank" href="https://www.facebook.com/xyfindit"><i class="fa fa-facebook"></i></a></li>
+                                    <li><a target="_blank" href="https://twitter.com/xyfindit"><i class="fa fa-twitter"></i></a></li>
+                                    <li><a target="_blank" href="https://www.youtube.com/channel/UCNxDJE1gGsY8lU7xSG7IpHw"><i class="fa fa-youtube"></i></a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-sm-5" style="margin-top:7px;">
+                            Copyright &copy; 2017 <a style="white-space: nowrap;" href="/">XY - The Findables Company</a>
+                        </div>
+                        <div class="col-sm-7" style="margin-top:7px;">
+                            <ul class="pull-right">
+                                <li><a href="https://www.xyfindit.com/contact">Contact Us</a></li>
+                                <li><a href="https://www.xyfindit.com/product">Products</a></li>
+                                <li><a href="/invest">Invest in XY</a></li>
+                                <li><a href="http://support.xyfindit.com/hc" target="_blank">Help</a></li>
+                                <li><a href="https://www.xyfindit.com/privacy">Privacy</a></li>
+                                <li><a href="https://www.xyfindit.com/terms">Terms</a></li>
+                                <li><a href="/developer">Developer</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </footer>
+
+            <div id="preload" style="display:none;"></div>
+            <form id="frmData">
+                <input type="hidden" id="visitor_id" name="visitor_id" value="3bc7a146-c6fd-4bf8-b718-300c5ced798d" />
+                <input type="hidden" id="page_id" name="page_id" />
+                    <input type="hidden" id="url-referrer" name="url-referrer" />
+
+            </form>
+
+            <noscript>
+                <img height="1" width="1" style="display:none"
+                     src="https://www.facebook.com/tr?id=1738550356412303&ev=PageView&noscript=1" />
+            </noscript>
+            <script type="text/javascript">
+                if (Utils.readCookie('visitor_id') && Utils.readCookie('visitor_id') != null) {
+                    var vid = Utils.readCookie('visitor_id');
+                    if (vid && vid != null)
+                        $("#frmData #visitor_id").val(vid);
+                }
+                else {
+                    Utils.createCookie('visitor_id', $("#frmData #visitor_id").val(), 100);
+                }
+            </script>
+
+        <!-- xy-site-footer - snippet - end -->
+    '''

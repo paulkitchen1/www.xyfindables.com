@@ -1,0 +1,25 @@
+body {
+    font-size: 16px;
+}
+
+.nav {
+    padding-left:40px;
+}
+
+.small-title {
+    text-decoration: underline;
+    font-size: 18px;
+    margin: 25px 0 15px 0;
+}
+
+@media screen and (max-width: 490px) {
+    .table-condensed-xs > thead > tr > th,
+    .table-condensed-xs > tbody > tr > th,
+    .table-condensed-xs > tfoot > tr > th,
+    .table-condensed-xs > thead > tr > td,
+    .table-condensed-xs > tbody > tr > td,
+    .table-condensed-xs > tfoot > tr > td {
+        padding: 5px;
+        font-size: 13px;
+    }
+}
