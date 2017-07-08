@@ -3118,9 +3118,12 @@ border-right:0px;
           padding-top: 10px;
         }
     }
-    
+
     @media screen and (max-width:999px) {
         .desktopLogo {
+          display:none !important;
+        }
+        .features_image {
           display:none !important;
         }
     }
@@ -3129,6 +3132,8 @@ border-right:0px;
         .mobileLogo {
           display:none !important;
         }
+
+
     }
 
     .variant-item span
