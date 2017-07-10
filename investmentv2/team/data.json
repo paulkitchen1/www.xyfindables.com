@@ -28,8 +28,8 @@ var data = {
       "name": "Alex M.",
       "img": "https://ssl.gstatic.com/images/branding/product/1x/avatar_square_grey_512dp.png",
       "icon": "",
-      "description": "",
-      "title": ""
+      "description": "A cool guy!",
+      "title": "Software Dude"
     },
     {
       "name": "Belzasar C.",
@@ -182,7 +182,7 @@ var data = {
     },
     {
       "name": "Bob P.",
-      "img": "",
+      "img": "https://ssl.gstatic.com/images/branding/product/1x/avatar_square_grey_512dp.png",
       "icon": "",
       "description": "",
       "title": "Controller"
