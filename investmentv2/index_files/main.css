@@ -337,7 +337,7 @@ input.search-form {
 }
 
 .navbar-nav {
-    margin-top: 12px;
+    margin-top: 9px;
     margin-right:18px;
 }
 
@@ -567,8 +567,9 @@ input.search-form {
           padding-top:25px;
         }
 
+
         .banner-1 {
-         background-image: url(/img/banner/Banner_1_Mobile.jpg) !important;
+         background-image: url(/img/banner/banner_1_mobile.jpg) !important;
          height:400px !important;
         }
 
@@ -580,23 +581,23 @@ input.search-form {
           padding-top: 4px;
         }
         .banner-2 {
-         background-image: url(/img/banner/Banner_2_Mobile.jpg) !important;
+         background-image: url(/img/banner/banner_2_mobile.jpg) !important;
           height:400px !important;
         }
         .banner-3 {
-         background-image: url(/img/banner/Banner_3_Mobile.jpg) !important;
+         background-image: url(/img/banner/banner_3_mobile.jpg) !important;
           height:400px !important;
         }
         .banner-4 {
-         background-image: url(/img/banner/Banner_4_Mobile.jpg) !important;
+         background-image: url(/img/banner/banner_4_mobile.jpg) !important;
           height:400px !important;
         }
         .banner-5 {
-         background-image: url(/img/banner/Banner_5_Mobile.jpg) !important;
+         background-image: url(/img/banner/banner_5_mobile.jpg) !important;
           height:400px !important;
         }
         .banner-6 {
-         background-image: url(/img/banner/Banner_6_Mobile.jpg) !important;
+         background-image: url(/img/banner/banner_6_mobile.jpg) !important;
           height:400px !important;
         }
         .own-a-piece {
@@ -2775,15 +2776,15 @@ color:#00a9ea;*/
 }
 ._btn_buy {
 
-background-color:#279fd8 !important;
+background-color:#00C1DE !important;
 color:white !important;
+font-weight: 600;
 
 }
 ._btn_buy:hover {
 
-background:#65c1ec  !important;
+background:#02deff  !important;
 color:white !important;
-border-radius: 3px;
 
 }
 .as_seen_on {
