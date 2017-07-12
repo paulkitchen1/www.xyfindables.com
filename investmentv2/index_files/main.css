@@ -3187,6 +3187,9 @@ border-right:0px;
         .wonky {
           margin-left:215px !important;
         }
+        .desktopLogo {
+          display:none !important;
+        }
       }
 
     @media screen and (max-width: 770px) {
@@ -3225,7 +3228,7 @@ border-right:0px;
         }
     }
 
-    @media screen and (min-width:1000px) {
+    @media screen and (min-width:1200px) {
         .mobileLogo {
           display:none !important;
         }
