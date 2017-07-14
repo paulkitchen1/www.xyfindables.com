@@ -1,191 +1,176 @@
 var data = {
-  "team": [
-    "Alex M.",
-    "Arie T.",
-    "Belzasar C.",
-    "Bob P.",
-    "Bryan V.",
-    "Caroline W.",
-    "Christine S.",
-    "Donald P.",
-    "Emily M.",
-    "Gabriela D.",
-    "John M.",
-    "John P.",
-    "Johnny K.",
-    "Jordan T.",
-    "Josh P.",
-    "Lee K.",
-    "Louie T.",
-    "Maria K.",
-    "Marissa O.",
-    "Maryann C.",
-    "Patrick P.",
-    "Patrick T.",
-    "Paul K."
-  ],
-  "team_detailed": [{
-      "name": "Alex M.",
-      "img": "https://ssl.gstatic.com/images/branding/product/1x/avatar_square_grey_512dp.png",
-      "icon": "",
-      "description": "A cool guy!",
-      "title": "Software Dude"
-    },
-    {
-      "name": "Belzasar C.",
-      "img": "https://ssl.gstatic.com/images/branding/product/1x/avatar_square_grey_512dp.png",
-      "icon": "",
-      "description": "",
-      "title": ""
-    },
-    {
-      "name": "Bryan V.",
-      "img": "",
-      "icon": "",
-      "description": "",
-      "title": ""
-    },
-    {
-      "name": "Caroline W.",
-      "img": "",
-      "icon": "",
-      "description": "",
-      "title": ""
-    },
-    {
-      "name": "Christine S.",
-      "img": "",
-      "icon": "",
-      "description": "",
-      "title": ""
-    },
-    {
-      "name": "Donald P.",
-      "img": "",
-      "icon": "",
-      "description": "",
-      "title": ""
-    },
-    {
-      "name": "Emily M.",
-      "img": "",
-      "icon": "",
-      "description": "",
-      "title": ""
-    },
-    {
-      "name": "Gabriela D.",
-      "img": "",
-      "icon": "",
-      "description": "",
-      "title": ""
-    },
-    {
+    "team": [
+        "Alex M.",
+        "Arie T.",
+        "Belzasar C.",
+        "Bob P.",
+        "Bryan V.",
+        "Caroline W.",
+        "Christine S.",
+        "Donald P.",
+        "Emily M.",
+        "Gabriela D.",
+        "John M.",
+        "John P.",
+        "Johnny K.",
+        "Jordan T.",
+        "Josh P.",
+        "Lee K.",
+        "Louie T.",
+        "Maria K.",
+        "Marissa O.",
+        "Maryann C.",
+        "Patrick P.",
+        "Patrick T.",
+        "Paul K."
+    ],
+    "team_detailed": [
+      {
+        "name": "Belzasar C.",
+        "img": "/img/Team/Belza.jpg",
+        "icon": "/img/Team/Belza_Funny.jpg",
+        "description": "",
+        "title": ""
+      },
+      {
+        "name": "Bryan V.",
+        "img": "/img/Team/Bryan.jpg",
+        "icon": "/img/Team/Bryan_Funny.jpg",
+        "description": "not yet",
+        "title": "Customer Service"
+    }, {
+        "name": "Caroline W.",
+        "img": "/img/Team/Caroline.jpg",
+        "icon": "/img/Team/Caroline_Funny.jpg",
+        "description": "Caroline is the Social Media Coordinator for XY The Findables Company since 2016. Caroline graduated with a Bachelor of Arts in Business Studies with Event Management from Limerick Institute of Technology in her native country Ireland and has over 4 years experience in Marketing, Events and Social Media. When Caroline isn't working alongside her partner in crime Marissa she teaches the XY team some phrases in Irish and practices her American accent.",
+        "title": ""
+    }, {
+        "name": "Christine S.",
+        "img": "/img/Team/Christine.jpg",
+        "icon": "/img/Team/Christine_Funny.jpg",
+        "description": "",
+        "title": ""
+    }, {
+        "name": "Donald P.",
+        "img": "/img/Team/Donald.jpg",
+        "icon": "/img/Team/Donald_Funny.jpg",
+        "description": "",
+        "title": ""
+    }, {
+        "name": "Emily M.",
+        "img": "/img/Team/Emily.jpg",
+        "icon": "/img/Team/Emily_Funny.jpg",
+        "description": "",
+        "title": ""
+    }, {
+        "name": "Gabriela D.",
+        "img": "/img/Team/Gabby.jpg",
+        "icon": "/img/Team/Gabby_Funny.jpg",
+        "description": "",
+        "title": ""
+    }, {
+        "name": "John P.",
+        "img": "/img/Team/John.jpg",
+        "icon": "/img/Team/John_Funny.jpg",
+        "description": "",
+        "title": ""
+    }, {
+        "name": "Johnny K.",
+        "img": "/img/Team/Johnny.jpg",
+        "icon": "/img/Team/Johnny_Funny.jpg",
+        "description": "",
+        "title": ""
+    }, {
+        "name": "Jordan T.",
+        "img": "/img/Team/Jordan.jpg",
+        "icon": "/img/Team/Jordan_Funny.jpg",
+        "description": "",
+        "title": ""
+    }, {
+        "name": "Josh P.",
+        "img": "/img/Team/Josh.jpg",
+        "icon": "/img/Team/Josh_Funny.jpg",
+        "description": "",
+        "title": ""
+    }, {
+        "name": "Lee K.",
+        "img": "/img/Team/Lee.jpg",
+        "icon": "/img/Team/Lee_Funny.jpg",
+        "description": "",
+        "title": ""
+    }, {
+        "name": "Louie T.",
+        "img": "/img/Team/Louie.jpg",
+        "icon": "/img/Team/Louie_Funny.jpg",
+        "description": "",
+        "title": ""
+    }, {
+        "name": "Maria C.",
+        "img": "/img/Team/Maria.jpg",
+        "icon": "/img/Team/Maria_Funny.jpg",
+        "description": "",
+        "title": ""
+    }, {
+        "name": "Marissa O.",
+        "img": "/img/Team/Marissa.jpg",
+        "icon": "/img/Team/Marissa_Funny.jpg",
+        "description": "",
+        "title": ""
+    }, {
+        "name": "Maryann C.",
+        "img": "/img/Team/Maryann.jpg",
+        "icon": "/img/Team/Maryann_Funny.jpg",
+        "description": "",
+        "title": ""
+    }, {
+        "name": "Patrick P.",
+        "img": "/img/Team/Patrick.jpg",
+        "icon": "/img/Team/Patrick_Funny.jpg",
+        "description": "",
+        "title": ""
+    }, {
+        "name": "Patrick T.",
+        "img": "/img/Team/Pat.jpg",
+        "icon": "/img/Team/Pat_Funny.jpg",
+        "description": "",
+        "title": ""
+    }, {
+        "name": "Paul K.",
+        "img": "/img/Team/Paul.jpg",
+        "icon": "/img/Team/Paul_Funny.jpg",
+        "description": "",
+        "title": ""
+    }],
+    "management_detailed": [{
+        "name": "Arie T.",
+        "img": "/img/Team/Arie.jpg",
+        "icon": "/img/Team/Arie.jpg",
+        "description": "Boss mon",
+        "title": "CEO"
+    }, {
+        "name": "Bob P.",
+        "img": "/img/Team/Bob.jpg",
+        "icon": "/img/Team/Bob.jpg",
+        "description": "",
+        "title": "Controller"
+    }]
+};
+
+/*
+
+  {
+    "name": "Alex M.",
+    "img": "https://ssl.gstatic.com/images/branding/product/1x/avatar_square_grey_512dp.png",
+    "icon": "",
+    "description": "A cool guy!",
+    "title": "Software Dude"
+  },
+
+  {
       "name": "John M.",
       "img": "",
       "icon": "",
       "description": "",
       "title": ""
-    },
-    {
-      "name": "John P.",
-      "img": "",
-      "icon": "",
-      "description": "",
-      "title": ""
-    },
-    {
-      "name": "Johnny K.",
-      "img": "",
-      "icon": "",
-      "description": "",
-      "title": ""
-    },
-    {
-      "name": "Jordan T.",
-      "img": "",
-      "icon": "",
-      "description": "",
-      "title": ""
-    },
-    {
-      "name": "Josh P.",
-      "img": "",
-      "icon": "",
-      "description": "",
-      "title": ""
-    },
-    {
-      "name": "Lee K.",
-      "img": "",
-      "icon": "",
-      "description": "",
-      "title": ""
-    },
-    {
-      "name": "Louie T.",
-      "img": "",
-      "icon": "",
-      "description": "",
-      "title": ""
-    },
-    {
-      "name": "Maria K.",
-      "img": "",
-      "icon": "",
-      "description": "",
-      "title": ""
-    },
-    {
-      "name": "Marissa O.",
-      "img": "",
-      "icon": "",
-      "description": "",
-      "title": ""
-    },
-    {
-      "name": "Maryann C.",
-      "img": "",
-      "icon": "",
-      "description": "",
-      "title": ""
-    },
-    {
-      "name": "Patrick P.",
-      "img": "",
-      "icon": "",
-      "description": "",
-      "title": ""
-    },
-    {
-      "name": "Patrick T.",
-      "img": "",
-      "icon": "",
-      "description": "",
-      "title": ""
-    },
-    {
-      "name": "Paul K.",
-      "img": "",
-      "icon": "",
-      "description": "",
-      "title": ""
-    }
-  ],
-  "management_detailed": [
-    {
-      "name": "Arie T.",
-      "img": "https://ssl.gstatic.com/images/branding/product/1x/avatar_square_grey_512dp.png",
-      "icon": "",
-      "description": "",
-      "title": "CEO"
-    },
-    {
-      "name": "Bob P.",
-      "img": "https://ssl.gstatic.com/images/branding/product/1x/avatar_square_grey_512dp.png",
-      "icon": "",
-      "description": "",
-      "title": "Controller"
-    }
-  ]
-};
+  },
+*/

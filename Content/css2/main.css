@@ -2790,8 +2790,10 @@ color:white !important;
 .as_seen_on {
 background-color:#eef0f2;
 color:#4e4e4e;
+}
 
-
+.story-banner-margin {
+  margin: 25px 0 30px 0;
 }
 
 .partners ul li {
@@ -3189,6 +3191,12 @@ border-right:0px;
         }
         .desktopLogo {
           display:none !important;
+        }
+      }
+
+      @media screen and (max-width:990px) {
+        .story-banner-margin {
+          margin: 15px 0 0px 0 !important;
         }
       }
 
