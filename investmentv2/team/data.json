@@ -48,8 +48,8 @@ var data = {
         "name": "Christine S.",
         "img": "/img/Team/Christine.jpg",
         "icon": "/img/Team/Christine_Funny.jpg",
-        "description": "Christine has an extensive background in Mathematics and has worked in upper management for the past 5 years.  Most recently, she has been at XY as the Sr. Data and Marketing Analyst and manages operations for the Investment Team.  She is also a local musician and can be seen playing around town in boardshorts and a tank-top.",
-        "title": "Investment Coordinator"
+        "description": "Christine has an extensive background in Mathematics and has worked in upper management for the past 5 years.  Most recently, she has been at XY as the Sr. Data and Marketing Analyst and manages operations for the Investment Team in addition to acting as Investment Operations Manager.  She is also a local musician and can be seen playing around town in boardshorts and a tank-top.",
+        "title": "Sr. Data Analyst"
     }, {
         "name": "Donald P.",
         "img": "/img/Team/Donald.jpg",
@@ -132,7 +132,7 @@ var data = {
         "name": "Paul K.",
         "img": "/img/Team/Paul.jpg",
         "icon": "/img/Team/Paul_Funny.jpg",
-        "description": "Paul is a veteran software engineer with almost 18 years of experience. He handles all our front-facing programming including our websites, our data management, and our online shop. Paul graduated from San Diego State University with a degree in Computer Science and have helped multipe companies succeed in the past. In his free time, Paul plans to launch his own restuarant chain of fast-food Fillets called 'Paul's Kitchen'.",
+        "description": "Paul is a veteran software engineer with almost 18 years of experience. He handles all our front-facing programming including our websites, our data management, and our online shop. Paul graduated from San Diego State University with a degree in Computer Science and has helped multiple companies succeed in the past. In his free time, Paul plans to launch his own restaurant chain of fast-food Fillets called 'Paul's Kitchen'.",
         "title": "Software Engineer"
     }],
     "management_detailed": [{
