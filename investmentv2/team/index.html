@@ -121,12 +121,20 @@
             cursor: pointer;
         }
 
+        #managementList .teamMember {
+            height: 400px;
+        }
+
         .teamMember .name {
             position: absolute;
             bottom: 45px;
             left: 15px;
             color: white;
             font-size: 30px;
+        }
+
+        .teamMember .managementProfile {
+            height: 415px !important;
         }
 
         .teamMember .title {
@@ -146,8 +154,7 @@
             padding: 15px;
             background-color: #d4d4d4;
             display: none;
-
-          }
+        }
 
         .teamMember .back {
             position: absolute;
@@ -156,11 +163,30 @@
             background-color: black;
             width: 100%;
             height: 100%;
-            opacity: 0.2;
+            opacity: 0.3;
         }
 
         .teamMember .back:hover {
             opacity: 0;
+        }
+
+        .alt-image {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-position: center center;
+            background-size: cover;
+            opacity: 0;
+            transition: opacity 0.5s;
+            -webkit-transition: opacity 0.5s;
+            -o-transition: opacity 0.5s;
+            -moz-transition: opacity 0.5s;
+        }
+
+        .active .alt-image {
+            opacity: 1;
         }
 
         .teamMember.active .back {
@@ -173,10 +199,16 @@
 
         .bio .content {
             padding: 5px;
-            padding-left:36px;
-            min-height: 300px;
+            padding-left: 36px;
+            padding-right:25px;
+            min-height: 250px;
             color: white;
             background-color: #c3c3c3;
+        }
+
+        .teamMember .title {
+            color: white;
+            opacity: 0.5;
         }
 
         @media (min-width:768px) {
@@ -195,9 +227,11 @@
             .text-description {
                 margin-bottom: 7%;
             }
-
             .gps-banner {
-              max-height: 300px !important;
+                max-height: 300px !important;
+            }
+            .teamMember .title {
+                font-size: 15px;
             }
         }
     </style>
@@ -225,7 +259,7 @@
                     <ul class="nav navbar-nav">
                         <li class="text-center"><a href="../">Home</a></li>
                         <li class="text-center"><a href="../our-story">Our Story</a></li>
-                        <li class="text-center"><a href="../gallery">Gallery</a></li>
+                        <li class="text-center"><a href="">Team</a></li>
                         <!--<li class="text-center"><a href="../team" >Team</a></li>-->
                         <li class="text-center"><a href="../faq">FAQ</a></li>
                         <li class="text-center visible-xs"><a href="../contact-us">Contact Us</a></li>
@@ -258,10 +292,10 @@
     <section>
         <div class="container">
             <div class="row" id="managementList">
-                <div id="bioManagement" class="bio col-xs-12" style="display:none;">
+                <div id="bioManagement" class="bio col-xs-12 " style="display:none;">
                     <div class="content">
-                        <h1 class="name" style="margin-bottom:0; padding-bottom:0px;"></h1>
-                        <h3 class="title" ></h3>
+                        <h1 class="name " style="margin-bottom:0; padding-bottom:0px;"></h1>
+                        <h3 class="title"></h3>
                         <p class="description" style="color:black;"></p>
                     </div>
                 </div>
@@ -282,13 +316,17 @@
         </div>
     </div>
 
+
+
     <section>
         <div class="container">
+            <hr>
             <div class="row" id="teamList">
                 <div id="bio" class="bio col-xs-12" style="display:none;">
                     <div class="content">
-                        <span class="name"></span>
-                        <span class="title"></span>
+                        <h1 class="name" style="margin-bottom:0; padding-bottom:0px;"></h1>
+                        <h3 class="title"></h3>
+                        <p class="description" style="color:black;"></p>
                     </div>
                 </div>
             </div>
@@ -366,9 +404,7 @@
                 var div = $("<div>");
                 div.addClass("col-xs-12 col-sm-6 col-md-" + size + "  text-center teamMemberContainer");
                 var content = $("<div>");
-                content.append("<div class='back'></div>")
                 content.addClass("teamMember");
-                content.attr("description", teamMember.description);
                 content.css("background-image", "url(" + teamMember.img + ")");
                 content.attr("position", i);
                 var nameSpan = $("<span>");
@@ -377,6 +413,11 @@
                 var titleSpan = $("<span>");
                 titleSpan.addClass("title");
                 titleSpan.text(teamMember.title);
+                var funnyImage = $("<div>");
+                funnyImage.css("background-image", "url(" + teamMember.icon + ")");
+                funnyImage.addClass("alt-image");
+                content.append(funnyImage);
+                content.append("<div class='back'></div>");
                 content.append(nameSpan);
                 content.append(titleSpan);
                 div.append(content);
@@ -395,6 +436,8 @@
         function updateBioText(member) {
             bio.find(".name").text(member.name);
             bio.find(".title").text(member.title);
+            bio.find(".description").text(member.description);
+
         }
 
         function updateBioManagement(member) {
@@ -411,18 +454,11 @@
             var num = parseInt(div.attr("position"));
             var targetPos = (window.innerWidth < 766) ? num : (num + ((window.innerWidth < 992) ? 1 - num % 2 : 2 - num % 3));
             $("#teamList .teamMember").removeClass("active");
-            $("#teamList .teamMember").each(function() {
-                var div = $(this);
-                var backgroundUrl = div.css("background-image");
-                div.css("background-image", backgroundUrl.replace("_Funny.jpg", ".jpg"));
-            });
             if (show) {
                 div.addClass("active");
                 bio.insertAfter($(div.parent().parent().children()[targetPos]));
                 updateBioText(data.team_detailed[num]);
                 bio.fadeIn();
-                var backgroundUrl = div.css("background-image");
-                div.css("background-image", backgroundUrl.replace(".jpg", "_Funny.jpg"));
             } else {
                 bio.fadeOut();
             }
@@ -435,18 +471,11 @@
             var num = parseInt(div.attr("position"));
             var targetPos = (window.innerWidth < 766) ? num : 1;
             $("#managementList .teamMember").removeClass("active");
-            $("#managementList .teamMember").each(function() {
-                var div = $(this);
-                var backgroundUrl = div.css("background-image");
-                div.css("background-image", backgroundUrl.replace("_Funny.jpg", ".jpg"));
-            });
             if (show) {
                 div.addClass("active");
                 bioManagement.insertAfter($(div.parent().parent().children()[targetPos]));
                 updateBioManagement(data.management_detailed[num]);
                 bioManagement.fadeIn();
-                var backgroundUrl = div.css("background-image");
-                div.css("background-image", backgroundUrl.replace(".jpg", "_Funny.jpg"));
             } else {
                 bio.fadeOut();
             }
