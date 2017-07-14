@@ -1,4 +1,4 @@
-
+﻿
 <html>
 <head>
     <meta charset="utf-8" />
@@ -17,7 +17,7 @@
 
     <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" type="text/javascript"></script>
-	<script src="Scripts/js/xy_utilities.js" type="text/javascript"></script>
+	<script src="/Scripts/js/xy-utilities.js" type="text/javascript"></script>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
     <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Quicksand:300italic,400italic,600italic,700italic,800italic,400,600,700,300,800" />
     <link rel="stylesheet" type="text/css" href="/Content/css2/main.css">
@@ -1198,7 +1198,7 @@
                     var senddata = 'visitor_id=' + vid + '&event_type=invest_email';
                     senddata += '&event_value=' + $("[name=first_name]").val() + "~" + $("[name=last_name]").val() + "~" + $("[name=email_address]").val();
                     $.ajax({
-                        url: "/api/event",
+						url: "https://www.xyfindit.com/api/event",
                         type: "POST",
                         timeout: 2000,
                         data: senddata
@@ -1268,7 +1268,7 @@
                 e.stopPropagation();
 
                     $.ajax({
-                        url: "/api/invest",
+                        url: "https://www.xyfindit.com/api/invest",
                         type: "POST",
                         timeout: 25000,
                         data: $("#frmInvest").serialize() + (Utils.readCookie('invest-qs') != null && Utils.readCookie('invest-qs') != '' ? '&' + Utils.readCookie('invest-qs') : ''),
@@ -1296,7 +1296,7 @@
                 $("#frmInvest #utm_campaign").val(Utils.getCookie('invest_campaign'));
             }
             $.ajax({
-                url: "/api/investpart",
+                url: "https://www.xyfindit.com/api/investpart",
                 type: "POST",
                 timeout: 5000,
                 data: $("#frmInvest").serialize() + (Utils.readCookie('invest-qs') != null && Utils.readCookie('invest-qs') != '' ? '&' + Utils.readCookie('invest-qs') : ''),
@@ -1352,7 +1352,7 @@
                 }
             }
             else
-                document.location = '/invest/review?shares=' + $("[name=numberOfShares]").val();
+                document.location = '/invest/review.html?shares=' + $("[name=numberOfShares]").val();
         }
 
         function checkInputs(frm) {
@@ -1530,14 +1530,7 @@ var submit = document.querySelector('.btn-credit');
     }
     else
         Utils.createCookie("xy-invest", JSON.stringify(data));
-    $.ajax({
-        url: "/api/ITag",
-        type: "POST",
-        timeout: 5000,
-        data: "uid=" + data.uid + "&p=http://ec2-52-45-37-203.compute-1.amazonaws.com/invest/apply",
-        dataType: "text",
-    });
-
+    
         
         if (document.location.href.toLowerCase().indexOf('/invest/apply') > -1)
         {
@@ -1551,7 +1544,7 @@ var submit = document.querySelector('.btn-credit');
             if ($("[name=" + p + "]").val().trim())
                 data.investor.personal[p] = $("[name=" + p + "]").val();
         }
-        for (var p in data.investor.financial) { if ($("[name=" + p + "]").val().trim()) data.investor.financial[p] = $("[name=" + p + "]").val(); }
+		for (var p in data.investor.financial) { if ($("[name=" + p + "]").length > 0 && $("[name=" + p + "]").val().trim()) data.investor.financial[p] = $("[name=" + p + "]").val(); }
         Utils.createCookie("xy-invest", JSON.stringify(data));
     }
 
