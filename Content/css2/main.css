@@ -630,7 +630,7 @@ input.search-form {
 #main-slider .next {
     position: absolute;
     top: 50%;
-    background-color: rgba(43, 134, 199, 0.46);
+    background-color: rgba(70, 175, 222, 0.46);;
     color: #fff;
     display: inline-block;
     margin-top: -25px;
@@ -645,7 +645,7 @@ input.search-form {
 
     #main-slider .prev:hover,
     #main-slider .next:hover {
-        background-color: #65c1ec;
+        background-color: #00C1DE;
     }
 
 #main-slider .prev {
@@ -691,8 +691,8 @@ input.search-form {
         width: 24px;
         height: 24px;
         border-radius: 100%;
-        background: #409ed6;
-        border: 2px solid  rgb(55, 168, 193);
+        background: #00C1DE;
+        border: 2px solid  rgb(74, 155, 173) !important;
         left: -3px;
         top: -3px;
     }
@@ -1178,7 +1178,7 @@ a.accordion-toggle i {
     }
 
         #carousel-slider .carousel-indicators li {
-            border: 1px solid #ffbd20;
+            border: 1px solid rgb(74, 155, 173);
         }
 
     #carousel-slider a i {
