@@ -1528,7 +1528,7 @@ var submit = document.querySelector('.btn-credit');
     {
         data = JSON.parse(Utils.readCookie("xy-invest"));
         $("[name=uid]").val(data.uid);
-        data.visits.push({ page: 'http://ec2-52-45-37-203.compute-1.amazonaws.com/invest/apply', visitDate: '2017-07-14T16:48' });
+        data.visits.push({ page: 'https://www.xyfindables/invest/apply', visitDate: '2017-07-14T16:48' });
     }
     else
         Utils.createCookie("xy-invest", JSON.stringify(data));
