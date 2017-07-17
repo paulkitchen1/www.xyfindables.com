@@ -13,5 +13,13 @@ var data = [{
   {
     "question": "How do I make money?",
     "answer": "Right now, our shares are mini-IPO, meaning they aren’t traded on the public stock market. We are hoping to IPO in the next 2-3 years, and at that point, you’ll be able to sell your stocks on the regulated market. Normally when a company IPOs, the stock can be around $15-$30, which already is a huge return! Sometimes, they can even trade higher!"
-  }
+  },
+  {
+    "question": "What is Regulation A+ Crowdfunding?",
+    "answer": "Title IV (Regulation A+) of 2012’s JOBS Act allows privately-held companies to sell shares to the public, very much like a traditional IPO. These shares can be sold to both accredited and non-accredited investors.In short, Reg A+ gives companies like XY Findables the ability to offer early stage ownership to customers, supporters, or any other individual."
+  },
+  {
+    "question": "What are the risks?",
+    "answer": "Buying XY Findables equity is higher risk (and hopefully higher reward) than a major stock on the NYSE. The odds of us going out of business is higher than Apple, but the odds of us growing 2x, 3x, or 10x is also higher. When it comes to Reg A+ offerings, the important thing to do is read the circular, do your own research on the product and market, and decide if this is something that you want to invest in and feel has the risk profile that works for you."
+  },
 ];
