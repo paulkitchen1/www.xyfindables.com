@@ -1179,7 +1179,7 @@
                         </div>
                      </div>
 
-                    <input type="hidden" name="uid" value="626ebb72-c000-4bc4-833b-0b571514c63c" />
+                    <input type="hidden" name="uid" value="" />
 </form>
  </section>
     <script>
@@ -1520,8 +1520,10 @@ var submit = document.querySelector('.btn-credit');
       });
 
 
-
-    var data = JSON.parse('{"uid" : "626ebb72-c000-4bc4-833b-0b571514c63c","investor": {"personal": {"first_name": "","last_name": "","email_address": "","phone": ""},"financial": {"numberOfShares": "","annual_income": "","net_worth": "","address1": "","address2": "","country": "","zipcode": "","city": "","state": "","region": ""},"finalize": {"paymentMethod": ""}},"creatDate": "2017-07-14T16:48","visits": [{"visitDate":"2017-07-14T16:48", "page":"http://ec2-52-45-37-203.compute-1.amazonaws.com/invest/apply"}]}');
+	  if ($("[name=uid]").val() == '') {
+		  $("[name=uid]").val(Utils.guid());
+	  }
+	  var data = JSON.parse('{"uid" : "' + $("[name=uid]").val()  + '","investor": {"personal": {"first_name": "","last_name": "","email_address": "","phone": ""},"financial": {"numberOfShares": "","annual_income": "","net_worth": "","address1": "","address2": "","country": "","zipcode": "","city": "","state": "","region": ""},"finalize": {"paymentMethod": ""}},"creatDate": "2017-07-14T16:48","visits": [{"visitDate":"2017-07-14T16:48", "page":"http://ec2-52-45-37-203.compute-1.amazonaws.com/invest/apply"}]}');
     if(Utils.readCookie("xy-invest"))
     {
         data = JSON.parse(Utils.readCookie("xy-invest"));
