@@ -90,6 +90,19 @@
     <style>
         /* The Modal (background) */
 
+        .formError {
+          display: none;
+          color: red;
+          position: absolute;
+          float: right;
+          right: 25px;
+          font-size: 12px;
+        }
+
+        .form-control.error {
+          border-color: red;
+        }
+
         .modal {
             display: none;
             /* Hidden by default */
@@ -109,6 +122,8 @@
             /* Fallback color */
             background-color: rgba(0, 0, 0, 0.4);
             /* Black w/ opacity */
+
+            overflow: hidden;
         }
         /* Modal Content/Box */
 
@@ -686,20 +701,21 @@
     <div class="modal-content">
         <span class="close">&times;</span>
         <div class="content-text popup">
-            <h2 class="">Learn more about Investing in XY The Findables Company!</h2>
-            <p>We'd love to be able to email or call you and help you learn about how investing in our company could help you make significant returns in the future! </p>
+            <h2 class="text-center" style="padding-top: 25px;">Learn more about Investing in XY The Findables Company!</h2>
+            <!--<p>We'd love to be able to email or call you and help you learn about how investing in our company could help you make significant returns in the future! </p>-->
             <form id="frmInvestInfo">
                 <div class="form-group">
                     Email <input class="form-control" name="email" type="Text" style="width:100%;padding:4px" />
+                    <span class="formError"> Please enter a valid email </span>
                 </div>
                 <div class="form-group">
                     Full Name <input class="form-control" name="fullname" type="Text" style="width:100%;padding:4px" />
                 </div>
                 <div class="form-group">
-                    Phone Number <input class="form-control" name="phone" type="number" style="width:100%;padding:4px" />
+                    Phone Number (Optional) <input class="form-control" name="phone" type="number" style="width:100%;padding:4px" />
                 </div>
             </form>
-            <div class="btn btn-info send-code">Submit</div><a class="nothanks">No Thanks</a>
+            <div class="btn btn-info send-code">Send</div><a class="nothanks">No thanks, I already know I want to invest!</a>
         </div>
     </div>
 
@@ -732,10 +748,22 @@
     //    }
     //}
 
+    function throwError(div){
+      /**div.css("border-color","red");**/
+      div.parent().find(".formError").show();
+      div.addClass("error");
+    }
+
+    $(".form-control").on("click",function(){
+      $(this).removeClass("error");
+      $(this).parent().find(".formError").hide();
+    });
+
     function getcode() {
         var email = $("[name=email]").val();
         if (!Utils.validateEmail(email)) {
-            alert('Email is required');
+            throwError($("[name=email]"));
+            /**alert('Email is required'); **/
             return;
         }
         $.ajax({
@@ -758,9 +786,9 @@
 
     function showCode(data) {
         $(".content-text").html(
-            '<h2>Here\'s your 10% Discount Code!</h2><div style="padding:2px;margin-top:5px;margin-bottom:20px;overflow:visible"><input type="text" readonly style="font-weight:bold;font-size:125%;display:block;margin:auto;line-height:30px" class="text-center" value="' +
+            '<h2>Thank you for your Interest!</h2><div style="padding:2px;margin-top:5px;margin-bottom:20px;overflow:visible"><input type="text" readonly style="font-weight:bold;font-size:125%;display:block;margin:auto;line-height:30px" class="text-center" value="' +
             data +
-            '"></input></div><p style="margin-bottom:20px">Simply copy and apply this code at Checkout.  We have sent this code to the email provided as well.  Be sure to check your SPAM folder if you cannot locate it.</p><a class="close" style="position:absolute;bottom:4px;right:35px">close</a>'
+            '"></input></div><p style="margin-bottom:20px"></p><a class="close" style="position:absolute;bottom:4px;right:35px">close</a>'
         );
         Utils.setCookie('r-discount', '1', .1);
         $(".close").click(function() {
