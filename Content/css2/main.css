@@ -516,7 +516,7 @@ input.search-form {
     transition: opacity ease-in-out 500ms;
 }
 
-@media (max-width:1200px) {
+@media screen and (min-width:990px) and (max-width:1200px) {
   .facebook-ana {
     display:none !important;
   }

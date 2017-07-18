@@ -115,8 +115,18 @@
         }
 
         td {
-          padding: 7px;
-          padding-right:12px;
+            padding: 7px;
+            text-align: center;
+        }
+
+        @media (max-width:1000px) {
+            .shortcut {
+                margin-top: 10px !important;
+                text-align: center;
+            }
+            h1 {
+                text-align: center;
+            }
         }
 
         @media (min-width:768px) {
@@ -134,6 +144,13 @@
         @media (max-width:767px) {
             .text-description {
                 margin-bottom: 7%;
+            }
+            td {
+                padding: 1px !important;
+                font-size: 13px;
+            }
+            .gps-banner {
+                height: 300px !important;
             }
         }
     </style>
@@ -177,71 +194,105 @@
     </header>
 
     <div class="center" style="margin-top:55px; padding-bottom:0">
-        <div class="gps-banner text-center col-xs-12" style="padding:0px;">
-            <img style="width:100%; padding:0px;" class="img-responsive" src="/img/banner/SEC_banner.jpg">
+        <div class="center" style="margin-top:55px; padding-bottom:0">
+            <div class="gps-banner text-center col-xs-12" style="padding:0px; height:500px; background-image:url(/img/banner/SEC_banner.jpg); background-size: cover; background-position: center center;">
+            </div>
+            <div class="text-center col-xs-12 story-banner-margin">
+            </div>
         </div>
-        <div class="text-center col-xs-12" style="margin: 25px 0 30px 0;">
-            <h1>SEC Filing and Documentation</h1>
-        </div>
+
     </div>
 
+
+
     <section>
+
         <div class="container">
             <div class="row">
-                <div class="col-sm-12" style="font-size:16px;">
+                <div class="col-md-3 col-sm-12 shortcut" style="margin-top:23px;">
+                    <img src="/img/sec_seal.png" style="width:225px;">
+                </div>
+                <div class="col-sm-12 col-md-9" style="font-size:16px;">
+                    <div class="col-xs-12" style="margin: 0px 0 10px 0; padding-left:0px; !important">
+                        <h1 style="font-size:2.5em; margin-top:10px; margin-bottom:3px;">SEC Filing and Documentation</h1>
+                        <div class="col-sm-12" style="padding-left:0px; !important">
+                            <hr>
+                        </div>
+                    </div>
                     <p>The SEC (Securities and Exchange Commission) is the government agency that regulates the stock market and protects investors to make sure their money is safe and in the right place. They're the same agency that approved Google, Facebook,
                         Tesla, Snapchat, and all the biggest companies in the US to go public and sell their stock.
                     </p>
                     <p style="padding-top:5px">Out of all the startups nationwide, XY Findables was selected for an exemption by the SEC and was granted Regulation A approval. Typically, you have to be a millionaire to invest in startups. It's actually illegal for anyone who isn't
                         a millionaire to invest in these deals that can change your life forever.
                     </p>
-                    <p style="padding-top:5px">That's why the SEC exemption is such a game-changer. It's now anyone's opportunity to invest in a startup at this stage and people are freaking out everywhere to get in on our investment. Because the SEC granted us the exception to
-                        the rules, they said we're so special we can sell our stock to anyone. They went through our books, they went through our business, they looked into and verified absolutely everything and then decided our company was so solid everyone
-                        can invest in it. Not just the millionaires.
+                </div>
+            </div>
+
+            <hr style="margin-top:50px;">
+
+            <div class="row">
+                <div class="col-sm-12" style="margin-top:20px;">
+                    <div class="col-sm-12" style="margin: 0px 0 20px 0; padding-left:0px; !important">
+                        <h1 style="font-size:2em; margin-top:10px; text-align:center;"> XY - the Findables Company SEC Filings</h1>
+                        <div style="font-size:14px; text-align:center; margin-top:10px">
+                            <p>Check out the same documents on the <a style=target="_blank" href="https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=0001577351&owner=exclude&count=40&hidefilings=0">SEC's website</a>!</p>
+                        </div>
+                    </div>
+                    <table border="1" class="text-center" style="width:100%; margin-top:20px; margin-bottom:40px;">
+                        <tr style="font-weight:bold">
+                            <td>Filings</td>
+                            <td>Title</td>
+                            <td>Filing Date</td>
+                            <td>Document</td>
+                        </tr>
+                        <tr>
+                            <td>Form 1-K</td>
+                            <td>ANNUAL REPORT</td>
+                            <td>2017-04-27</td>
+                            <td><a target="_blank" href="https://www.sec.gov/Archives/edgar/data/1577351/000119312517142783/d378748dpartii.htm">See Government Filing</a></td>
+                        </tr>
+                        <tr>
+                            <td>Form 1-A/A</td>
+                            <td>Offering Statement [Regulation A] [Amend]</td>
+                            <td>2016-09-21</td>
+                            <td><a target="_blank" href="https://www.sec.gov/Archives/edgar/data/1577351/000119312516653546/d203102dpartiiandiii.htm">See Government Filing</a></td>
+                        </tr>
+                        <tr>
+                            <td>CORRESP</td>
+                            <td>[Cover] Correspondence</td>
+                            <td>2016-09-27</td>
+                            <td><a target="_blank" href="https://www.sec.gov/Archives/edgar/data/1577351/000119312516721525/filename1.htm">See Government Filing</a></td>
+                        </tr>
+                        <tr>
+                            <td>QUALIF</td>
+                            <td>Notice of Qualification [Regulation A]</td>
+                            <td>2016-09-29</td>
+                            <td><a target="_blank" href="https://www.sec.gov/Archives/edgar/data/1577351/999999999416000104/xslQUALIFX01/primary_doc.xml">See Government Filing</a></td>
+                        </tr>
+                    </table>
+
+                </div>
+
+
+            </div>
+
+            <hr style="margin-top: 30px; padding-top: 10px; margin-bottom: 0px;">
+
+            <div class "row">
+                <div class="col-sm-12">
+                    <h1 style="font-size: 2.5em; margin-top:30px; margin-bottom:30px; text-align:center;"> Importance</h1>
+                    <p style="font-size:1.15em; line-height: 28px;"> SEC exemption is a huge game-changer. It's now anyone's opportunity to invest in a startup at this stage and people are freaking out everywhere to get in on our investment. Because the SEC granted us the exception to the rules, they
+                        said we're so special we can sell our stock to anyone. They went through our books, they went through our business, they looked into and verified absolutely everything and then decided our company was so solid everyone can invest
+                        in it. Not just the millionaires.
                     </p>
                 </div>
             </div>
 
-            <p style="margin-bottom: 20px; margin-top: 40px;font-weight:bold">
-                XY - the Findables Company SEC Filings
-            </p>
-            <p>
-                <table border="1" style="width:100% padding:">
-                    <tr style="font-weight:bold">
-                        <td>Filings</td>
-                        <td>Title</td>
-                        <td>Filing Date</td>
-                        <td>Document</td>
-                    </tr>
-                    <tr>
-                        <td>Form 1-K</td>
-                        <td>ANNUAL REPORT</td>
-                        <td>2017-04-27</td>
-                        <td><a target="_blank" href="https://www.sec.gov/Archives/edgar/data/1577351/000119312517142783/d378748dpartii.htm">See Government Filing</a></td>
-                    </tr>
-                    <tr>
-                        <td>Form 1-A/A</td>
-                        <td>Offering Statement [Regulation A] [Amend]</td>
-                        <td>2016-09-21</td>
-                        <td><a target="_blank" href="https://www.sec.gov/Archives/edgar/data/1577351/000119312516653546/d203102dpartiiandiii.htm">See Government Filing</a></td>
-                    </tr>
-                    <tr>
-                        <td>CORRESP</td>
-                        <td>[Cover] Correspondence</td>
-                        <td>2016-09-27</td>
-                        <td><a target="_blank" href="https://www.sec.gov/Archives/edgar/data/1577351/000119312516721525/filename1.htm">See Government Filing</a></td>
-                    </tr>
-                    <tr>
-                        <td>QUALIF</td>
-                        <td>Notice of Qualification [Regulation A]</td>
-                        <td>2016-09-29</td>
-                        <td><a target="_blank" href="https://www.sec.gov/Archives/edgar/data/1577351/999999999416000104/xslQUALIFX01/primary_doc.xml">See Government Filing</a></td>
-                    </tr>
-                </table>
-                <br />
-                <span style="font-size:14px">Check out the same documents on the SEC's website! <a target="_blank" href="https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=0001577351&owner=exclude&count=40&hidefilings=0">https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=0001577351&owner=exclude&count=40&hidefilings=0</a></span>
-            </p>
-            <div style="padding-top:60px">
+            <div class="col-sm-12" style="padding-left:0px !important; margin-top:30px; margin-bottom:20px; ">
+                <hr>
+            </div>
+
+            <div style="margin-top:60px">
                 <p> SEC Disclaimer and Forward-Looking Statements </p>
 
                 <p> AN OFFERING STATEMENT REGARDING THIS OFFERING HAS BEEN FILED WITH THE SEC. THE SEC HAS QUALIFIED THAT OFFERING STATEMENT, WHICH ONLY MEANS THAT THE COMPANY MAY MAKE SALES OF THE SECURITIES DESCRIBED BY THE OFFERING STATEMENT. IT DOES NOT
@@ -255,7 +306,36 @@
             </div>
         </div>
 
+        <!--  <script>
+            $("#descriptionlink").on("click", function(e) {
+                e.preventDefault();
+                $("#descriptioncontent").show();
+                $("#descriptionbanner").show();
+                $("#documentationbanner").hide();
+                $("#documentationcontent").hide();
+                $("#importancecontent").hide();
+                $("#importancebanner").hide();
 
+            });
+            $("#documentationlink").on("click", function(e) {
+                e.preventDefault();
+                $("#descriptioncontent").hide();
+                $("#descriptionbanner").hide();
+                $("#documentationbanner").show();
+                $("#documentationcontent").show();
+                $("#importancecontent").hide();
+                $("#importancebanner").hide();
+            });
+            $("#importancelink").on("click", function(e) {
+                e.preventDefault();
+                $("#descriptioncontent").hide();
+                $("#descriptionbanner").hide();
+                $("#documentationbanner").hide();
+                $("#documentationcontent").hide();
+                $("#importancecontent").show();
+                $("#importancebanner").show();
+            });
+        </script> -->
     </section>
 
 
@@ -342,7 +422,34 @@
         }
     </script>
 
-
+    <!-- Facebook Pixel Code -->
+    <script>
+        ! function(f, b, e, v, n, t, s) {
+            if (f.fbq) return;
+            n = f.fbq = function() {
+                n.callMethod ?
+                    n.callMethod.apply(n, arguments) : n.queue.push(arguments)
+            };
+            if (!f._fbq) f._fbq = n;
+            n.push = n;
+            n.loaded = !0;
+            n.version = '2.0';
+            n.queue = [];
+            t = b.createElement(e);
+            t.async = !0;
+            t.src = v;
+            s = b.getElementsByTagName(e)[0];
+            s.parentNode.insertBefore(t, s)
+        }(window,
+            document, 'script', 'https://connect.facebook.net/en_US/fbevents.js');
+        fbq('init', '322839541477444'); // Insert your pixel ID here.
+        fbq('track', 'PageView');
+    </script>
+    <noscript><img height="1" width="1" style="display:none"
+    src="https://www.facebook.com/tr?id=322839541477444&ev=PageView&noscript=1"
+    /></noscript>
+    <!-- DO NOT MODIFY -->
+    <!-- End Facebook Pixel Code -->
 
 </body>
 

@@ -170,7 +170,7 @@
         <!--/nav-->
     </header>
 
-    <div >
+    <div>
         <div class="center" style="margin-top:55px; padding-bottom:0">
             <div class="gps-banner text-center col-xs-12" style="padding:0px; height:500px; background-image:url(/img/banner/faq_banner.jpg); background-size: cover; background-position: center center;">
             </div>
@@ -180,8 +180,8 @@
     </div>
 
     <div class="center" style="margin-top:15px; padding-bottom:0">
-        <div class="text-center col-xs-12" style="    margin: 0px 0 50px 0;">
-            <h1 style="font-size:4em; padding-top:20px; ">FAQ</h1>
+        <div class="text-center col-xs-12" style=" margin: 0px 0 45px 0;">
+            <h1 style="font-size:4em; padding-top:0px; margin-top:20px">FAQ</h1>
         </div>
     </div>
 
@@ -205,8 +205,8 @@
             </div>
 
             <div class="col-sm-12 text-center">
-            <hr style="padding: 40px;">
-          </div>
+                <hr style="padding: 40px;">
+            </div>
 
             <div style="padding-top:100px">
                 <p> SEC Disclaimer and Forward-Looking Statements </p>
@@ -305,7 +305,34 @@
         }
     </script>
 
-
+    <!-- Facebook Pixel Code -->
+    <script>
+        ! function(f, b, e, v, n, t, s) {
+            if (f.fbq) return;
+            n = f.fbq = function() {
+                n.callMethod ?
+                    n.callMethod.apply(n, arguments) : n.queue.push(arguments)
+            };
+            if (!f._fbq) f._fbq = n;
+            n.push = n;
+            n.loaded = !0;
+            n.version = '2.0';
+            n.queue = [];
+            t = b.createElement(e);
+            t.async = !0;
+            t.src = v;
+            s = b.getElementsByTagName(e)[0];
+            s.parentNode.insertBefore(t, s)
+        }(window,
+            document, 'script', 'https://connect.facebook.net/en_US/fbevents.js');
+        fbq('init', '322839541477444'); // Insert your pixel ID here.
+        fbq('track', 'PageView');
+    </script>
+    <noscript><img height="1" width="1" style="display:none"
+    src="https://www.facebook.com/tr?id=322839541477444&ev=PageView&noscript=1"
+    /></noscript>
+    <!-- DO NOT MODIFY -->
+    <!-- End Facebook Pixel Code -->
 
 </body>
 
