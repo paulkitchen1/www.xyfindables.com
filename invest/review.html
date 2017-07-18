@@ -1,4 +1,4 @@
-<html>
+﻿<html>
 
 <head>
     <meta charset="utf-8">
@@ -342,7 +342,15 @@ src="https://www.facebook.com/tr?id=322839541477444&ev=PageView&noscript=1"
                     Utils.setCookie('contentview', +new Date(), 1)
                 }
             }, 5000);
-        }
+		}
+
+
+		if (!Utils.readCookie('xy-purchase')) {
+			if (Utils.getUrlParameter('shares') != undefined) {
+				Utils.setCookie('xy-purchase', Utils.getUrlParameter('shares'), 1);
+				fbq('track', 'Purchase', { value: Utils.getUrlParameter('shares'), currency: 'USD' });
+			}		
+		}
     </script>
 
 
