@@ -113,6 +113,8 @@
             display: inline-block;
         }
 
+        .bold {}
+
         @media (min-width:768px) {
             .text-description {
                 margin-top: 7%;
@@ -123,12 +125,26 @@
             .phones .text-description {
                 margin-top: 12%;
             }
+
+            .hrlink {
+              display:none;
+            }
         }
 
         @media (max-width:767px) {
             .text-description {
                 margin-bottom: 7%;
             }
+            .gps-banner {
+                height: 300px !important;
+            }
+            h1 {
+                text-align: center;
+            }
+            .navlink {
+                text-align: center;
+            }
+
         }
     </style>
 
@@ -193,45 +209,49 @@
                 <div class="col-md-3 col-sm-12">
                     <div class="col-md-12 col-sm-4">
                         <a id="overviewlink" href="">
-                            <h4 style="font-weight:600 !important;"> Overview </h4>
+                            <h4 class="navlink" style="font-weight:600 !important;"> Overview </h4>
                         </a>
                     </div>
-                    <div class="col-md-12 col-sm-4">
+                    <div class="col-md-12 col-sm-4 ">
                         <a id="storylink" href="">
-                            <h4 style="font-weight:600 !important;"> The Story </h4>
+                            <h4 class="navlink" style="font-weight:600 !important;"> The Story </h4>
                         </a>
                     </div>
-                    <div class="col-md-12 col-sm-4">
+                    <div class="col-md-12 col-sm-4 ">
                         <a id="timelinelink" href="">
-                            <h4 style="font-weight:600 !important;"> Company Timeline </h4>
+                            <h4 class="navlink" style="font-weight:600 !important;"> Company Timeline </h4>
                         </a>
                     </div>
                 </div>
 
+                <hr class="hrlink">
                 <div class="col-sm-12 col-md-9" style="font-size:16px;">
                     <div id="overviewcontent">
                         <h1 style="margin-top:0px; !important">Overview</h1>
                         <hr>
-                        <p style="line-height:30px;">XY Findables is a tech startup with a mission to make everything in the world findable. Technology is getting smaller, and it's our job to help people find the things they want. Our website and mobile apps allow XY users to find
-                            things all over the world. Even after millions in revenue, we are excited to continue growing and become a monster tech company in the future.
+                        <p style="line-height:30px;">
+                            <span class="bold">XY Findables</span> is a tech startup with a mission to make everything in the world findable. Technology is getting smaller, and it's our job to help people find the things they want. Our website and mobile
+                            apps allow XY users to find things all over the world. Even after millions in revenue, we are excited to continue growing and become a monster tech company in the future.
                         </p>
                     </div>
                     <div id="storycontent" style="display:none;">
                         <h1 style="margin-top:0px; !important; ">The Story</h1>
                         <hr>
                         <div style="line-height:30px;">
-                            <p>XY Findables is a technology startup in downtown San Diego, California. We released our first product, the XY Find It, three years ago on Kickstarter, and it was a HUGE success! We raised over $200,000 and were one of the most
-                                popular for the year. The first year of manufacturing, we did $1.5 milion dollars in revenue, and we kept selling out all over the place. The next year, we earned more than double, at $3.6 million! Now, we have business
-                                deals with Amazon, Target, Walmart, Fry’s, and more!
+                            <p>
+                                <span class="bold">XY Findables</span> is a technology startup in downtown San Diego, California. We released our first product, the XY Find It, three years ago on Kickstarter, and it was a
+                                <span class="bold">HUGE</span> success! We raised over $200,000 and were one of the most popular for the year. The first year of manufacturing, we did
+                                <span class="bold">$1.5 milion dollars</span> in revenue, and we kept selling out all over the place. The next year, we earned more than
+                                <span class="bold">double</span>, at
+                                <span class="bold">$3.6 million!</span> Now, we have business deals with Amazon, Target, Walmart, Fry’s, and more!
                             </p>
-                            <p style="padding-top:7px;"> Now we’re on our third generation XY3, and we just expanded our product line to include the XY GPS, a tracking device that can find the things you love around the world. We’re projected to do $15 million in revenue this year
-                                alone. We want to keep expanding nd developing our product line, so we took the next step: investments.
+                            <p style="padding-top:7px;"> Now we’re on our third generation XY3, and we just expanded our product line to include the XY GPS, a tracking device that can find the things you love around the world. We’re projected to do
+                                <span class="bold">$15 million</span> in revenue this year alone. We want to keep expanding nd developing our product line, so we took the next step: investments.
                             </p>
                             <p style="padding-top:7px;"> We’re in our growth phase and it’s time for us to find investors. Here’s where you come in! Normally, startups are legally required to go to millionaires, like Mark Cuban or Bill Gates. It wasn’t fair, because the everyday
-                                person wasn’t able to invest! However, startups who are approved by the government, can sell pre-public stock to the everyday investor. We’ve been approved by the SEC, the government agency that regulates all publicly traded
-                                companies, like Facebook, Snapchat, and Twitter. Now, we can begin selling mini-IPO shares to everyone, and we are excited to become a customer-owned company. We hope to go public in the next 2-3 years, and you can help
-                                us move toward that goal. Publicly owned companies can have huge returns for the original investors. For example, a $10,000 investment in Facebook seven years ago would be $7,000,000 today! Now’s your chance to get in on
-                                it.
+                                person wasn’t able to invest! However, startups who are approved by the government, can sell pre-public stock to the everyday investor. We’ve been approved by the
+                                <span class="bold">SEC</span>, the government agency that regulates all publicly traded companies, like Facebook, Snapchat, and Twitter. Now, we can begin selling mini-IPO shares to <span class="bold">everyone</span>, and
+                                we are excited to become a customer-owned company. We hope to go public in the next 2-3 years, and you can help it.
                             </p>
                         </div>
                     </div>
@@ -244,7 +264,44 @@
                 </div>
             </div>
 
-            <hr style="margin-top: 80px;">
+            <hr style="margin-top: 40px; margin-bottom:60px;">
+
+            <div id="overviewgallery" class="row">
+              <div class="col-sm-12">
+                <div class="col-sm-4">
+                  <img style="width:360px" src="/img/ourstory/office_4.jpg">
+                </div>
+                <div class="col-sm-4">
+                  <img style="width:360px" src="/img/ourstory/5.jpg">
+                </div>
+                <div class="col-sm-4">
+                  <img style="width:360px" src="/img/ourstory/8.jpg">
+                </div>
+              </div>
+              <div class="col-sm-12" style="padding-top:15px;">
+                <div class="col-sm-4">
+                  <img style="width:360px"  src="/img/ourstory/3.jpg">
+                </div>
+                <div class="col-sm-4">
+                  <img style="width:360px" src="/img/ourstory/kitchen_2.jpg">
+                </div>
+                <div class="col-sm-4">
+                  <img style="width:360px" src="/img/ourstory/4.jpg">
+                </div>
+              </div>
+              <div class="col-sm-12" style="padding-top:15px;">
+                <div class="col-sm-4">
+                  <img style="width:360px"  src="/img/ourstory/office_3.jpg">
+                </div>
+                <div class="col-sm-4">
+                  <img style="width:360px" src="/img/ourstory/9.jpg">
+                </div>
+                <div class="col-sm-4">
+                  <img style="width:360px" src="/img/ourstory/10.jpg">
+                </div>
+              </div>
+            </div>
+
             <div style="padding-top:100px">
                 <p> SEC Disclaimer and Forward-Looking Statements </p>
 
@@ -264,6 +321,7 @@
                 e.preventDefault();
                 $("#overviewcontent").show();
                 $("#overviewbanner").show();
+                $("#overviewgallery").show();
                 $("#storybanner").hide();
                 $("#storycontent").hide();
                 $("#timelinecontent").hide();
@@ -271,6 +329,7 @@
             $("#storylink").on("click", function(e) {
                 e.preventDefault();
                 $("#overviewcontent").hide();
+                $("#overviewgallery").hide();
                 $("#overviewbanner").hide();
                 $("#storycontent").show();
                 $("#storybanner").show();
@@ -279,6 +338,7 @@
             $("#timelinelink").on("click", function(e) {
                 e.preventDefault();
                 $("#overviewcontent").hide();
+                $("#overviewgallery").hide();
                 $("#storycontent").hide();
                 $("#timelinecontent").show();
             });

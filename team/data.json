@@ -26,6 +26,13 @@ var data = {
     ],
     "team_detailed": [
       {
+        "name": "Alex M.",
+        "img": "/img/Team/Alex.jpg",
+        "icon": "/img/Team/Alex_Funny.jpg",
+        "description": "Alex is one of our newest team members, but he has already taken on a vital role in the company as one of our lead developers. With his passion and skill centered on computer programming, Alex helps develop, repair, and design our applications and services. While he may be an exceptional programmer by trade, he is also a serious proffesional poker player (see the above poker face).",
+        "title": "Software Engineer"
+      },
+      {
         "name": "Belzasar C.",
         "img": "/img/Team/Belza.jpg",
         "icon": "/img/Team/Belza_Funny.jpg",
@@ -56,7 +63,15 @@ var data = {
         "icon": "/img/Team/Donald_Funny.jpg",
         "description": "Donald is a full-stack web application developer with over 15 years experience.  From concept to creation; measuring and revising, he has an in-depth understanding of the product down pixel, up to the cloud and every process in between.  When not coding he spends his time studying the art of smoke curing meats and training for triathlons.",
         "title": "Software Engineer"
-    },  {
+    },
+    {
+        "name": "Emily M.",
+        "img": "/img/Team/Emily.jpg",
+        "icon": "/img/Team/Emily_Funny.jpg",
+        "description": "Emily is the Investment Experience Manager handling investor relations and  HR for the investment team. She received her Bachelor's Degrees in Political Science and French from San Diego State University and has spent time living abroad. In her free time she enjoys acting in San Diego community theater.",
+        "title": "Investment Experience Manager"
+    },
+      {
         "name": "Gabriela D.",
         "img": "/img/Team/Gabby.jpg",
         "icon": "/img/Team/Gabby_Funny.jpg",
@@ -84,8 +99,8 @@ var data = {
         "name": "Josh P.",
         "img": "/img/Team/Josh.jpg",
         "icon": "/img/Team/Josh_Funny.jpg",
-        "description": "Josh works with Paul and Lee as with photography, videography, 3D design, graphic design, and web design. He is a junior at UC San Diego and is pursuing a degree in Speculative Design before graduate school. Besides that, he works as a freelance graphic designer and videographer on the side and enjoys partnering with local artists and businesses. In his spare time, Josh loves playing the drums and making 3D architectural and character models.",
-        "title": "Intern"
+        "description": "Josh works with Paul and Lee in photography, videography, 3D design, graphic design, and web design. He is a junior at UC San Diego and is pursuing a degree in Speculative Design before graduate school. Besides that, he works as a freelance graphic designer and videographer on the side and enjoys partnering with local artists and businesses. In his spare time, Josh loves playing the drums and making 3D architectural and character models.",
+        "title": "Graphics and Web Intern"
     }, {
         "name": "Lee K.",
         "img": "/img/Team/Lee.jpg",
@@ -152,21 +167,9 @@ var data = {
 
 /*
 
-  {
-    "name": "Alex M.",
-    "img": "https://ssl.gstatic.com/images/branding/product/1x/avatar_square_grey_512dp.png",
-    "icon": "",
-    "description": "A cool guy!",
-    "title": "Software Dude"
-  },
 
-  {
-      "name": "Emily M.",
-      "img": "/img/Team/Emily.jpg",
-      "icon": "/img/Team/Emily_Funny.jpg",
-      "description": "",
-      "title": ""
-  },
+
+
 
   {
       "name": "John M.",
