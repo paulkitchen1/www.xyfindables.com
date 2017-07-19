@@ -104,7 +104,7 @@
         }
 
         .projected {
-          padding-right: 35px;
+            padding-right: 35px;
         }
 
         .modal {
@@ -142,7 +142,6 @@
         }
 
         .nothanks {
-            margin-left: 25px;
             cursor: pointer
         }
         /* The Close Button */
@@ -162,22 +161,41 @@
             cursor: pointer;
         }
 
+        @media screen and (min-width: 770px) {
+            .sendbtn .btn {
+                Padding-left: 50px !important;
+                padding-right: 50px !important;
+                margin-left: 43px;
+            }
+
+            .nothanks {
+              margin-top: 6px;
+            }
+        }
+
         @media screen and (max-width:770px) {
             .popup h2 {
                 font-size: 14px;
                 font-weight: 600;
             }
-
-            .facebook-ana{
-              display: none;
+            .facebook-ana {
+                display: none;
             }
+            .popup .btn {
+                width: 100%;
+            }
+            .nothanks {
+              margin-top: 15px;
+            }
+
+
         }
 
         @media screen and (max-width:990px) {
-          .projected {
-            text-align:center;
-            padding-right:0px;
-          }
+            .projected {
+                text-align: center;
+                padding-right: 0px;
+            }
         }
     </style>
 </head>
@@ -461,7 +479,7 @@
                             <div class="col-sm-5" style="font-size:20px; text-align:left;">
                                 <p style="margin: 0 0 2px;">Facebook Today </p>
                                 <spann><img style="width : 50px;" src="img/money_icon_large.png"></span>
-                                <span>$7,000,000 </span>
+                                    <span>$7,000,000 </span>
                             </div>
                         </div>
                         <div class="col-sm-12 text-center _btn_group_order_now" style="margin-bottom:25px">
@@ -547,11 +565,11 @@
         </div>
 
         <div class="col-sm-12 text-center" style="padding-top:30px; padding-bottom:10px;">
-          <a href="invest/apply.html" target="_blank" class="btn btn-lg _btn_buy" style="">Invest Now</a>
+            <a href="invest/apply.html" target="_blank" class="btn btn-lg _btn_buy" style="">Invest Now</a>
         </div>
         <div class="col-sm-12 text-center">
-        <hr style="padding:20px;">
-      </div>
+            <hr style="padding:20px;">
+        </div>
         <div style="padding-top:30px">
             <p> SEC Disclaimer and Forward-Looking Statements </p>
 
@@ -722,13 +740,26 @@
 
 <!-- Facebook Pixel Code -->
 <script>
-!function(f,b,e,v,n,t,s){if(f.fbq)return;n=f.fbq=function(){n.callMethod?
-n.callMethod.apply(n,arguments):n.queue.push(arguments)};if(!f._fbq)f._fbq=n;
-n.push=n;n.loaded=!0;n.version='2.0';n.queue=[];t=b.createElement(e);t.async=!0;
-t.src=v;s=b.getElementsByTagName(e)[0];s.parentNode.insertBefore(t,s)}(window,
-document,'script','https://connect.facebook.net/en_US/fbevents.js');
-fbq('init', '322839541477444'); // Insert your pixel ID here.
-fbq('track', 'PageView');
+    ! function(f, b, e, v, n, t, s) {
+        if (f.fbq) return;
+        n = f.fbq = function() {
+            n.callMethod ?
+                n.callMethod.apply(n, arguments) : n.queue.push(arguments)
+        };
+        if (!f._fbq) f._fbq = n;
+        n.push = n;
+        n.loaded = !0;
+        n.version = '2.0';
+        n.queue = [];
+        t = b.createElement(e);
+        t.async = !0;
+        t.src = v;
+        s = b.getElementsByTagName(e)[0];
+        s.parentNode.insertBefore(t, s)
+    }(window,
+        document, 'script', 'https://connect.facebook.net/en_US/fbevents.js');
+    fbq('init', '322839541477444'); // Insert your pixel ID here.
+    fbq('track', 'PageView');
 </script>
 <noscript><img height="1" width="1" style="display:none"
 src="https://www.facebook.com/tr?id=322839541477444&ev=PageView&noscript=1"
@@ -756,7 +787,12 @@ src="https://www.facebook.com/tr?id=322839541477444&ev=PageView&noscript=1"
                     Phone Number (Optional) <input class="form-control" name="phone" type="number" style="width:100%;padding:4px" />
                 </div>
             </form>
-            <div class="btn btn-info send-code" style="Padding-left:30px; padding-right:30px;">Send</div><a class="nothanks">No thanks, I already know I want to invest!</a>
+            <div class="row">
+                <div class="col-xs-12 col-sm-4 sendbtn">
+                    <div class="btn btn-info send-code" style="Padding-left:30px; padding-right:30px;">Send</div>
+                </div>
+                <div class="col-xs-12 col-sm-8 text-center nothanks"><a href="/invest/apply.html" target="blank">No thanks, I already know I want to invest!</a></div>
+            </div>
         </div>
     </div>
 

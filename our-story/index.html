@@ -125,9 +125,8 @@
             .phones .text-description {
                 margin-top: 12%;
             }
-
             .hrlink {
-              display:none;
+                display: none;
             }
         }
 
@@ -144,7 +143,10 @@
             .navlink {
                 text-align: center;
             }
-
+            .timelineimg {
+                width: 90% !important;
+                margin-left: 5% !important;
+            }
         }
     </style>
 
@@ -237,7 +239,7 @@
                     <div id="storycontent" style="display:none;">
                         <h1 style="margin-top:0px; !important; ">The Story</h1>
                         <hr>
-                        <div style="line-height:30px;">
+                        <div style="line-height:30px; font-size: 15px;">
                             <p>
                                 <span class="bold">XY Findables</span> is a technology startup in downtown San Diego, California. We released our first product, the XY Find It, three years ago on Kickstarter, and it was a
                                 <span class="bold">HUGE</span> success! We raised over $200,000 and were one of the most popular for the year. The first year of manufacturing, we did
@@ -255,52 +257,77 @@
                             </p>
                         </div>
                     </div>
+
                     <div id="timelinecontent" style="display:none;">
                         <h1 style="margin-top:0px; !important">Company Timeline</h1>
+
+                        <div class="col-sm-12">
                         <hr>
-                        <p> Coming Soon!
+                      </div>
+
+                        <p> Our company has been growing in San Diego since 2012, and from the very first day, our goal has been to make the world findable. Check out our progression below, from founding to xy1 to our future goal of IPO. Our journey has been
+                            incredible so far, and we'd love to have you join us as we move towards a mutually profitable and rewarding finish line.
                         </p>
+                        <div class="col-sm-12">
+                        <hr style="margin-top:30px;">
+                      </div>
                     </div>
                 </div>
             </div>
 
-            <hr style="margin-top: 40px; margin-bottom:60px;">
+            <hr id="timelineline" style="margin-top: 20px; margin-bottom: 50px;">
 
             <div id="overviewgallery" class="row">
-              <div class="col-sm-12">
-                <div class="col-sm-4">
-                  <img style="width:360px" src="/img/ourstory/office_4.jpg">
+                <div class="col-sm-12">
+                    <div class="col-sm-4">
+                        <img style="width:360px" src="/img/ourstory/office_4.jpg">
+                    </div>
+                    <div class="col-sm-4">
+                        <img style="width:360px" src="/img/ourstory/5.jpg">
+                    </div>
+                    <div class="col-sm-4">
+                        <img style="width:360px" src="/img/ourstory/8.jpg">
+                    </div>
                 </div>
-                <div class="col-sm-4">
-                  <img style="width:360px" src="/img/ourstory/5.jpg">
+                <div class="col-sm-12" style="padding-top:15px;">
+                    <div class="col-sm-4">
+                        <img style="width:360px" src="/img/ourstory/3.jpg">
+                    </div>
+                    <div class="col-sm-4">
+                        <img style="width:360px" src="/img/ourstory/kitchen_2.jpg">
+                    </div>
+                    <div class="col-sm-4">
+                        <img style="width:360px" src="/img/ourstory/4.jpg">
+                    </div>
                 </div>
-                <div class="col-sm-4">
-                  <img style="width:360px" src="/img/ourstory/8.jpg">
+                <div class="col-sm-12" style="padding-top:15px;">
+                    <div class="col-sm-4">
+                        <img style="width:360px" src="/img/ourstory/office_3.jpg">
+                    </div>
+                    <div class="col-sm-4">
+                        <img style="width:360px" src="/img/ourstory/9.jpg">
+                    </div>
+                    <div class="col-sm-4">
+                        <img style="width:360px" src="/img/ourstory/10.jpg">
+                    </div>
                 </div>
-              </div>
-              <div class="col-sm-12" style="padding-top:15px;">
-                <div class="col-sm-4">
-                  <img style="width:360px"  src="/img/ourstory/3.jpg">
-                </div>
-                <div class="col-sm-4">
-                  <img style="width:360px" src="/img/ourstory/kitchen_2.jpg">
-                </div>
-                <div class="col-sm-4">
-                  <img style="width:360px" src="/img/ourstory/4.jpg">
-                </div>
-              </div>
-              <div class="col-sm-12" style="padding-top:15px;">
-                <div class="col-sm-4">
-                  <img style="width:360px"  src="/img/ourstory/office_3.jpg">
-                </div>
-                <div class="col-sm-4">
-                  <img style="width:360px" src="/img/ourstory/9.jpg">
-                </div>
-                <div class="col-sm-4">
-                  <img style="width:360px" src="/img/ourstory/10.jpg">
-                </div>
-              </div>
             </div>
+
+            <div id="timeline" class="row" style="display:none;">
+                <img style="width:50%; margin-left: 25%;" class="timelineimg" src="/img/timeline.svg">
+            </div>
+
+            <hr style="margin-top: 60px; margin-bottom:30px;">
+
+            <div class="row text-center">
+                <div class="col-sm-12">
+                    <h2> Ready to join us for the rest of the journey? </h2>
+                    <a href="invest/apply.html" target="_blank" class="btn btn-lg _btn_buy" style="padding-left: 45px; padding-right: 45px; margin-top:5px;">Invest Now</a>
+                </div>
+            </div>
+
+            <hr style="margin-top: 30px; margin-bottom:30px;">
+
 
             <div style="padding-top:100px">
                 <p> SEC Disclaimer and Forward-Looking Statements </p>
@@ -325,6 +352,9 @@
                 $("#storybanner").hide();
                 $("#storycontent").hide();
                 $("#timelinecontent").hide();
+                $("#timeline").hide();
+                $("#timelineline").show();
+
             });
             $("#storylink").on("click", function(e) {
                 e.preventDefault();
@@ -334,6 +364,10 @@
                 $("#storycontent").show();
                 $("#storybanner").show();
                 $("#timelinecontent").hide();
+                $("#timeline").hide();
+                $("#timelineline").hide();
+
+
             });
             $("#timelinelink").on("click", function(e) {
                 e.preventDefault();
@@ -341,6 +375,10 @@
                 $("#overviewgallery").hide();
                 $("#storycontent").hide();
                 $("#timelinecontent").show();
+                $("#timeline").show();
+                $("#timelineline").hide();
+
+
             });
         </script>
     </section>
