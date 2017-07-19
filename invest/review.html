@@ -1,4 +1,5 @@
-﻿<html>
+
+<html>
 
 <head>
     <meta charset="utf-8">
@@ -29,6 +30,27 @@
     <link rel="stylesheet" type="text/css" href="/Content/css2/main.css">
     <link rel="stylesheet" type="text/css" href="/Content/css2/responsive.css">
 
+    <script>
+        (function(i, s, o, g, r, a, m) {
+            i['GoogleAnalyticsObject'] = r;
+            i[r] = i[r] || function() {
+                (i[r].q = i[r].q || []).push(arguments)
+            }, i[r].l = 1 * new Date();
+            a = s.createElement(o),
+                m = s.getElementsByTagName(o)[0];
+            a.async = 1;
+            a.src = g;
+            m.parentNode.insertBefore(a, m)
+        })(window, document, 'script', 'https://www.google-analytics.com/analytics.js', 'ga');
+
+        ga('create', 'UA-42073870-11', 'auto', {
+            'allowLinker': true
+        });
+
+        ga('require', 'linker');
+        ga('linker:autoLink', ['www.xyfindit.com', 'xyfindit.com', 'buymyxy.com', 'www.buymyxy.com', 'shopify.com', 'xyproducts.myshopify.com', 'checkout.shopify.com']);
+        ga('send', 'pageview');
+    </script>
 
     <script src="/bundles/xy.js"></script>
 
@@ -342,15 +364,18 @@ src="https://www.facebook.com/tr?id=322839541477444&ev=PageView&noscript=1"
                     Utils.setCookie('contentview', +new Date(), 1)
                 }
             }, 5000);
-		}
+        }
 
 
-		if (!Utils.readCookie('xy-purchase')) {
-			if (Utils.getUrlParameter('shares') != undefined) {
-				Utils.setCookie('xy-purchase', Utils.getUrlParameter('shares'), 1);
-				fbq('track', 'Purchase', { value: Utils.getUrlParameter('shares'), currency: 'USD' });
-			}		
-		}
+        if (!Utils.readCookie('xy-purchase')) {
+            if (Utils.getUrlParameter('shares') != undefined) {
+                Utils.setCookie('xy-purchase', Utils.getUrlParameter('shares'), 1);
+                fbq('track', 'Purchase', {
+                    value: Utils.getUrlParameter('shares'),
+                    currency: 'USD'
+                });
+            }
+        }
     </script>
 
 
