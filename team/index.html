@@ -1,4 +1,4 @@
-<html>
+﻿<html>
 
 <head>
     <meta charset="utf-8">
@@ -476,8 +476,9 @@
             if (show) {
                 div.addClass("active");
                 bio.insertAfter($(div.parent().parent().children()[targetPos]));
-                updateBioText(data.team_detailed[num]);
-                bio.fadeIn();
+				updateBioText(data.team_detailed[num]);				
+				bio.fadeIn();
+				Utils.sendGA(encodeURIComponent(data.team_detailed[num].name));
             } else {
                 bio.fadeOut();
             }
@@ -493,7 +494,8 @@
             if (show) {
                 div.addClass("active");
                 bioManagement.insertAfter($(div.parent().parent().children()[targetPos]));
-                updateBioManagement(data.management_detailed[num]);
+				updateBioManagement(data.management_detailed[num]);
+				Utils.sendGA(encodeURIComponent(data.management_detailed[num].name));
                 bioManagement.fadeIn();
             } else {
                 bio.fadeOut();
