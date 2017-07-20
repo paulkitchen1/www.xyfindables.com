@@ -55,7 +55,7 @@ var data = {
         "name": "Christine S.",
         "img": "/img/Team/Christine.jpg",
         "icon": "/img/Team/Christine_Funny.jpg",
-        "description": "Christine has an extensive background in Mathematics and has worked in upper management for the past 5 years.  Most recently, she has been at XY as the Sr. Data and Marketing Analyst and manages operations for the Investment Team in addition to acting as Investment Operations Manager.  She is also a local musician and can be seen playing around town in boardshorts and a tank-top.",
+       "description": "Christine has an extensive background in Mathematics and has worked in upper management for the past 5 years. Most recently, she has been at XY as the Sr. Data and Marketing Analyst and acts as the Investment Team Operations Manager. Originally from Minnesota, she moved to sunny San Diego to escape the tundra in 2012. Christine is also a local musician and can be seen playing around town in boardshorts and a tank-top.",
         "title": "Sr. Data Analyst"
     }, {
         "name": "Donald P.",
@@ -77,7 +77,16 @@ var data = {
         "icon": "/img/Team/Gabby_Funny.jpg",
         "description": "Gabriela is our Customer Service Manager and has been with XY Findables since January 2016. Gabriela has over 5 years of customer service experience. Gabriela obtained a Bachelor’s degree in Anthropological Archaeology from the University of California, San Diego. When she's not assisting our customers, she’s off excavating in various parts of the Middle East and East Africa. ",
         "title": "Support Manager"
-    }, {
+    },
+
+      {
+          "name": "John M.",
+          "img": "/img/Team/Murko.jpg",
+          "icon": "/img/Team/Murko_Funny.jpg",
+          "description": "John is currently in his third year of studying computer science at University of California, San Diego. He has worked as an software intern at XY Find It for two summers. In his spare time, John uses his artistic talents to draw cartoons, some of which can be found around the office. Fun fact: before John graduated high school and came to XY, he worked as the character mascot at Chuck E. Cheese's.",
+          "title": "Software Intern"
+      },
+       {
         "name": "John P.",
         "img": "/img/Team/John.jpg",
         "icon": "/img/Team/John_Funny.jpg",
@@ -171,11 +180,4 @@ var data = {
 
 
 
-  {
-      "name": "John M.",
-      "img": "",
-      "icon": "",
-      "description": "",
-      "title": ""
-  },
 */

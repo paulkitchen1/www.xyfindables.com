@@ -167,9 +167,8 @@
                 padding-right: 50px !important;
                 margin-left: 43px;
             }
-
             .nothanks {
-              margin-top: 6px;
+                margin-top: 6px;
             }
         }
 
@@ -185,10 +184,8 @@
                 width: 100%;
             }
             .nothanks {
-              margin-top: 15px;
+                margin-top: 15px;
             }
-
-
         }
 
         @media screen and (max-width:990px) {
@@ -469,19 +466,26 @@
                         <div class="facebook-ana col-sm-12">
                             <div class="col-sm-5" style="font-size:20px; text-align:right; ">
                                 <p style="margin: 0 0 2px;">Facebook 2007</p>
-                                <span><img style="width:50px;" src="img/money_icon_small.png"></span>
-                                <span>$10,000 </span>
-
+                                <div style="padding-right: 15px;">
+                                    <span><img style="width:50px;" src="img/money_icon_small.png"></span>
+                                    <span>$10,000 </span>
+                                </div>
                             </div>
+
                             <div class="col-sm-2" style="text-align:center; font-size: 45px; padding-top: 10px; color: #8c8c8c; ">
                                 <p> > </p>
                             </div>
+
                             <div class="col-sm-5" style="font-size:20px; text-align:left;">
                                 <p style="margin: 0 0 2px;">Facebook Today </p>
-                                <spann><img style="width : 50px;" src="img/money_icon_large.png"></span>
+                                <div style="margin-left: -5px;"><span>
+                                <img style="width : 50px;" src="img/money_icon_large.png"></span>
                                     <span>$7,000,000 </span>
+                                </div>
                             </div>
+
                         </div>
+
                         <div class="col-sm-12 text-center _btn_group_order_now" style="margin-bottom:25px">
                             <a target="_blank" href="offering" class="btn btn-lg _btn_buy" style="margin-top:15px; padding-left: 45px; padding-right: 45px; color:black !important; background-color:transparent !important; border-color:black;">SEC Info</a>
                         </div>
@@ -813,6 +817,7 @@ src="https://www.facebook.com/tr?id=322839541477444&ev=PageView&noscript=1"
     // When the user clicks on <span> (x), close the modal
     $(".close").click(function() {
         $("#myModal").hide();
+        Utils.setCookie('r-discount', '1', 1);
     });
     $(".nothanks").click(function() {
         $("#myModal").hide();
