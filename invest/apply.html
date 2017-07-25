@@ -788,7 +788,7 @@
                             <div class="col-xs-12 col-sm-9">
                                 <div>
                                     <div>
-                                        <input type="number" name="numberOfShares" placeholder="# of shares to purchase (e.g. 1,000)" required="required" ng-min="500" ng-max="500000" class="form-control     -validate-amount">
+                                        <input type="number" name="numberOfShares" placeholder="# of shares to purchase (e.g. 1,000)" required="required"  class="form-control" onkeydown="return noSpace(event)">
                                     </div>
                                 </div>
                             </div>
@@ -1447,6 +1447,14 @@
                     document.location = '/invest/review.html?shares=' + $("[name=numberOfShares]").val();
             }
 
+
+			function noSpace(evt) {
+				var charCode = (evt.which) ? evt.which : event.keyCode
+				if (charCode == 32)
+					return false;
+				return true;
+			}
+
             function checkInputs(frm) {
                 //validate fields
                 fail = false;
@@ -1482,31 +1490,40 @@
                         name = $("[name=email_address]").attr('name');
                         fail_log += name + " is required \n";
                     }
-                }
-                if ($("[name=numberOfShares]").is(':visible') && $.isNumeric($("[name=numberOfShares]").val())) {
-                    var equityError = "";
-                    $("[name=numberOfShares]").val(parseInt($("[name=numberOfShares]").val()));
-                    if ($("[name=numberOfShares]").val() < 350 || $("[name=numberOfShares]").val() > 500000) {
-                        $("[name=numberOfShares").closest(".form-control").addClass('had-error');
-                        $("[name=numberOfShares]").focus(function() {
-                            $("[name=numberOfShares]").closest(".form-control").removeClass('had-error');
-                            $(".text-danger").hide()
-                        });
-                        equityError += "Share limit is a minimum of 350 and a maximum of 500,000.";
-                        fail = true;
-                    } else {
-                        if ($("[name=annual_income]").is(':visible') && $.isNumeric($("[name=annual_income]").val()) && $("[name=net_worth]").val()) {
-                            if (($("[name=annual_income]").val() * .10) < $("[name=numberOfShares]").val() && ($("[name=net_worth]").val() * .10) < $("[name=numberOfShares]").val()) {
-                                $("[name=numberOfShares").closest(".form-control").addClass('had-error');
-                                $("[name=numberOfShares]").focus(function() {
-                                    $("[name=numberOfShares]").closest(".form-control").removeClass('had-error');
-                                    $(".text-danger").hide()
-                                });
-                                equityError += "Based on your annual income and net worth, this amount exceeds your Title IV limits."
-                                fail = true;
-                            }
-                        }
-                    }
+				}
+				
+				if ($("[name=numberOfShares]").is(':visible'))
+				{
+					var equityError = "";
+					$(".text-danger").hide();
+					if ($.isNumeric($("[name=numberOfShares]").val())) {
+						
+						if ($("[name=numberOfShares]").val() < 350 || $("[name=numberOfShares]").val() > 500000) {
+							$("[name=numberOfShares").closest(".form-control").addClass('had-error');
+							$("[name=numberOfShares]").focus(function () {
+								$("[name=numberOfShares]").closest(".form-control").removeClass('had-error');
+								$(".text-danger").hide()
+							});
+							equityError += "Share limit is a minimum of 350 and a maximum of 500,000.";
+							fail = true;
+							//} else {
+							//	if ($("[name=annual_income]").is(':visible') && $.isNumeric($("[name=annual_income]").val()) && $("[name=net_worth]").val()) {
+							//		if (($("[name=annual_income]").val() * .10) < $("[name=numberOfShares]").val() && ($("[name=net_worth]").val() * .10) < $("[name=numberOfShares]").val()) {
+							//			$("[name=numberOfShares").closest(".form-control").addClass('had-error');
+							//			$("[name=numberOfShares]").focus(function () {
+							//				$("[name=numberOfShares]").closest(".form-control").removeClass('had-error');
+							//				$(".text-danger").hide()
+							//			});
+							//			equityError += "Based on your annual income and net worth, this amount exceeds your Title IV limits."
+							//			fail = true;
+							//		}
+							//	}
+						}
+					}
+					else {
+						equityError += "Number of Shares is not a number.";
+						fail = true;
+					}
                     if (equityError != '') {
                         $(".text-danger").text(equityError).show();
                     }

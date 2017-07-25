@@ -480,7 +480,7 @@
                 bio.insertAfter($(div.parent().parent().children()[targetPos]));
 				updateBioText(data.team_detailed[num]);
 				bio.fadeIn();
-				Utils.sendGA(encodeURIComponent(data.team_detailed[num].name));
+				Utils.sendGA("/team/" + encodeURIComponent(data.team_detailed[num].name.replace('.','')));
             } else {
                 bio.fadeOut();
             }
@@ -497,7 +497,7 @@
                 div.addClass("active");
                 bioManagement.insertAfter($(div.parent().parent().children()[targetPos]));
 				updateBioManagement(data.management_detailed[num]);
-				Utils.sendGA(encodeURIComponent(data.management_detailed[num].name));
+				Utils.sendGA("/team/" + encodeURIComponent(data.management_detailed[num].name.replace('.', '')));
                 bioManagement.fadeIn();
             } else {
                 bio.fadeOut();
