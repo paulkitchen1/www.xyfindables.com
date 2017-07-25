@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>Our Story | XY - The Findables Company™</title>
+    <title>Investor Perks | XY - The Findables Company™</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="description" content="Invest in XY The Findables Company today!">
     <meta property="og:title" content="Join the movement and invest in XY The Findables Company - now Reg A+ certified! ">
@@ -34,6 +34,7 @@
 
 
     <script src="//cdn.zarget.com/147218/357465.js"></script>
+
 
     <script>
         (function(i, s, o, g, r, a, m) {
@@ -113,7 +114,39 @@
             display: inline-block;
         }
 
-        .bold {}
+        td {
+            padding: 7px;
+            padding-right: 12px;
+        }
+
+        .perksimages img {
+            width: 100%;
+            transition: 0.2s;
+            opacity: .95;
+        }
+
+        .perksimages img:hover {
+            transform: scale(1.05);
+            -webkit-transform: scale(1.05);
+            -o-transform: scale(1.05);
+            -moz-transform: scale(1.05);
+            opacity: 1;
+        }
+
+        .perkhex p {
+            transition: 0.5s;
+            padding-top: 15px;
+            font-weight: 600;
+        }
+
+        .perkhex:hover p {
+            opacity: 1 !important;
+        }
+
+        .perkdescriptionp {
+            margin-left: 65px;
+            margin-right: 65px;
+        }
 
         @media (min-width:768px) {
             .text-description {
@@ -125,27 +158,21 @@
             .phones .text-description {
                 margin-top: 12%;
             }
-            .hrlink {
-                display: none;
-            }
         }
 
         @media (max-width:767px) {
-            .text-description {
-                margin-bottom: 7%;
+            .perkhex {
+                width: 50%;
+                transition: 0.2s;
+                opacity: .95;
             }
-            .gps-banner {
-                height: 300px !important;
+            .perkdescriptionp {
+                margin-left: 20px;
+                margin-right: 20px;
+                text-align: left !important;
             }
-            h1 {
-                text-align: center;
-            }
-            .navlink {
-                text-align: center;
-            }
-            .timelineimg {
-                width: 90% !important;
-                margin-left: 5% !important;
+            .perkslist {
+                margin-left: 0 !important;
             }
         }
     </style>
@@ -178,7 +205,7 @@
                         <li class="text-center"><a href="../faq">FAQ</a></li>
                         <li class="text-center visible-xs"><a href="../contact-us">Contact Us</a></li>
                         <li class="text-center"><a href="../offering">SEC Documents</a></li>
-                        <li class="text-center"><a class="btn _btn_buy" href="/invest/apply.html" target="blank" style="border-color:white; border-radius:6px;">Invest Now</a></li>
+                        <li class="text-center"><a class="btn _btn_buy" href="/invest/apply.html" style="border-color:white; border-radius:6px;">Invest Now</a></li>
 
                     </ul>
                 </div>
@@ -188,155 +215,142 @@
         <!--/nav-->
     </header>
 
-    <div id="overviewbanner">
-        <div class="center" style="margin-top:55px; padding-bottom:0">
-            <div class="gps-banner text-center col-xs-12" style="padding:0px; height:500px; background-image:url(/img/banner/Our_Story.jpg); background-size: cover; background-position: center center;">
-            </div>
-            <div class="text-center col-xs-12 story-banner-margin">
-            </div>
+    <div class="center" style="margin-top:55px; padding-bottom:0">
+        <div class="gps-banner text-center col-xs-12" style="padding:0px;">
+            <img style="width:100%; padding:0px;" class="img-responsive" src="/img/banner/perks_banner.jpg">
+        </div>
+        <div class="text-center col-xs-12" style="margin: 25px 0 30px 0;">
+            <h1 style="font-size:3em; padding-top:0px; margin-top:30px">XY Findables Investors</h1>
         </div>
     </div>
-    <div id="storybanner" style="display:none;">
-        <div class="center" style="margin-top:55px; padding-bottom:0">
-            <div class="gps-banner text-center col-xs-12" style="padding:0px; height:500px; background-image:url(/img/banner/Our_Story_2.jpg); background-size: cover; background-position: center center;">
-            </div>
-            <div class="text-center col-xs-12 story-banner-margin">
-            </div>
-        </div>
-    </div>
-    <div id="timelinebanner" style="display:none;">
-        <div class="center" style="margin-top:55px; padding-bottom:0">
-            <div class="gps-banner text-center col-xs-12" style="padding:0px; height:500px; background-image:url(/img/banner/timeline_banner.jpg); background-size: cover; background-position: center center;">
-            </div>
-            <div class="text-center col-xs-12 story-banner-margin">
-            </div>
-        </div>
-    </div>
+
+    <hr style="margin-top: 50px; padding-top: 10px; margin-bottom: 0px;">
+
 
     <section>
         <div class="container">
             <div class="row">
-                <div class="col-md-3 col-sm-12">
-                    <div class="col-md-12 col-sm-4">
-                        <a id="overviewlink" href="">
-                            <h4 class="navlink" style="font-weight:600 !important;"> Overview </h4>
-                        </a>
+                <div class="col-sm-12 perksimages">
+                    <div class="col-sm-3 col-xs-6 perkhex">
+                        <img src="/img/perks/Stock_Certificate.png">
+                        <p class="perksdescription" style="text-align:center; opacity:0;"> Stock Certificate </p>
                     </div>
-                    <div class="col-md-12 col-sm-4 ">
-                        <a id="storylink" href="">
-                            <h4 class="navlink" style="font-weight:600 !important;"> Our Story </h4>
-                        </a>
+                    <div class="col-sm-3 col-xs-6 perkhex">
+                        <img src="/img/perks/keychain.png">
+                        <p class="perksdescription" style="text-align:center; opacity:0;"> XY Finder Wire Fastener </p>
                     </div>
-                    <div class="col-md-12 col-sm-4 ">
-                        <a id="timelinelink" href="">
-                            <h4 class="navlink" style="font-weight:600 !important;"> Company Timeline </h4>
-                        </a>
+                    <div class="col-sm-3 col-xs-6 perkhex">
+                        <img src="/img/perks/beacon.png">
+                        <p class="perksdescription" style="text-align:center; opacity:0;"> Custom Investor Beacon </p>
+
                     </div>
-                </div>
-
-                <hr class="hrlink">
-                <div class="col-sm-12 col-md-9" style="font-size:16px;">
-                    <div id="overviewcontent">
-                        <h1 style="margin-top:0px; !important">Overview</h1>
-                        <hr>
-                        <p style="line-height:30px;">
-                            <span class="bold">XY Findables</span> is a tech startup with a mission to make everything in the world findable. Technology is getting smaller, and it's our job to help people find the things they want. Our website and mobile
-                            apps allow XY users to find things all over the world. Even after millions in revenue, we are excited to continue growing and become a monster tech company in the future.
-                        </p>
-                    </div>
-                    <div id="storycontent" style="display:none;">
-                        <h1 style="margin-top:0px; !important; ">Our Story</h1>
-                        <hr>
-                        <div style="line-height:30px; font-size: 15px;">
-                            <p>
-                                <span class="bold">XY Findables</span> is a technology startup in downtown San Diego, California. We released our first product, the XY Find It, three years ago on Kickstarter, and it was a
-                                <span class="bold">HUGE</span> success! We raised over $200,000 and were one of the most popular for the year. The first year of manufacturing, we did
-                                <span class="bold">$1.5 milion dollars</span> in revenue, and we kept selling out all over the place. The next year, we earned more than
-                                <span class="bold">double</span>, at
-                                <span class="bold">$3.6 million!</span> Now, we have business deals with Amazon, Target, Walmart, Fry’s, and more!
-                            </p>
-                            <p style="padding-top:7px;"> Now we’re on our third generation XY3, and we just expanded our product line to include the XY GPS, a tracking device that can find the things you love around the world. We’re projected to do
-                                <span class="bold">$15 million</span> in revenue this year alone. We want to keep expanding and developing our product line, so we took the next step: investments.
-                            </p>
-                            <p style="padding-top:7px;"> We’re in our growth phase and it’s time for us to find investors. Here’s where you come in! Normally, startups are legally required to go to millionaires, like Mark Cuban or Bill Gates. It wasn’t fair, because the everyday
-                                person wasn’t able to invest! However, startups who are approved by the government, can sell pre-public stock to the everyday investor. We’ve been approved by the
-                                <span class="bold">SEC</span>, the government agency that regulates all publicly traded companies, like Facebook, Snapchat, and Twitter. Now, we can begin selling mini-IPO shares to <span class="bold">everyone</span>, and
-                                we are excited to become a customer-owned company. We hope to go public in the next 2-3 years, and you can help it.
-                            </p>
-                        </div>
-                    </div>
-
-                    <div id="timelinecontent" style="display:none;">
-                        <h1 style="margin-top:0px; !important">Company Timeline</h1>
-
-                        <div class="col-sm-12" style="padding-left:0px !important;">
-                            <hr>
-                        </div>
-
-                        <p> Our company has been growing in San Diego since 2012, and from the very first day, our goal has been to make the world findable. Check out our progression below, from founding to xy1 to our future goal of IPO. Our journey has been
-                            incredible so far, and we'd love to have you join us as we move towards a mutually profitable and rewarding finish line.
-                        </p>
-
+                    <div class="col-sm-3 col-xs-6 perkhex">
+                        <img src="/img/perks/batteries.png">
+                        <p class="perksdescription" style="text-align:center; opacity:0;"> Extra Battery Pack </p>
 
                     </div>
                 </div>
             </div>
 
-            <hr id="timelineline" style="margin-top: 20px; margin-bottom: 50px;">
+            <hr>
+            <div class="row">
+                <div class="text-center col-xs-12" style="margin: 15px 0 5px 0;">
+                    <h1 style="font-size:3em; padding-top:0px; margin-top:5px;">Perks</h1>
+                </div>
 
-            <div id="overviewgallery" class="row ">
+                <p style="text-align: center; font-size:14px;"> Our investors have... </p>
+
+                <div class="row">
+                    <div class="col-sm-8 perkslist" style="margin-left: 32%; margin-top:10px; margin-bottom: 20px;">
+                        <ul style="font-size: 16px; line-height: 35px;">
+                            <li>Exclusive access to the XY Investor store</li>
+                            <li>Get discounts on the latest products</li>
+                            <li>Opportunities to join and help us IPO</li>
+                            <li>Potential to make 1000% returns or more</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-sm-1">
+                        <h1></h1>
+                    </div>
+                    <div class="col-sm-10" style="text-align: center; font-size:16px; margin-top: 20px;">
+                        <p class="perkdescriptionp"> Not only that, but you can see some of the product perks investors recieve like a personalized investment folio, an exclusive investor beacon, batteries, and a wire keychain. There's never been a better time to invest! </p>
+                    </div>
+                    <div class="col-sm-1">
+                        <h1></h1>
+                    </div>
+                </div>
+
+
+                <div class="col-sm-12 text-center _btn_group_order_now projectedMargin" style="margin-bottom:15px">
+                    <a target="_blank" href="https://my.xyfindit.com/insider/" class="btn btn-lg _btn_buy secbtn" style="margin-top:15px; padding-left: 45px; padding-right: 45px; color:#505050 !important; background-color:transparent !important; border-color:#505050 ;"> Investor Portal</a>
+                </div>
+            </DIV>
+
+            <hr style="margin-top:30px; padding-top: 10px; margin-bottom: 30px;">
+
+            <img src="/img/usecase_2.jpg" style="width:100%">
+
+            <hr style="margin-top:30px; padding-top: 10px; margin-bottom: 0px;">
+
+
+            <table class="table table-striped table-condensed-xs" style="border:solid 1px #ccc;margin-top:30px;">
+                <tr>
+                    <th>Membership Level</th>
+                    <th>Invested Amount</th>
+                    <th>Product Discount</th>
+                    <th>Coupon Codes</th>
+                </tr>
+                <tr>
+                    <td>Manager</td>
+                    <td>$350+</td>
+                    <td>5%</td>
+                    <td>5 - 5% off coupons</td>
+                </tr>
+                <tr>
+                    <td>Partner</td>
+                    <td>$1,000+</td>
+                    <td>10%</td>
+                    <td>10 - 5% off coupons</td>
+                </tr>
+                <tr>
+                    <td>Executive</td>
+                    <td>$2,500+</td>
+                    <td>15%</td>
+                    <td>10 - 10% off coupons</td>
+                </tr>
+                <tr>
+                    <td>Founder</td>
+                    <td>$5,000+</td>
+                    <td>20%</td>
+                    <td>10 - 15% off coupons</td>
+                </tr>
+            </table>
+
+            <hr style="margin-top:30px; padding-top: 10px; margin-bottom: 0px;">
+
+            <div class="col-sm-12 text-center" style="padding-top:20px;">
+                <h2> Have questions? </h2>
+                <h4 style="margin-bottom:20px;"> To learn more, check out <a href="https://university.xyfindables.com/" target="_blank">XY Findables University</a> for more information for investing. </h4>
+            </div>
+
+
+            <div class="col-sm-12" style="margin-top: -20px;">
+                <hr style="margin-top:30px; padding-top: 10px; margin-bottom: 20px;">
+            </div>
+
+            <div class="row text-center" style="padding-top:20px;">
                 <div class="col-sm-12">
-                    <div class="col-sm-4">
-                        <img style="width:360px" src="/img/ourstory/office_4.jpg">
-                    </div>
-                    <div class="col-sm-4">
-                        <img style="width:360px" src="/img/ourstory/5.jpg">
-                    </div>
-                    <div class="col-sm-4">
-                        <img style="width:360px" src="/img/ourstory/8.jpg">
-                    </div>
-                </div>
-                <div class="col-sm-12" style="padding-top:15px;">
-                    <div class="col-sm-4">
-                        <img style="width:360px" src="/img/ourstory/3.jpg">
-                    </div>
-                    <div class="col-sm-4">
-                        <img style="width:360px" src="/img/ourstory/kitchen_2.jpg">
-                    </div>
-                    <div class="col-sm-4">
-                        <img style="width:360px" src="/img/ourstory/4.jpg">
-                    </div>
-                </div>
-                <div class="col-sm-12" style="padding-top:15px;">
-                    <div class="col-sm-4">
-                        <img style="width:360px" src="/img/ourstory/office_3.jpg">
-                    </div>
-                    <div class="col-sm-4">
-                        <img style="width:360px" src="/img/ourstory/9.jpg">
-                    </div>
-                    <div class="col-sm-4">
-                        <img style="width:360px" src="/img/ourstory/10.jpg">
-                    </div>
-                </div>
-            </div>
-
-            <div id="timeline" class="row" style="display:none;">
-                <img style="width:50%; margin-left: 25%;" class="timelineimg" src="/img/timeline.png">
-            </div>
-
-            <hr style="margin-top: 60px; margin-bottom:30px;">
-
-            <div class="row text-center">
-                <div class="col-sm-12">
-                    <h2> Ready to join us for the rest of the journey? </h2>
+                    <h2> Ready to invest? </h2>
                     <a href="/invest/apply.html" target="_blank" class="btn btn-lg _btn_buy" style="padding-left: 45px; padding-right: 45px; margin-top:5px;">Invest Now</a>
                 </div>
             </div>
+            <hr style="margin-top: 50px; padding-top: 10px; margin-bottom: 0px;">
 
-            <hr style="margin-top: 30px; margin-bottom:30px;">
 
-
-            <div style="padding-top:100px">
+            <div style="padding-top:60px">
                 <p> SEC Disclaimer and Forward-Looking Statements </p>
 
                 <p> AN OFFERING STATEMENT REGARDING THIS OFFERING HAS BEEN FILED WITH THE SEC. THE SEC HAS QUALIFIED THAT OFFERING STATEMENT, WHICH ONLY MEANS THAT THE COMPANY MAY MAKE SALES OF THE SECURITIES DESCRIBED BY THE OFFERING STATEMENT. IT DOES NOT
@@ -346,51 +360,11 @@
 
                 <p>YOU SHOULD READ THE OFFERING CIRCULAR BEFORE MAKING ANY INVESTMENT.</p>
 
-                <p> OFFERING DOCUMENTATION CAN BE FOUND AT <a href="../offering" target="_blank"> www.xyfindables.com/offering. </a></p>
+                <p> OFFERING DOCUMENTATION CAN BE FOUND AT <a href=""> www.xyfindables.com/offering. </a></p>
             </div>
         </div>
 
-        <script>
-            $("#overviewlink").on("click", function(e) {
-                e.preventDefault();
-                $("#overviewcontent").show();
-                $("#overviewbanner").show();
-                $("#overviewgallery").show();
-                $("#storybanner").hide();
-                $("#storycontent").hide();
-                $("#timelinecontent").hide();
-                $("#timeline").hide();
-                $("#timelineline").show();
-                $("#timelinebanner").hide();
 
-            });
-            $("#storylink").on("click", function(e) {
-                e.preventDefault();
-                $("#overviewcontent").hide();
-                $("#overviewgallery").hide();
-                $("#overviewbanner").hide();
-                $("#storycontent").show();
-                $("#storybanner").show();
-                $("#timelinecontent").hide();
-                $("#timeline").hide();
-                $("#timelineline").hide();
-                $("#timelinebanner").hide();
-
-            });
-            $("#timelinelink").on("click", function(e) {
-                e.preventDefault();
-                $("#overviewcontent").hide();
-                $("#overviewgallery").hide();
-                $("#overviewbanner").hide();
-                $("#storybanner").hide();
-                $("#storycontent").hide();
-                $("#timelinecontent").show();
-                $("#timeline").show();
-                $("#timelineline").show();
-                $("#timelinebanner").show();
-
-            });
-        </script>
     </section>
 
 
@@ -426,7 +400,7 @@
                         <li><a href="../contact-us">Contact Us</a></li>
                         <li><a href="http://https://www.xyfindit.com/" target="_blank">Products</a></li>
                         <li class="text-center"><a href="../our-story">Our Story</a></li>
-                        <li class="text-center"><a href="../Team">Team</a></li>
+                        <li class="text-center"><a href="../gallery">Gallery</a></li>
                         <li class="text-center"><a href="../team">Team</a></li>
                         <li class="text-center"><a href="../faq">FAQ</a></li>
                         <li class="text-center"><a target="_blank" href="https://my.xyfindit.com/">Sign In</a></li>
@@ -438,7 +412,6 @@
     <!--/#footer-->
 
     <div id="preload" style="display:none;"></div>
-
 
 
     <noscript>
@@ -478,36 +451,35 @@
         }
     </script>
 
-
+    <!-- Facebook Pixel Code -->
+    <script>
+        ! function(f, b, e, v, n, t, s) {
+            if (f.fbq) return;
+            n = f.fbq = function() {
+                n.callMethod ?
+                    n.callMethod.apply(n, arguments) : n.queue.push(arguments)
+            };
+            if (!f._fbq) f._fbq = n;
+            n.push = n;
+            n.loaded = !0;
+            n.version = '2.0';
+            n.queue = [];
+            t = b.createElement(e);
+            t.async = !0;
+            t.src = v;
+            s = b.getElementsByTagName(e)[0];
+            s.parentNode.insertBefore(t, s)
+        }(window,
+            document, 'script', 'https://connect.facebook.net/en_US/fbevents.js');
+        fbq('init', '322839541477444'); // Insert your pixel ID here.
+        fbq('track', 'PageView');
+    </script>
+    <noscript><img height="1" width="1" style="display:none"
+    src="https://www.facebook.com/tr?id=322839541477444&ev=PageView&noscript=1"
+    /></noscript>
+    <!-- DO NOT MODIFY -->
+    <!-- End Facebook Pixel Code -->
 
 </body>
-<!-- Facebook Pixel Code -->
-<script>
-    ! function(f, b, e, v, n, t, s) {
-        if (f.fbq) return;
-        n = f.fbq = function() {
-            n.callMethod ?
-                n.callMethod.apply(n, arguments) : n.queue.push(arguments)
-        };
-        if (!f._fbq) f._fbq = n;
-        n.push = n;
-        n.loaded = !0;
-        n.version = '2.0';
-        n.queue = [];
-        t = b.createElement(e);
-        t.async = !0;
-        t.src = v;
-        s = b.getElementsByTagName(e)[0];
-        s.parentNode.insertBefore(t, s)
-    }(window,
-        document, 'script', 'https://connect.facebook.net/en_US/fbevents.js');
-    fbq('init', '322839541477444'); // Insert your pixel ID here.
-    fbq('track', 'PageView');
-</script>
-<noscript><img height="1" width="1" style="display:none"
-src="https://www.facebook.com/tr?id=322839541477444&ev=PageView&noscript=1"
-/></noscript>
-<!-- DO NOT MODIFY -->
-<!-- End Facebook Pixel Code -->
 
 </html>

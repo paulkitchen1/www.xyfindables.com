@@ -24,141 +24,134 @@ var data = {
         "Patrick T.",
         "Paul K."
     ],
-    "team_detailed": [
-      {
-        "name": "Alex M.",
-        "img": "/img/Team/Alex.jpg",
-        "icon": "/img/Team/Alex_Funny.jpg",
-        "description": "Alex is one of our newest team members, but he has already taken on a vital role in the company as one of our lead developers. With his passion and skill centered on computer programming, Alex helps develop, repair, and design our applications and services. While he may be an exceptional programmer by trade, he is also a serious proffesional poker player (see the above poker face).",
-        "title": "Software Engineer"
-      },
-      {
-        "name": "Belzasar C.",
-        "img": "/img/Team/Belza.jpg",
-        "icon": "/img/Team/Belza_Funny.jpg",
-        "description": "Belzasar, or 'Belza', works as one of our Customer Service specialists. He has had several years of experience working in customer service and customer experience after graduating from San Diego State University. Besides working hard to help our customers, Belza also loves to play and enjoy music on a regular basis. He plays the guitar and sings at local venues.",
-        "title": "Support Agent"
-      },
-      {
-        "name": "Bryan V.",
-        "img": "/img/Team/Bryan.jpg",
-        "icon": "/img/Team/Bryan_Funny.jpg",
-        "description": "Bryan works as one of our Customer Service specialists. Bryan has been working as customer service for various companies while he earns his degree in Geological Sciences from San Diego State University. Besides rocks and fossils Bryan enjoys music as well as playing his guitar. Once he graduates he hopes to get a job at Geothermal Plants.",
-        "title": "Support Agent"
-    }, {
-        "name": "Caroline W.",
-        "img": "/img/Team/Caroline.jpg",
-        "icon": "/img/Team/Caroline_Funny.jpg",
-        "description": "Caroline is the Social Media Coordinator for XY The Findables Company since 2016. Caroline graduated with a Bachelor of Arts in Business Studies with Event Management from Limerick Institute of Technology in her native country Ireland and has over 4 years experience in Marketing, Events and Social Media. When Caroline isn't working alongside her partner in crime Marissa she teaches the XY team some phrases in Irish and practices her American accent.",
-        "title": "Marketing Specialist"
-    }, {
-        "name": "Christine S.",
-        "img": "/img/Team/Christine.jpg",
-        "icon": "/img/Team/Christine_Funny.jpg",
-       "description": "Christine has an extensive background in Mathematics and has worked in upper management for the past 5 years. Most recently, she has been at XY as the Sr. Data and Marketing Analyst and acts as the Investment Team Operations Manager. Originally from Minnesota, she moved to sunny San Diego to escape the tundra in 2012. Christine is also a local musician and can be seen playing around town in boardshorts and a tank-top.",
-        "title": "Sr. Data Analyst"
-    }, {
-        "name": "Donald P.",
-        "img": "/img/Team/Donald.jpg",
-        "icon": "/img/Team/Donald_Funny.jpg",
-        "description": "Donald is a full-stack web application developer with over 15 years experience.  From concept to creation; measuring and revising, he has an in-depth understanding of the product down pixel, up to the cloud and every process in between.  When not coding he spends his time studying the art of smoke curing meats and training for triathlons.",
-        "title": "Software Engineer"
-    },
-    {
-        "name": "Emily M.",
-        "img": "/img/Team/Emily.jpg",
-        "icon": "/img/Team/Emily_Funny.jpg",
-        "description": "Emily is the Investment Experience Manager handling investor relations and  HR for the investment team. She received her Bachelor's Degrees in Political Science and French from San Diego State University and has spent time living abroad. In her free time she enjoys acting in San Diego community theater.",
-        "title": "Investment Experience Manager"
-    },
-      {
-        "name": "Gabriela D.",
-        "img": "/img/Team/Gabby.jpg",
-        "icon": "/img/Team/Gabby_Funny.jpg",
-        "description": "Gabriela is our Customer Service Manager and has been with XY Findables since January 2016. Gabriela has over 5 years of customer service experience. Gabriela obtained a Bachelor’s degree in Anthropological Archaeology from the University of California, San Diego. When she's not assisting our customers, she’s off excavating in various parts of the Middle East and East Africa. ",
-        "title": "Support Manager"
-    },
-
-      {
-          "name": "John M.",
-          "img": "/img/Team/Murko.jpg",
-          "icon": "/img/Team/Murko_Funny.jpg",
-          "description": "John is currently in his third year of studying computer science at University of California, San Diego. He has worked as an software intern at XY Find It for two summers. In his spare time, John uses his artistic talents to draw cartoons, some of which can be found around the office. Fun fact: before John graduated high school and came to XY, he worked as the character mascot at Chuck E. Cheese's.",
-          "title": "Software Intern"
-      },
-       {
-        "name": "John P.",
-        "img": "/img/Team/John.jpg",
-        "icon": "/img/Team/John_Funny.jpg",
-        "description": "John is a passionate computer scientist with an emphasis in software engineering, particularly in app design and graphics.  He has a degree in Computer Science from the University of California, San Diego.  In his spare time, John loves recording music and 3D modeling / game design.",
-        "title": "Software Engineer"
-    }, {
-        "name": "Johnny K.",
-        "img": "/img/Team/Johnny.jpg",
-        "icon": "/img/Team/Johnny_Funny.jpg",
-        "description": "Johnny Kolasinski consulted on our successful 2014 Kickstarter and officially joined the team in 2015. Before coming to XY, Johnny worked in arts marketing and fundraising, most recently at Stanford Arts and Stanford Live, the university's performing arts organization. Johnny studied theatre at The Ohio University. Fun fact: Johnny's podcast, 'GoT Thrones,' was one of the top 50 entertainment-focused podcasts in the summer of 2016.",
-        "title": "Business Development Manager"
-    }, {
-        "name": "Jordan T.",
-        "img": "/img/Team/Jordan.jpg",
-        "icon": "/img/Team/Jordan_Funny.jpg",
-        "description": "Jordan works with Christine as an Investment Team Leader, and she strives to create a strong group before she leaves in September for her third undergraduate year at the University in Chicago. Jordan is majoring in Visual Arts and also is a part of the selective UChicago Careers in Business Program. At XY, she coaches Investment Advisors, develops investment marketing channels, and helps run the company Twitter, Facebook, and Instagram. Fun Fact: Jordan loves to play video games, with favorites like World of Warcraft, Skyrim, and Zelda.",
-        "title": "Investment Team Leader"
-    }, {
-        "name": "Josh P.",
-        "img": "/img/Team/Josh.jpg",
-        "icon": "/img/Team/Josh_Funny.jpg",
-        "description": "Josh works with Paul and Lee in photography, videography, 3D design, graphic design, and web design. He is a junior at UC San Diego and is pursuing a degree in Speculative Design before graduate school. Besides that, he works as a freelance graphic designer and videographer on the side and enjoys partnering with local artists and businesses. In his spare time, Josh loves playing the drums and making 3D architectural and character models.",
-        "title": "Graphics and Web Intern"
-    }, {
-        "name": "Lee K.",
-        "img": "/img/Team/Lee.jpg",
-        "icon": "/img/Team/Lee_Funny.jpg",
-        "description": "Arie and Lee have been working together so long their friendship bracelets have long since fused to their wrists. As creative director of XY | The Findables Company, Lee is responsible for making things look pretty.  Anything that looks ugly, was Josh's fault. As a designer with diverse skills, Lee has created UI/UX as well as product designs for multiple Fortune 500 Companies, including, Verizon, Microsoft, and Nike.  Lee is also an accomplished artist in the film industry working on such projects as Star Wars, Dr Who, Voltron, The Avengers, X-Files, and more.",
-        "title": "Art Director"
-    }, {
-        "name": "Louie T.",
-        "img": "/img/Team/Louie.jpg",
-        "icon": "/img/Team/Louie_Funny.jpg",
-        "description": "Louie manages our inventory, shipping, and IT and is a vital and founding member of our team. He's known Arie since college, and he has worked at XY tirelessly since its inception. He attended university in New York before moving out to California to start his career. In his free time, Louie runs a local anime group and loves to play video games with Josh and his other friends.",
-        "title": "Warehouse Manager"
-    }, {
-        "name": "Maria C.",
-        "img": "/img/Team/Maria.jpg",
-        "icon": "/img/Team/Maria_Funny.jpg",
-        "description": "Account Manager Maria comes from the world of retail management and has been part of the XY Findables team since June of 2016.  She uses her years of retail experience to bridge the needs of the marketplace and the realities of working at a startup.  When she isn’t busy sending out invoices or trying to beat the FedEx cut off times she enjoys spending time her husband and son.  Maria’s hobbies include going to way too many comic conventions and catching up on all things Star Trek.",
-        "title": "Business Facilitator"
-    }, {
-        "name": "Marissa O.",
-        "img": "/img/Team/Marissa.jpg",
-        "icon": "/img/Team/Marissa_Funny.jpg",
-        "description": "As Marketing Specialist at XY the Findables Company, Marissa approaches marketing not only as a profession, but as a creative and artistic outlet. Marissa graduated from Arizona State University with a Bachelor of Science in Sociology and a minor in Communications. She thrives to stay up on inspiring designs and marketing content while finding efficient ways of connecting it to the community. When she’s not in the office fighting internet trolls with Caroline, she’s either hiking, traveling, or holding one sided convos with her cat Al and dog Odie. Fun fact, her nickname is Moose (but you’ll never guess why).",
-        "title": "Marketing Specialist"
-    }, {
-        "name": "Maryann C.",
-        "img": "/img/Team/Maryann.jpg",
-        "icon": "/img/Team/Maryann_Funny.jpg",
-        "description": "Maryann has been a member of the XY Findables customer service and technical support team since July of 2016, and also covers phone and office reception. She worked as a freelancer for local San Diego web development companies for most of her career, in addition to having experience in data curation and assisting in alternative club and concert promotion. Her passions include literature, live music, and the gothic subculture.",
-        "title": "Support Agent"
-    }, {
-        "name": "Patrick P.",
-        "img": "/img/Team/Patrick.jpg",
-        "icon": "/img/Team/Patrick_Funny.jpg",
-        "description": "Patrick is currently serving as our Product Experience Manager. Recently returned to his native San Diego — he felt that, instead of waiting for the future to happen, he should help build it. Patrick is proud to be with the company and focuses his extensive background in both technical theater and customer support to provide a world-class empathetic and grounded approach to his role. Patrick is also an enthusiastic amateur game designer, history nerd, and writer who has a BA in Classical Humanities. “This above all: to thine own self be true.”",
-        "title": "Product Experience Manager"
-    }, {
-        "name": "Patrick T.",
-        "img": "/img/Team/Pat.jpg",
-        "icon": "/img/Team/Pat_Funny.jpg",
-        "description": "Patrick, or 'Pat', has a wide variety of skills from his 20+ years Freelance Commercial and Nature photography, 12 years of business management, and 11 years in animal husbandry. From joining XY close to the very beginning up until today, he has helped in commercial photography and in shipping and has helped facilitate a tight-knit culture at the company. In his free time, he enjoys taking road trips to out of the way destinations just for the heck of it. Has a collection of different types of scorpions from around the world. He also has 6 cats! ",
-        "title": "Warehouse Associate"
-    }, {
-        "name": "Paul K.",
-        "img": "/img/Team/Paul.jpg",
-        "icon": "/img/Team/Paul_Funny.jpg",
-        "description": "Paul is a veteran software engineer with almost 18 years of experience. He handles all our front-facing programming including our websites, our data management, and our online shop. Paul graduated from San Diego State University with a degree in Computer Science and has helped multiple companies succeed in the past. In his free time, Paul plans to launch his own restaurant chain of fast-food Fillets called 'Paul's Kitchen'.",
-        "title": "Software Engineer"
-    }],
+    "team_detailed": [{
+            "name": "Alex M.",
+            "img": "/img/Team/Alex.jpg",
+            "icon": "/img/Team/Alex_Funny.jpg",
+            "description": "Alex is one of our newest team members, but he has already taken on a vital role in the company as one of our lead developers. With his passion and skill centered on computer programming, Alex helps develop, repair, and design our applications and services. While he may be an exceptional programmer by trade, he is also a serious proffesional poker player (see the above poker face).",
+            "title": "Software Engineer"
+        }, {
+            "name": "Belzasar C.",
+            "img": "/img/Team/Belza.jpg",
+            "icon": "/img/Team/Belza_Funny.jpg",
+            "description": "Belzasar, or 'Belza', works as one of our Customer Service specialists. He has had several years of experience working in customer service and customer experience after graduating from San Diego State University. Besides working hard to help our customers, Belza also loves to play and enjoy music on a regular basis. He plays the guitar and sings at local venues.",
+            "title": "Support Agent"
+        }, {
+            "name": "Bryan V.",
+            "img": "/img/Team/Bryan.jpg",
+            "icon": "/img/Team/Bryan_Funny.jpg",
+            "description": "Bryan works as one of our Customer Service specialists. Bryan has been working as customer service for various companies while he earns his degree in Geological Sciences from San Diego State University. Besides rocks and fossils Bryan enjoys music as well as playing his guitar. Once he graduates he hopes to get a job at Geothermal Plants.",
+            "title": "Support Agent"
+        }, {
+            "name": "Caroline W.",
+            "img": "/img/Team/Caroline.jpg",
+            "icon": "/img/Team/Caroline_Funny.jpg",
+            "description": "Caroline is the Social Media Coordinator for XY The Findables Company since 2016. Caroline graduated with a Bachelor of Arts in Business Studies with Event Management from Limerick Institute of Technology in her native country Ireland and has over 4 years experience in Marketing, Events and Social Media. When Caroline isn't working alongside her partner in crime Marissa she teaches the XY team some phrases in Irish and practices her American accent.",
+            "title": "Marketing Specialist"
+        }, {
+            "name": "Christine S.",
+            "img": "/img/Team/Christine.jpg",
+            "icon": "/img/Team/Christine_Funny.jpg",
+            "description": "Christine has an extensive background in Mathematics and has worked in upper management for the past 5 years. Most recently, she has been at XY as the Sr. Data and Marketing Analyst and acts as the Investment Team Operations Manager. Originally from Minnesota, she moved to sunny San Diego to escape the tundra in 2012. Christine is also a local musician and can be seen playing around town in boardshorts and a tank-top.",
+            "title": "Sr. Data Analyst"
+        }, {
+            "name": "Donald P.",
+            "img": "/img/Team/Donald.jpg",
+            "icon": "/img/Team/Donald_Funny.jpg",
+            "description": "Donald is a full-stack web application developer with over 15 years experience.  From concept to creation; measuring and revising, he has an in-depth understanding of the product down pixel, up to the cloud and every process in between.  When not coding he spends his time studying the art of smoke curing meats and training for triathlons.",
+            "title": "Software Engineer"
+        }, {
+            "name": "Gabriela D.",
+            "img": "/img/Team/Gabby.jpg",
+            "icon": "/img/Team/Gabby_Funny.jpg",
+            "description": "Gabriela is our Customer Service Manager and has been with XY Findables since January 2016. Gabriela has over 5 years of customer service experience. Gabriela obtained a Bachelor’s degree in Anthropological Archaeology from the University of California, San Diego. When she's not assisting our customers, she’s off excavating in various parts of the Middle East and East Africa. ",
+            "title": "Support Manager"
+        }, {
+            "name": "John M.",
+            "img": "/img/Team/Murko.jpg",
+            "icon": "/img/Team/Murko_Funny.jpg",
+            "description": "John is currently in his third year of studying computer science at University of California, San Diego. He has worked as an software intern at XY Find It for two summers. In his spare time, John uses his artistic talents to draw cartoons, some of which can be found around the office. Fun fact: before John graduated high school and came to XY, he worked as the character mascot at Chuck E. Cheese's.",
+            "title": "Software Intern"
+        }, {
+            "name": "John P.",
+            "img": "/img/Team/John.jpg",
+            "icon": "/img/Team/John_Funny.jpg",
+            "description": "John is a passionate computer scientist with an emphasis in software engineering, particularly in app design and graphics.  He has a degree in Computer Science from the University of California, San Diego.  In his spare time, John loves recording music and 3D modeling / game design.",
+            "title": "Software Engineer"
+        }, {
+            "name": "Johnny K.",
+            "img": "/img/Team/Johnny.jpg",
+            "icon": "/img/Team/Johnny_Funny.jpg",
+            "description": "Johnny Kolasinski consulted on our successful 2014 Kickstarter and officially joined the team in 2015. Before coming to XY, Johnny worked in arts marketing and fundraising, most recently at Stanford Arts and Stanford Live, the university's performing arts organization. Johnny studied theatre at The Ohio University. Fun fact: Johnny's podcast, 'GoT Thrones,' was one of the top 50 entertainment-focused podcasts in the summer of 2016.",
+            "title": "Business Development Manager"
+        }, {
+            "name": "Jordan T.",
+            "img": "/img/Team/Jordan.jpg",
+            "icon": "/img/Team/Jordan_Funny.jpg",
+            "description": "Jordan works with Christine as an Investment Team Leader, and she strives to create a strong group before she leaves in September for her third undergraduate year at the University in Chicago. Jordan is majoring in Visual Arts and also is a part of the selective UChicago Careers in Business Program. At XY, she coaches Investment Advisors, develops investment marketing channels, and helps run the company Twitter, Facebook, and Instagram. Fun Fact: Jordan loves to play video games, with favorites like World of Warcraft, Skyrim, and Zelda.",
+            "title": "Investment Team Leader"
+        }, {
+            "name": "Josh P.",
+            "img": "/img/Team/Josh.jpg",
+            "icon": "/img/Team/Josh_Funny.jpg",
+            "description": "Josh works with Paul and Lee in photography, videography, 3D design, graphic design, and web design. He is a junior at UC San Diego and is pursuing a degree in Speculative Design before graduate school. Besides that, he works as a freelance graphic designer and videographer on the side and enjoys partnering with local artists and businesses. In his spare time, Josh loves playing the drums and making 3D architectural and character models.",
+            "title": "Graphics and Web Intern"
+        }, {
+            "name": "Lee K.",
+            "img": "/img/Team/Lee.jpg",
+            "icon": "/img/Team/Lee_Funny.jpg",
+            "description": "Arie and Lee have been working together so long their friendship bracelets have long since fused to their wrists. As creative director of XY | The Findables Company, Lee is responsible for making things look pretty.  Anything that looks ugly, was Josh's fault. As a designer with diverse skills, Lee has created UI/UX as well as product designs for multiple Fortune 500 Companies, including, Verizon, Microsoft, and Nike.  Lee is also an accomplished artist in the film industry working on such projects as Star Wars, Dr Who, Voltron, The Avengers, X-Files, and more.",
+            "title": "Art Director"
+        }, {
+            "name": "Louie T.",
+            "img": "/img/Team/Louie.jpg",
+            "icon": "/img/Team/Louie_Funny.jpg",
+            "description": "Louie manages our inventory, shipping, and IT and is a vital and founding member of our team. He's known Arie since college, and he has worked at XY tirelessly since its inception. He attended university in New York before moving out to California to start his career. In his free time, Louie runs a local anime group and loves to play video games with Josh and his other friends.",
+            "title": "Warehouse Manager"
+        }, {
+            "name": "Maria C.",
+            "img": "/img/Team/Maria.jpg",
+            "icon": "/img/Team/Maria_Funny.jpg",
+            "description": "Account Manager Maria comes from the world of retail management and has been part of the XY Findables team since June of 2016.  She uses her years of retail experience to bridge the needs of the marketplace and the realities of working at a startup.  When she isn’t busy sending out invoices or trying to beat the FedEx cut off times she enjoys spending time her husband and son.  Maria’s hobbies include going to way too many comic conventions and catching up on all things Star Trek.",
+            "title": "Business Facilitator"
+        }, {
+            "name": "Marissa O.",
+            "img": "/img/Team/Marissa.jpg",
+            "icon": "/img/Team/Marissa_Funny.jpg",
+            "description": "As Marketing Specialist at XY the Findables Company, Marissa approaches marketing not only as a profession, but as a creative and artistic outlet. Marissa graduated from Arizona State University with a Bachelor of Science in Sociology and a minor in Communications. She thrives to stay up on inspiring designs and marketing content while finding efficient ways of connecting it to the community. When she’s not in the office fighting internet trolls with Caroline, she’s either hiking, traveling, or holding one sided convos with her cat Al and dog Odie. Fun fact, her nickname is Moose (but you’ll never guess why).",
+            "title": "Marketing Specialist"
+        }, {
+            "name": "Maryann C.",
+            "img": "/img/Team/Maryann.jpg",
+            "icon": "/img/Team/Maryann_Funny.jpg",
+            "description": "Maryann has been a member of the XY Findables customer service and technical support team since July of 2016, and also covers phone and office reception. She worked as a freelancer for local San Diego web development companies for most of her career, in addition to having experience in data curation and assisting in alternative club and concert promotion. Her passions include literature, live music, and the gothic subculture.",
+            "title": "Support Agent"
+        }, {
+            "name": "Monique A.",
+            "img": "/img/Team/Monique.jpg",
+            "icon": "/img/Team/Monique_Funny.jpg",
+            "description": "Since obtaining her Bachelor's Degree in Communication at San Diego State University in 2014, Monique has worked in the Marketing and Customer Service fields. Her ambition to continue to learn and grow has landed her a number of professional opportunities both abroad and in state. When she’s not handling XY’s investor interests you can find her exploring San Diego, trying the latest craft beers and preparing for her next camping adventure.",
+            "title": "Investment Experience Manager"
+        }, {
+            "name": "Patrick P.",
+            "img": "/img/Team/Patrick.jpg",
+            "icon": "/img/Team/Patrick_Funny.jpg",
+            "description": "Patrick is currently serving as our Product Experience Manager. Recently returned to his native San Diego — he felt that, instead of waiting for the future to happen, he should help build it. Patrick is proud to be with the company and focuses his extensive background in both technical theater and customer support to provide a world-class empathetic and grounded approach to his role. Patrick is also an enthusiastic amateur game designer, history nerd, and writer who has a BA in Classical Humanities. “This above all: to thine own self be true.”",
+            "title": "Product Experience Manager"
+        }, {
+            "name": "Patrick T.",
+            "img": "/img/Team/Pat.jpg",
+            "icon": "/img/Team/Pat_Funny.jpg",
+            "description": "Patrick, or 'Pat', has a wide variety of skills from his 20+ years Freelance Commercial and Nature photography, 12 years of business management, and 11 years in animal husbandry. From joining XY close to the very beginning up until today, he has helped in commercial photography and in shipping and has helped facilitate a tight-knit culture at the company. In his free time, he enjoys taking road trips to out of the way destinations just for the heck of it. Has a collection of different types of scorpions from around the world. He also has 6 cats! ",
+            "title": "Warehouse Associate"
+        }, {
+            "name": "Paul K.",
+            "img": "/img/Team/Paul.jpg",
+            "icon": "/img/Team/Paul_Funny.jpg",
+            "description": "Paul is a veteran software engineer with almost 18 years of experience. He handles all our front-facing programming including our websites, our data management, and our online shop. Paul graduated from San Diego State University with a degree in Computer Science and has helped multiple companies succeed in the past. In his free time, Paul plans to launch his own restaurant chain of fast-food Fillets called 'Paul's Kitchen'.",
+            "title": "Software Engineer"
+        }
+    ],
     "management_detailed": [{
         "name": "Arie T.",
         "img": "/img/Team/Arie.jpg",
@@ -177,7 +170,13 @@ var data = {
 /*
 
 
-
+{
+    "name": "Emily M.",
+    "img": "/img/Team/Emily.jpg",
+    "icon": "/img/Team/Emily_Funny.jpg",
+    "description": "Emily is the Investment Experience Manager handling investor relations and  HR for the investment team. She received her Bachelor's Degrees in Political Science and French from San Diego State University and has spent time living abroad. In her free time she enjoys acting in San Diego community theater.",
+    "title": "Investment Experience Manager"
+},
 
 
 */
