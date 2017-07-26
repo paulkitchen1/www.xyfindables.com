@@ -117,6 +117,7 @@
             width: 100%;
             transition: 0.2s;
             opacity: .95;
+            padding-bottom:30px;
         }
 
         .galleryimage img:hover {
@@ -127,7 +128,12 @@
             opacity: 1;
         }
 
-        .bold {}
+        @media (min-width:766px) and (max-width: 1200px){
+          .galleryimage img {
+            padding-left:30px;
+            padding-right:30px;
+          }
+        }
 
         @media (min-width:768px) {
             .text-description {
@@ -160,6 +166,14 @@
             .timelineimg {
                 width: 90% !important;
                 margin-left: 5% !important;
+            }
+
+            .galleryimage {
+              text-align: center;
+            }
+
+            .galleryimage img {
+              padding-right:14px;
             }
         }
     </style>
@@ -299,38 +313,32 @@
             <hr id="timelineline" style="margin-top: 20px; margin-bottom: 50px;">
 
             <div id="overviewgallery" class="row galleryimage">
-                <div class="col-sm-12">
-                    <div class="col-sm-4">
-                        <img style="width:360px" src="/img/ourstory/office_4.jpg">
-                    </div>
-                    <div class="col-sm-4">
-                        <img style="width:360px" src="/img/ourstory/5.jpg">
-                    </div>
-                    <div class="col-sm-4">
-                        <img style="width:360px" src="/img/ourstory/8.jpg">
-                    </div>
+                <div class="col-md-4 col-sm-6">
+                    <img style="width:360px" src="/img/ourstory/office_4.jpg">
                 </div>
-                <div class="col-sm-12" style="padding-top:15px;">
-                    <div class="col-sm-4">
-                        <img style="width:360px" src="/img/ourstory/3.jpg">
-                    </div>
-                    <div class="col-sm-4">
-                        <img style="width:360px" src="/img/ourstory/kitchen_2.jpg">
-                    </div>
-                    <div class="col-sm-4">
-                        <img style="width:360px" src="/img/ourstory/4.jpg">
-                    </div>
+                <div class="col-md-4 col-sm-6">
+                    <img style="width:360px" src="/img/ourstory/5.jpg">
                 </div>
-                <div class="col-sm-12" style="padding-top:15px;">
-                    <div class="col-sm-4">
-                        <img style="width:360px" src="/img/ourstory/office_3.jpg">
-                    </div>
-                    <div class="col-sm-4">
-                        <img style="width:360px" src="/img/ourstory/9.jpg">
-                    </div>
-                    <div class="col-sm-4">
-                        <img style="width:360px" src="/img/ourstory/10.jpg">
-                    </div>
+                <div class="col-md-4 col-sm-6">
+                    <img style="width:360px" src="/img/ourstory/8.jpg">
+                </div>
+                <div class="col-md-4 col-sm-6">
+                    <img style="width:360px" src="/img/ourstory/3.jpg">
+                </div>
+                <div class="col-md-4 col-sm-6">
+                    <img style="width:360px" src="/img/ourstory/kitchen_2.jpg">
+                </div>
+                <div class="col-md-4 col-sm-6">
+                    <img style="width:360px" src="/img/ourstory/4.jpg">
+                </div>
+                <div class="col-md-4 col-sm-6">
+                    <img style="width:360px" src="/img/ourstory/office_3.jpg">
+                </div>
+                <div class="col-md-4 col-sm-6">
+                    <img style="width:360px" src="/img/ourstory/9.jpg">
+                </div>
+                <div class="col-md-4 col-sm-6">
+                    <img style="width:360px" src="/img/ourstory/10.jpg">
                 </div>
             </div>
 
