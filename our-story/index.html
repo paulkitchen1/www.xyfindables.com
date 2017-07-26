@@ -113,6 +113,20 @@
             display: inline-block;
         }
 
+        .galleryimage img {
+            width: 100%;
+            transition: 0.2s;
+            opacity: .95;
+        }
+
+        .galleryimage img:hover {
+            transform: scale(1.05);
+            -webkit-transform: scale(1.05);
+            -o-transform: scale(1.05);
+            -moz-transform: scale(1.05);
+            opacity: 1;
+        }
+
         .bold {}
 
         @media (min-width:768px) {
@@ -284,7 +298,7 @@
 
             <hr id="timelineline" style="margin-top: 20px; margin-bottom: 50px;">
 
-            <div id="overviewgallery" class="row ">
+            <div id="overviewgallery" class="row galleryimage">
                 <div class="col-sm-12">
                     <div class="col-sm-4">
                         <img style="width:360px" src="/img/ourstory/office_4.jpg">
