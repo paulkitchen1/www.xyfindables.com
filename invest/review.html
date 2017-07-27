@@ -205,6 +205,25 @@ src="https://www.facebook.com/tr?id=322839541477444&ev=PageView&noscript=1"
             display: inline-block;
         }
 
+        @media (min-width:990px) {
+            .hear {
+                text-align: right !important;
+            }
+            .hearform {
+                margin-left: -20px !important;
+                padding-left: 0px !important;
+            }
+            .sendbtn {
+                margin-left: -145px !important;
+            }
+            .formstuff {
+                margin-left: 125px;
+            }
+            .center {
+                margin-top: 25px !important;
+            }
+        }
+
         @media (min-width:768px) {
             .text-description {
                 margin-top: 7%;
@@ -232,6 +251,13 @@ src="https://www.facebook.com/tr?id=322839541477444&ev=PageView&noscript=1"
             }
             .seal {
                 margin-top: 30px !important;
+            }
+            .hear {
+                font-size: 18px;
+            }
+            .sendbtn .btn {
+                padding-left: 100px !important;
+                padding-right: 100px !important;
             }
         }
     </style>
@@ -315,13 +341,38 @@ src="https://www.facebook.com/tr?id=322839541477444&ev=PageView&noscript=1"
                     </div>
                 </div>
                 <div class="col-sm-12">
-                    <hr style="margin-top:35px; margin-bottom: 25px;">
+                    <hr style="margin-top: 40px; margin-bottom: 40px;">
                 </div>
+
+                <div class="formstuff" id="frmInvestInfo" style="text-align:center;">
+                    <div class="col-sm-4">
+                        <h4 class="hear"> How did you hear about us? </h4>
+                    </div>
+                    <div class="col-sm-4">
+                        <form id="frmHowHear" style="padding: 10px;">
+                            <select name="howhear" style="padding: 10px;">
+                              <option value="onlineAd">Online Ad</option>
+                              <option value="friend">Through a Friend</option>
+                              <option value="advisor">Called an investment Advisor</option>
+                              <option value="google">Google Search</option>
+                              <option value="other">Other</option>
+                            </select>
+                        </form>
+                    </div>
+                    <div class="col-sm-2" style="margin-top: 13px;">
+                        <div class="sendbtn">
+                            <div class="btn btn-info send-code" style="Padding-left:30px; padding-right:30px;">Send</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-sm-12 text-center hiddenbtn" name="hiddenbtn" style=" margin-bottom: 15px; display:none;">
+                    <a href="/" class="btn btn-lg _btn_buy " style="padding-left: 35px; padding-right: 35px; color:#505050 !important; margin-top:10px; background-color:transparent !important; border-color:#505050 ;">Back to Home</a>
+                    <a href="/perks" class="btn btn-lg _btn_buy wonky" style="padding-left: 47px; padding-right: 47px; margin-top:10px;">Perks Page</a>
+                </div>
+
             </div>
-            <div class="col-sm-12 text-center" style="margin-top:20px; margin-bottom:0px;">
-                <a href="/" class="btn btn-lg _btn_buy " style="padding-left: 35px; padding-right: 35px; color:#505050 !important; margin-top:10px; background-color:transparent !important; border-color:#505050 ;">Back to Home</a>
-                <a href="/perks" class="btn btn-lg _btn_buy wonky" style="padding-left: 47px; padding-right: 47px; margin-top:10px;">Perks Page</a>
-            </div>
+        </div>
     </section>
 
     <div class="center" style="margin-top:55px; padding-bottom:0">
@@ -364,6 +415,14 @@ src="https://www.facebook.com/tr?id=322839541477444&ev=PageView&noscript=1"
                         </div>
                     </div>
                 </div>
+
+                <div class="col-sm-12">
+                    <hr style="margin-top:35px; margin-bottom: 25px;">
+                </div>
+            </div>
+            <div class="col-sm-12 text-center" style="margin-top:20px; margin-bottom:0px;">
+                <a href="/" class="btn btn-lg _btn_buy " style="padding-left: 35px; padding-right: 35px; color:#505050 !important; margin-top:10px; background-color:transparent !important; border-color:#505050 ;">Back to Home</a>
+                <a href="/perks" class="btn btn-lg _btn_buy wonky" style="padding-left: 47px; padding-right: 47px; margin-top:10px;">Perks Page</a>
             </div>
         </div>
     </section>
@@ -463,6 +522,34 @@ src="https://www.facebook.com/tr?id=322839541477444&ev=PageView&noscript=1"
         }
     </script>
 
+    <script>
+        function getcode() {
+            $.ajax({
+                url: "https://www.xyfindit.com/api/HowHear",
+                type: "Post",
+                method: "Post",
+                timeout: 5000,
+                data: $("#frmHowHear").serialize(),
+                dataType: "text",
+                success: function(data) {
+                },
+            });
+        }
+
+        function showCode(data) {
+            $(".content-text").html(
+                '<h2>Thank you!</h2><div style="padding:2px;margin-top:5px;margin-bottom:20px;overflow:visible"><input type="text" readonly style="font-weight:bold;font-size:125%;display:block;margin:auto;line-height:30px" class="text-center" value="' +
+                data +
+                '"></input></div><p style="margin-bottom:20px"></p><a class="close" style="position:absolute;bottom:4px;right:35px">close</a>'
+            );
+          }
+
+        $(".send-code").click(function() {
+            getcode();
+            $(".formstuff").fadeOut();
+            $(".hiddenbtn").fadeIn();
+        })
+    </script>
 
 
 </body>
