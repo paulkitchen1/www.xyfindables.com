@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>The Findables Market | XY - The Findables Company™</title>
+    <title>Our Story | XY - The Findables Company™</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="description" content="Invest in XY The Findables Company today!">
     <meta property="og:title" content="Join the movement and invest in XY The Findables Company - now Reg A+ certified! ">
@@ -34,7 +34,6 @@
 
 
     <script src="//cdn.zarget.com/147218/357465.js"></script>
-
 
     <script>
         (function(i, s, o, g, r, a, m) {
@@ -114,9 +113,31 @@
             display: inline-block;
         }
 
-        td {
-            padding: 7px;
-            padding-right: 12px;
+        .galleryimage img {
+            width: 100%;
+            transition: 0.2s;
+            opacity: .95;
+            padding-bottom: 30px;
+        }
+
+        .galleryimage img:hover {
+            transform: scale(1.05);
+            -webkit-transform: scale(1.05);
+            -o-transform: scale(1.05);
+            -moz-transform: scale(1.05);
+            opacity: 1;
+        }
+
+        .ableslist li {
+            font-size: 18px;
+            padding: 15px;
+        }
+
+        @media (min-width:766px) and (max-width: 1200px) {
+            .galleryimage img {
+                padding-left: 30px;
+                padding-right: 30px;
+            }
         }
 
         @media (min-width:768px) {
@@ -129,18 +150,40 @@
             .phones .text-description {
                 margin-top: 12%;
             }
+            .hrlink {
+                display: none;
+            }
+            .textlink {
+                margin-top: 85px;
+            }
+            .textlink .col-sm-3 {
+                margin-top: 5px !important;
+            }
         }
 
         @media (max-width:767px) {
             .text-description {
                 margin-bottom: 7%;
             }
-            .ourgoal h2 {
-                font-size: 20px;
+            .gps-banner {
+                height: 300px !important;
+                background-position: -600 0px !important;
             }
-            .marketimg img {
-                width: 100% !important;
-                margin-left: 0% !important;
+            h1 {
+                text-align: center;
+            }
+            .textlink {
+                text-align: center !important;
+            }
+            .timelineimg {
+                width: 90% !important;
+                margin-left: 5% !important;
+            }
+            .galleryimage {
+                text-align: center;
+            }
+            .galleryimage img {
+                padding-right: 14px;
             }
         }
     </style>
@@ -172,8 +215,8 @@
                         <!--<li class="text-center"><a href="../team" >Team</a></li>-->
                         <li class="text-center"><a href="../faq">FAQ</a></li>
                         <li class="text-center visible-xs"><a href="../contact-us">Contact Us</a></li>
-                        <li class="text-center"><a href="">SEC Documents</a></li>
-                        <li class="text-center"><a class="btn _btn_buy" href="/invest/apply.html" style="border-color:white; border-radius:6px;">Invest Now</a></li>
+                        <li class="text-center"><a href="../offering">SEC Documents</a></li>
+                        <li class="text-center"><a class="btn _btn_buy" href="/invest/apply.html" target="blank" style="border-color:white; border-radius:6px;">Invest Now</a></li>
 
                     </ul>
                 </div>
@@ -183,100 +226,147 @@
         <!--/nav-->
     </header>
 
-    <div class="center" style="margin-top:55px; padding-bottom:0">
-        <div class="gps-banner text-center col-xs-12" style="padding:0px;">
-            <img style="width:100%; padding:0px;" class="img-responsive" src="/img/banner/market_banner.jpg">
+    <div id="overviewbanner">
+        <div class="center" style="margin-top:55px; padding-bottom:0">
+            <div class="gps-banner text-center col-xs-12" style="padding:0px; height:500px; background-image:url(/img/banner/market_banner_2.jpg); background-size: cover; background-position: center center;">
+            </div>
+            <div class="text-center col-xs-12 story-banner-margin">
+            </div>
         </div>
-        <div class="text-center col-xs-12" style="margin: 25px 0 20px 0;">
-            <h1 style="font-size:3em; padding-top:0px; margin-top:30px">The Findables Market</h1>
-        </div>
-
     </div>
-
-    <div class="col-sm-12" style="margin-bottom:30px;">
-        <hr>
+    <div id="storybanner" style="display:none;">
+        <div class="center" style="margin-top:55px; padding-bottom:0">
+            <div class="gps-banner text-center col-xs-12" style="padding:0px; height:500px; background-image:url(/img/banner/market_banner_2.jpg); background-size: cover; background-position: center center;">
+            </div>
+            <div class="text-center col-xs-12 story-banner-margin">
+            </div>
+        </div>
+    </div>
+    <div id="timelinebanner" style="display:none;">
+        <div class="center" style="margin-top:55px; padding-bottom:0">
+            <div class="gps-banner text-center col-xs-12" style="padding:0px; height:500px; background-image:url(/img/banner/market_banner_2.jpg); background-size: cover; background-position: center center;">
+            </div>
+            <div class="text-center col-xs-12 story-banner-margin">
+            </div>
+        </div>
     </div>
 
     <section>
         <div class="container">
             <div class="row">
-                <div class="col-sm-12 ourgoal" style="text-align:center;">
-                    <h2>"Our goal is to be the leader in the Findables space by defining it, producing the best quality products, and providing the best user and owner experiences." -Arie Trouw, CEO</h2>
 
-                </div>
-            </div>
-            <div class="row" style="padding-top: 20px;">
-                <div class="col-sm-12" style="font-size: 16px; line-height: 33px;">
-                    <p>
-                        At XY Findables, the crowdfunding ethos is in our blood. Our first supporters, customers, and evangelists were the early adopters of Kickstarter. It was their involvement and feedback that helped make the company a success. We think that equity
-                        crowdfunding, through <a href="https://university.xyfindables.com/what-is-reg-a-c87fbd78b6ed" target="_blank" />Regulation A+</a>, is a natural next step for a company like ours. It gives investors at all income levels
-                        a chance to be early adopters and gives our supporters a real stake in our success, one with the potential for tangible long-term rewards.
-                    </p>
-                </div>
-            </div>
+              <div class="col-md-3 col-sm-12 textlink">
+                  <div class="col-md-12 col-sm-4">
+                      <a id="overviewlink" href="">
+                          <h4 style="font-weight:600 !important;"> Introduction </h4>
+                      </a>
+                  </div>
+                  <div class="col-md-12 col-sm-4 ">
+                      <a id="storylink" href="">
+                          <h4 style="font-weight:600 !important;"> Findables Market </h4>
+                      </a>
+                  </div>
+                  <div class="col-md-12 col-sm-4 ">
+                      <a id="timelinelink" href="">
+                          <h4 style="font-weight:600 !important;"> Competitors </h4>
+                      </a>
+                  </div>
+              </div>
 
-            <div class="row">
-                <div class="col-sm-12 marketimg" style="paddng:0 !important;">
-                    <img src="/img/XYFindIt_SE_Unity_20_281_29.png" style="width: 70%; margin-left: 15%;">
-                </div>
-            </div>
-
-            <div class="col-sm-12" style="margin-top:10px;">
-                <p class="text-center" style="margin-bottom: 20px; margin-top: 30px;font-weight:bold">
-                    As Owner/Users, investors give us the support and feedback we need to define the Findables market and they share in our success.
-                </p>
-            </div>
-
-            <div class="col-sm-12" style="font-size:16px; padding-top: 30px;">
-                <p> In 2014, we experienced great success on Kickstarter. Our campaign pre-orders for the first generation of XY Finders surpassed $200,000, putting us in the top 1% of all Kickstarter projects. Following the campaign, we quickly accelerated
-                    our retail presence, both online and with third party retailers, and established distributor and branding partnerships.
-                </p>
-                <p style="padding-top:5px">Rather than being an exclusively Bluetooth Finder, GPS, QR sticker, or app company that uses different technologies and form-factors, we strive to build a complete Findables ecosystem, create product unity and define a market with overwhelming
-                    potential.
-                </p>
-                <p style="padding-top:5px">That potential is found in three burgeoning markets: wearables - technology you wear, nearables - “smart” technology that reacts to the environment, and Findables - technology that lets you monitor the whereabouts of things that matter
-                    to you.
-                </p>
-                <p style="padding-top:5px">In 2015, the wearables market was worth over $15 billion, whereas the nearables market stood just above the $200 million mark. By 2019, CCS Insight estimates that the wearables market will explode, growing to over $25 billion, while the
-                    nearables market is expected to surpass $4 billion over the same period.
-                </p>
-            </div>
+                <div class="col-sm-12 col-md-9" style="font-size:16px; margin-top:5px;">
+                    <div id="overviewcontent">
+                        <h1 style="margin-top:0px; !important">Introduction to Findables</h1>
+                        <hr>
+                        <div class="row">
+                            <div class="col-sm-12 ourgoal" style="text-align:left;">
+                                <h2 style="font-size:20px;">"Our goal is to be the leader in the Findables space by defining it, producing the best quality products, and providing the best user and owner experiences." -Arie Trouw, CEO</h2>
+                            </div>
+                        </div>
 
 
-            <div class="col-sm-12">
-                <hr style="margin-top:35px; margin-bottom:24px;">
-            </div>
+                        <div class="row">
+                            <div class="col-sm-12" style="margin-top:20px;">
+                                <p style="font-size:17px; line-height:28px;">Our company uses different technologies and form-factors to achieve our goal. Already on our 3rd generation Bluetooth product and 1st generation GPS-hybrid unit, we strive to build a complete Findables ecosystem, create
+                                    product unity and define a market with overwhelming potential. </p>
+                            </div>
+                        </div>
 
-            <div class="row">
-                <div class="col-sm-12 margin-top:15px;">
-                    <h1 style="text-align:center;">The Offering</h1>
-                    <div class="col-sm-3">
-                        <h4></h4>
+
                     </div>
-                    <div class="col-sm-6" style="margin-top:10px">
-                        <ul style="font-size: 20px; line-height: 35px;">
-                            <li>10,000,000 shares</li>
-                            <li>$1 per share</li>
-                            <li>Learn more by reading our <a href="/offering">SEC offering statement</a></li>
+
+                    <div id="storycontent" style="display:none;">
+                        <h1 style="margin-top:0px; !important; ">Findables Market</h1>
+                        <hr>
+                        <h4 style="font-size:28px;"> Emerging Markets </h4>
+                        <ul class="ablesList">
+                            <li><span style="font-weight:600">Wearables</span> - Technology you wear </li>
+                            <li><span style="font-weight:600">Nearables</span> - “Smart” technology that reacts to the environment </li>
+                            <li><span style="font-weight:600">Findables</span> - Technology that lets you monitor the whereabouts of things that matter to you. </li>
                         </ul>
+
+                        <div style="line-height:27px; font-size: 17px; margin-top:25px;">
+                            <p>
+                                In 2015, the Wearables market was worth over $15 billion, whereas the Nearables market stood just above the $200 million mark. By 2019, CCS Insight estimates that the Wearables market will explode, growing to over $25 billion, while the Nearables market
+                                is expected to surpass $4 billion over the same period.
+                            </p>
+                            <p> The Findables Market is emerging, and we plan to dominate it. As the world becomes closer to technology, everything we love and care about becomes smaller. We now have the world’s smallest computers in our back pockets, slim
+                                wallets are on the rise, and who knows? Laptops might soon be lighter than a feather! It’s important to stay ahead of the game. XY Findables has multiple products in the works, and our vision will soon come to be a reality.
+                                Being able to find a locate things is not only important now, but will be even more important in the future. </p>
+                        </div>
                     </div>
-                    <div class="col-sm-3">
-                        <h4></h4>
+
+                    <div id="timelinecontent" style="display:none;">
+                        <h1 style="margin-top:0px; !important">Competitors</h1>
+
+                        <div class="col-sm-12" style="padding-left:0px !important;">
+                            <hr>
+                        </div>
+                        <div style="line-height:27px; font-size: 17px;">
+                            <p> Many of our competitors focus on only one technology or product in the Findables market. We don’t want to just find your keys-- we want to help you find your wallet, your dog, your kids, your car, your sanity, and anything
+                                else you might have forgotten.
+                            </p>
+                            <p> Bluetooth was the premier technology for nearby tracking, but we wanted something better, so we created a Bluetooth-GPS-Cellular hybrid that allows users to find anything they want, ALL. OVER. THE. WORLD. Not only that, but
+                                while competitors were still trying to figure out replaceable batteries, we were first to market with our rechargeable, globally tracking XY GPS.
+                            </p>
+                            <p> As if all that wasn’t enough, we also pursue commercial uses for our products. It’s not just your nextdoor neighbor who needs to find her keys, it’s large scale shipping companies, construction companies, and every other corporation
+                                that needs to find things quickly. The applications are endless and we want to be the first to pursue every one.
+                            </p>
+                        </div>
                     </div>
                 </div>
+
+
+
             </div>
 
-            <hr style="margin-top: 50px; padding-top: 10px; margin-bottom: 0px;">
-            <div class="row text-center" style="padding-top:20px;">
+            <div id="ready" style="display:none;">
+                <hr style="margin-top: 60px; margin-bottom:30px;">
+            </div>
+
+            <div id="overviewgallery">
+
                 <div class="col-sm-12">
-                    <h2> Ready to invest? </h2>
-                    <a href="/invest/apply.html" target="_blank" class="btn btn-lg _btn_buy" style="padding-left: 45px; padding-right: 45px; margin-top:5px;">Invest Now</a>
+                    <hr style="margin-top:40px; margin-bottom:50px;">
                 </div>
+
+                <h2 style="text-align:center; margin-bottom:30px;"> The Findables Ecosystem: XY3, XYGPS, XY Near </h2>
+
+                <div class="col-sm-12">
+                    <hr style="margin-top:30px; margin-bottom:30px; ">
+                </div>
+                <img src="/img/XYFindIt_SE_XY3_Features_20_281_29.png" style="width:100%">
             </div>
-            <hr style="margin-top: 50px; padding-top: 10px; margin-bottom: 0px;">
+
+            <div style="text-align:center; margin-top:20px;">
+                <a href="/" class="btn btn-lg btn-default readmore">Back Home</a>
+                <a href="invest/apply.html" class="btn btn-lg _btn_buy" style="padding-left: 45px; padding-right: 45px; margin-top:5px;">Invest Now</a>
+
+            </div>
+
+            <hr style="margin-top: 30px; margin-bottom:30px;">
 
 
-            <div style="padding-top:60px">
+            <div style="padding-top:100px">
                 <p> SEC Disclaimer and Forward-Looking Statements </p>
 
                 <p> AN OFFERING STATEMENT REGARDING THIS OFFERING HAS BEEN FILED WITH THE SEC. THE SEC HAS QUALIFIED THAT OFFERING STATEMENT, WHICH ONLY MEANS THAT THE COMPANY MAY MAKE SALES OF THE SECURITIES DESCRIBED BY THE OFFERING STATEMENT. IT DOES NOT
@@ -286,11 +376,55 @@
 
                 <p>YOU SHOULD READ THE OFFERING CIRCULAR BEFORE MAKING ANY INVESTMENT.</p>
 
-                <p> OFFERING DOCUMENTATION CAN BE FOUND AT <a href=""> www.xyfindables.com/offering. </a></p>
+                <p> OFFERING DOCUMENTATION CAN BE FOUND AT <a href="../offering" target="_blank"> www.xyfindables.com/offering. </a></p>
             </div>
         </div>
 
+        <script>
+            $("#overviewlink").on("click", function(e) {
+                e.preventDefault();
+                $("#overviewcontent").show();
+                $("#overviewbanner").show();
+                $("#overviewgallery").show();
+                $("#storybanner").hide();
+                $("#storycontent").hide();
+                $("#timelinecontent").hide();
+                $("#timeline").hide();
+                $("#timelineline").show();
+                $("#timelinebanner").hide();
+                $("#ready").hide();
 
+            });
+            $("#storylink").on("click", function(e) {
+                e.preventDefault();
+                $("#overviewcontent").hide();
+                $("#overviewgallery").hide();
+                $("#overviewbanner").hide();
+                $("#storycontent").show();
+                $("#storybanner").show();
+                $("#timelinecontent").hide();
+                $("#timeline").hide();
+                $("#timelineline").hide();
+                $("#timelinebanner").hide();
+                $("#ready").show();
+
+            });
+            $("#timelinelink").on("click", function(e) {
+                e.preventDefault();
+                $("#overviewcontent").hide();
+                $("#overviewgallery").hide();
+                $("#overviewbanner").hide();
+                $("#storybanner").hide();
+                $("#storycontent").hide();
+                $("#timelinecontent").show();
+                $("#timeline").show();
+                $("#timelineline").show();
+                $("#timelinebanner").show();
+                $("#ready").show();
+
+
+            });
+        </script>
     </section>
 
 
@@ -326,7 +460,7 @@
                         <li><a href="../contact-us">Contact Us</a></li>
                         <li><a href="http://https://www.xyfindit.com/" target="_blank">Products</a></li>
                         <li class="text-center"><a href="../our-story">Our Story</a></li>
-                        <li class="text-center"><a href="../gallery">Gallery</a></li>
+                        <li class="text-center"><a href="../Team">Team</a></li>
                         <li class="text-center"><a href="../team">Team</a></li>
                         <li class="text-center"><a href="../faq">FAQ</a></li>
                         <li class="text-center"><a target="_blank" href="https://my.xyfindit.com/">Sign In</a></li>
@@ -338,6 +472,7 @@
     <!--/#footer-->
 
     <div id="preload" style="display:none;"></div>
+
 
 
     <noscript>
@@ -377,35 +512,36 @@
         }
     </script>
 
-    <!-- Facebook Pixel Code -->
-    <script>
-        ! function(f, b, e, v, n, t, s) {
-            if (f.fbq) return;
-            n = f.fbq = function() {
-                n.callMethod ?
-                    n.callMethod.apply(n, arguments) : n.queue.push(arguments)
-            };
-            if (!f._fbq) f._fbq = n;
-            n.push = n;
-            n.loaded = !0;
-            n.version = '2.0';
-            n.queue = [];
-            t = b.createElement(e);
-            t.async = !0;
-            t.src = v;
-            s = b.getElementsByTagName(e)[0];
-            s.parentNode.insertBefore(t, s)
-        }(window,
-            document, 'script', 'https://connect.facebook.net/en_US/fbevents.js');
-        fbq('init', '322839541477444'); // Insert your pixel ID here.
-        fbq('track', 'PageView');
-    </script>
-    <noscript><img height="1" width="1" style="display:none"
-    src="https://www.facebook.com/tr?id=322839541477444&ev=PageView&noscript=1"
-    /></noscript>
-    <!-- DO NOT MODIFY -->
-    <!-- End Facebook Pixel Code -->
+
 
 </body>
+<!-- Facebook Pixel Code -->
+<script>
+    ! function(f, b, e, v, n, t, s) {
+        if (f.fbq) return;
+        n = f.fbq = function() {
+            n.callMethod ?
+                n.callMethod.apply(n, arguments) : n.queue.push(arguments)
+        };
+        if (!f._fbq) f._fbq = n;
+        n.push = n;
+        n.loaded = !0;
+        n.version = '2.0';
+        n.queue = [];
+        t = b.createElement(e);
+        t.async = !0;
+        t.src = v;
+        s = b.getElementsByTagName(e)[0];
+        s.parentNode.insertBefore(t, s)
+    }(window,
+        document, 'script', 'https://connect.facebook.net/en_US/fbevents.js');
+    fbq('init', '322839541477444'); // Insert your pixel ID here.
+    fbq('track', 'PageView');
+</script>
+<noscript><img height="1" width="1" style="display:none"
+src="https://www.facebook.com/tr?id=322839541477444&ev=PageView&noscript=1"
+/></noscript>
+<!-- DO NOT MODIFY -->
+<!-- End Facebook Pixel Code -->
 
 </html>
