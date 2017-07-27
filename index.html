@@ -1,4 +1,3 @@
-
 <!-- saved from url=(0025)https://www.xyfindit.com/ -->
 <html>
 
@@ -32,6 +31,7 @@
 
     <link rel="stylesheet" type="text/css" href="./Content/css2/main.css">
     <link rel="stylesheet" type="text/css" href="./index_files/responsive.css">
+    <link rel="stylesheet" href="./css/animate.css">
 
 
     <script src="./index_files/xy"></script>
@@ -155,11 +155,68 @@
             z-index: 2
         }
 
+        .innovationPicture {
+            transition: .2s;
+        }
+
+        .innovationPicture:hover {
+            transform: scale(1.05);
+            -webkit-transform: scale(1.05);
+            -o-transform: scale(1.05);
+            -moz-transform: scale(1.05);
+            opacity: 1;
+        }
+
         .close:hover,
         .close:focus {
             color: black;
             text-decoration: none;
             cursor: pointer;
+        }
+
+        .nonresponsive {
+            display: inline-block;
+        }
+
+        @media screen and (max-width:770px) {
+            .popup h2 {
+                font-size: 14px;
+                font-weight: 600;
+            }
+            .facebook-ana {
+                display: none;
+            }
+            .popup .btn {
+                width: 100%;
+            }
+            .nothanks {
+                margin-top: 15px;
+            }
+            .projectedMargin {
+                margin-bottom: 0px !important;
+            }
+            .innovationPicture img {
+                width: 90% !important;
+            }
+            .perkhex {
+                width: 50%;
+                transition: 0.2s;
+                opacity: .95;
+            }
+            .perkdescriptionp {
+                margin-left: 20px;
+                margin-right: 20px;
+                text-align: left !important;
+            }
+            .perkslist {
+                margin-left: 0 !important;
+            }
+        }
+
+        @media screen and (min-width: 550px) and (max-width: 779px) {
+            .innovationPicture img {
+                width: 400px !important;
+            }
         }
 
         @media screen and (min-width: 992px) and (max-width: 1198px) {
@@ -183,24 +240,8 @@
             .nothanks {
                 margin-top: 6px;
             }
-        }
-
-        @media screen and (max-width:770px) {
-            .popup h2 {
-                font-size: 14px;
-                font-weight: 600;
-            }
-            .facebook-ana {
-                display: none;
-            }
-            .popup .btn {
-                width: 100%;
-            }
-            .nothanks {
-                margin-top: 15px;
-            }
-            .projectedMargin {
-                margin-bottom: 0px !important;
+            .innovationPicture img {
+                height: 458px;
             }
         }
 
@@ -268,7 +309,7 @@
                         <div class="row slide-margin">
                             <div class="col-xs-12">
                                 <div class="carousel-content text-center">
-                                    <h1 class="animation animated-item-1" style="color:white">Invest in the Future of Findability</h1>
+                                    <h1 class="" style="color:white">Invest in the Future of Findability</h1>
                                     <a href="invest/apply.html" target="_blank" class="btn btn-lg _btn_buy" style="padding-left: 35px; padding-right: 35px;">Invest Now</a>
 
                                 </div>
@@ -282,7 +323,7 @@
                         <div class="row slide-margin">
                             <div class="col-sm-12">
                                 <div class="carousel-content text-center">
-                                    <h1 class="animation animated-item-1" style="color:white; padding-top:1vh;">XY Devices find anything around the world</h1>
+                                    <h1 class="" style="color:white; padding-top:1vh;">XY Devices find anything around the world</h1>
                                     <a href="invest/apply.html" target="_blank" class="btn btn-lg _btn_buy" style="padding-left: 35px; padding-right: 35px;">Invest Now</a>
                                 </div>
                             </div>
@@ -295,7 +336,7 @@
                         <div class="row slide-margin">
                             <div class="col-sm-8">
                                 <div class="carousel-content">
-                                    <h1 class="animation animated-item-1 text-center" style="color:white; margin-top:-15px;"> Revenue has doubled annually since initial release.</h1>
+                                    <h1 class="text-center" style="color:white; margin-top:-15px;"> Revenue has doubled annually since initial release.</h1>
                                     <a href="invest/apply.html" target="_blank" class="btn btn-lg _btn_buy wonky" style="margin-left:42%; padding-left: 35px; padding-right: 35px;">Invest Now</a>
                                 </div>
                             </div>
@@ -308,7 +349,7 @@
                         <div class="row slide-margin">
                             <div class="col-sm-8">
                                 <div class="carousel-content ">
-                                    <h1 class="animation animated-item-1 text-center" style="color:white; margin-top:-15px;"> First Bluetooth and GPS Hybrid product in market.</h1>
+                                    <h1 class="text-center" style="color:white; margin-top:-15px;"> First Bluetooth and GPS Hybrid product in market.</h1>
                                     <a href="invest/apply.html" target="_blank" class="btn btn-lg _btn_buy wonky" style="margin-left:42%; padding-left: 35px; padding-right: 35px;">Invest Now</a>
                                 </div>
                             </div>
@@ -321,7 +362,7 @@
                         <div class="row slide-margin">
                             <div class="col-sm-8">
                                 <div class="carousel-content ">
-                                    <h1 class="animation animated-item-1 text-center" style="color:white; margin-top:-15px;"> Join us as an initial investor before our IPO.</h1>
+                                    <h1 class=" text-center" style="color:white; margin-top:-15px;"> Join us as an initial investor before our IPO.</h1>
                                     <a href="invest/apply.html" target="_blank" class="btn btn-lg _btn_buy wonky " style="margin-left:42%; padding-left: 35px; padding-right: 35px;">Invest Now</a>
                                 </div>
                             </div>
@@ -333,7 +374,7 @@
                         <div class="row slide-margin">
                             <div class="col-sm-12">
                                 <div class="carousel-content text-center">
-                                    <h1 class="animation animated-item-1" style="color:white; padding-top:1vh;"> Keep track of everything.</h1>
+                                    <h1 class="" style="color:white; padding-top:1vh;"> Keep track of everything.</h1>
                                     <a href="invest/apply.html" target="_blank" class="btn btn-lg _btn_buy" style="left:30%; padding-left: 35px; padding-right: 35px;">Invest Now</a>
                                 </div>
                             </div>
@@ -357,11 +398,6 @@
         <div class="top-bar as_seen_on hidden-xs">
             <div class="container">
                 <div class="row">
-                    <!-- <div class="col-sm-2 col-xs-12">
-                    <div class="top-number">
-                        <h3>AS SEEN ON : </h3>
-                    </div>
-                </div>-->
                     <div class="col-sm-12 col-xs-12">
                         <div class="partners">
                             <ul>
@@ -377,7 +413,6 @@
                     </div>
                 </div>
             </div>
-            <!--/.container-->
         </div>
     </section>
     <!--/#main-slider-->
@@ -400,14 +435,14 @@
     </style>
 
     <div class="container">
-        <div class="row text-center own-a-piece" style="margin-top:35px ">
+        <div class="row text-center own-a-piece animate-box" style="margin-top:35px ">
             <h1>"Own a piece of the future today!"</h1>
         </div>
 
         <hr style="width:64%; margin-top:4vh;" class="hr-dis">
 
         <div class="row text-center" style="margin-top:30px ; margin-bottom:0px; ">
-            <h2 style="font-size:22px; margin-bottom:0px; padding-bottom: 0px; line-height:22px;"> Our Vision: </h2>
+            <h2 style="font-size:30px; margin-bottom:0px; padding-bottom: 0px; line-height:22px;"> The XY Findables Vision: </h2>
         </div>
         <div class="row text-center" style="margin-top:0px; padding-top:0px;">
             <h4 style="font-size:18px; line-height:20px;"> A world where everything is "FINDABLE" </h4>
@@ -495,7 +530,7 @@
 
             <div class="row">
                 <div class="col-sm-12">
-                    <div class="col-sm-12 col-md-6 text-center" style="padding-top:2% padding:0px; padding-top:10px;">
+                    <div class="col-sm-12  col-md-6 text-center" style="padding-top:2% padding:0px; padding-top:10px;">
                         <h1 class="text-center perks" style="font-size:40px;"> Shareholder Perks</h1>
                         <div style="text-align:center; padding-top:20px; margin-bottom:20px;">
                             <p> Exclusive access to XY Investor store</p>
@@ -521,36 +556,17 @@
         <div class="latestInnovation text-center" style="padding-top:30px;">
             <h1> Latest Innovation: XY GPS </h1>
             <h4> First-to-Market Bluetooth + GPS Hybrid Technology </h4>
-            <div class="innovationPicture" style="background-image: url(index_files/new_product_background.png);  padding-top: 0vh; margin-top: 40px; background-repeat: no-repeat; background-size:480px; background-position: center center; background-position-y:-40px;">
-                <div class="row">
-                    <div class="col-sm-12" style="margin-top:365px;">
-                        <img class="features_image" src="index_files/features_icons.png" style="width:60%">
-
-
-                        <!--  <div class="col-sm-6">
-                <<div class="col-sm-6">
-                  <img src="index_files/icon_globe.png">
-                  <p style="text-center"> World-wide Range </p>
-                </div>
-                <div class="col-sm-6">
-                  <img src="index_files/icon_satellite.png">
-                  <p style="text-center"> Bluetooth and Cellular Range </p>
-                </div>
-              </div>
-            <div class="col-sm-6">
-              <div class="col-sm-6">
-                <img src="index_files/icon_recharge.png">
-                <p style="text-center"> Rechargeable Battery </p>
-
-              </div>
-              <div class="col-sm-6">
-                <img src="index_files/icon_location.png">
-                <p style="text-center"> Map-Based Location </p>
-              </div>
-            </div> -->
-                    </div>
+            <div class="row" style="height:5px;">
+                <div class="innovationPicture" style="text-align:center;">
+                    <img class="img-responsive nonresponsive" src="index_files/new_product_background.png" style="margin-top:-30px;">
                 </div>
             </div>
+            <div class="row">
+                <div class="col-sm-12" style="margin-top:365px;">
+                    <img class="features_image" src="index_files/features_icons.png" style="width:60%; margin-left:23px;">
+                </div>
+            </div>
+
         </div>
 
         <hr>

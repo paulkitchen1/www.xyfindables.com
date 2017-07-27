@@ -142,8 +142,17 @@ src="https://www.facebook.com/tr?id=322839541477444&ev=PageView&noscript=1"
             font-size: 17px
         }
 
+        .bold {
+            font-weight: 600;
+        }
+
+
         .btn-row {
             margin-top: 30px
+        }
+
+        section {
+            padding-bottom: 20px !important;
         }
 
         .gps-banner {
@@ -157,6 +166,35 @@ src="https://www.facebook.com/tr?id=322839541477444&ev=PageView&noscript=1"
 
         .gps-banner img:first-child {
             margin-top: 15px
+        }
+
+        .perksimages img {
+            width: 100%;
+            transition: 0.2s;
+            opacity: .95;
+        }
+
+        .perksimages img:hover {
+            transform: scale(1.05);
+            -webkit-transform: scale(1.05);
+            -o-transform: scale(1.05);
+            -moz-transform: scale(1.05);
+            opacity: 1;
+        }
+
+        .perkhex p {
+            transition: 0.5s;
+            padding-top: 15px;
+            font-weight: 600;
+        }
+
+        .perkhex:hover p {
+            opacity: 1 !important;
+        }
+
+        .perkdescriptionp {
+            margin-left: 65px;
+            margin-right: 65px;
         }
 
         .gallery-img {
@@ -180,18 +218,17 @@ src="https://www.facebook.com/tr?id=322839541477444&ev=PageView&noscript=1"
             .text-description {
                 margin-bottom: 7%;
             }
-        }
-
-        @media screen and (max-width:868px) {
             .gps-banner {
-                background-image: url(/img/banner/review_banner_alt.jpg) !important;
-                height: 300px !important;
+                height: 256px !important;
             }
-        }
+            .congrats {
+                font-size: 17px !important;
+                font-weight: bold;
+                margin-bottom: -6px;
+            }
 
-        @media screen and (min-width:867px) {
-            .logo-review {
-                display: none !important;
+            .seal {
+              margin-top: 30px !important;
             }
         }
     </style>
@@ -209,7 +246,7 @@ src="https://www.facebook.com/tr?id=322839541477444&ev=PageView&noscript=1"
                       <span class="icon-bar"></span>
                       <span class="icon-bar"></span>
                   </button>
-                    <a class="navbar-brand" href="/investmentv2/" style="height:62px;">
+                    <a class="navbar-brand" href="/" style="height:62px;">
                         <img class="desktopLogo" src="/img/XYFindables_Small_Full.png" alt="logo">
                         <img class="mobileLogo" src="/img/XYFindables_Small.png">
                     </a>
@@ -217,13 +254,13 @@ src="https://www.facebook.com/tr?id=322839541477444&ev=PageView&noscript=1"
 
                 <div class="collapse navbar-collapse navbar-right">
                     <ul class="nav navbar-nav">
-                        <li class="text-center"><a href="../">Home</a></li>
-                        <li class="text-center"><a href="../our-story">Our Story</a></li>
-                        <li class="text-center"><a href="../team">Team</a></li>
-                        <!--<li class="text-center"><a href="../team" >Team</a></li>-->
-                        <li class="text-center"><a href="../faq">FAQ</a></li>
-                        <li class="text-center visible-xs"><a href="../contact-us">Contact Us</a></li>
-                        <li class="text-center"><a href="../offering">SEC Documents</a></li>
+                        <li class="text-center"><a href="/">Home</a></li>
+                        <li class="text-center"><a href="/our-story">Our Story</a></li>
+                        <li class="text-center"><a href="/team">Team</a></li>
+                        <!--<li class="text-center"><a href="/team" >Team</a></li>-->
+                        <li class="text-center"><a href="/faq">FAQ</a></li>
+                        <li class="text-center visible-xs"><a href="/contact-us">Contact Us</a></li>
+                        <li class="text-center"><a href="/offering">SEC Documents</a></li>
                         <li class="text-center"><a class="btn _btn_buy" href="/invest/apply.html" style="border-color:white; border-radius:6px;">Invest Now</a></li>
                     </ul>
                 </div>
@@ -235,62 +272,98 @@ src="https://www.facebook.com/tr?id=322839541477444&ev=PageView&noscript=1"
 
     <div class="center" style="margin-top:55px; padding-bottom:0">
         <div class="center" style="margin-top:55px; padding-bottom:0">
-            <div class="gps-banner text-center col-xs-12" style="padding:0px; height:500px; background-image:url(/img/banner/review_banner.jpg); background-size: cover; background-position: center center;">
+            <div class="gps-banner text-center col-xs-12" style="padding:0px; height:500px; background-image:url(/img/banner/review_banner-1.jpg); background-size: cover; background-position: center center;">
                 <div class="col-xs-12" style="margin-top:8%;">
-                    <div class="carousel-content text-center">
-                        <img class="img-responsive logo-review" src="/img/XYFindables_Small_White.png" style="width:50%">
-                    </div>
                 </div>
             </div>
         </div>
         <div class="text-center col-xs-12 story-banner-margin">
         </div>
     </div>
-    <div class="text-center col-xs-12" style="margin: 25px 0 30px 0;">
-        <h2>Congratulations on taking the first steps to owning your piece of XY!</h2>
-    </div>
-    </div>
+
 
     <section>
         <div class="container">
             <div class="row">
-                <div class="col-sm-12" style="font-size:17px; line-height:25px;">
-                    <p>Your data will be reviewed your subscription agreement will be mailed or emailed to you with the number of shares purchased if all the data seems in order and/or wiring information if you selected that option. This is an exciting new
-                        venture for us to allow our users the opportunity to purchase shares in the XY Findables™ company.
+                <div class="text-center col-xs-12 " style="margin:0px 0 20px 0;">
+                    <h2 class="congrats">Congratulations on taking the first steps to owning your piece of XY!</h2>
+                </div>
+
+                <div class="col-sm-12">
+                    <hr style="margin-top:13px; margin-bottom: 35px;">
+                </div>
+
+                <div class="col-sm-8" style="font-size:17px; line-height:25px; margin-top:0px;">
+                    <p>Your data will be reviewed your subscription agreement will be <span class="bold">mailed</span> or <span class="bold">emailed</span> to you with the number of shares purchased if all the data seems in order and/or wiring information
+                        if you selected that option. This is an exciting new venture for us to allow our users the opportunity to purchase shares in the XY Findables™ company.
                     </p>
                     <p style="padding-top:5px">XY's mission is to build the "Findables" space. This includes our popular Bluetooth Item Finder, but we are rapidly expanding to include GPS/3G and NFC technologies and various form factors. Our goal is to be the leader in the Findables
                         space by defining it, producing the best quality products, and providing the best user and owner experiences.
                     </p>
                 </div>
+                <div class="col-sm-4 seal" style="text-align:center;">
+                    <img style="display:inline-block; height:220px;" src="/img/sec_seal_bw.png">
+                </div>
+            </div>
+
+
+
+            <div class="col-sm-12">
+                <hr style="margin-top:42px; margin-bottom: 42px;">
+            </div>
+
+            <div class="row">
+                <div class="col-sm-12">
+                    <h2 style="text-align:center; margin-bottom:35px; "> As an Investor, You Will Recieve </h2>
+                </div>
+
+                <div class="row">
+                    <div class="col-sm-12 perksimages">
+                        <div class="col-sm-3 col-xs-6 perkhex">
+                            <img src="/img/perks/Stock_Certificate.png">
+                            <p class="perksdescription" style="text-align:center; opacity:0;"> Stock Certificate </p>
+                        </div>
+                        <div class="col-sm-3 col-xs-6 perkhex">
+                            <img src="/img/perks/keychain.png">
+                            <p class="perksdescription" style="text-align:center; opacity:0;"> XY Finder Wire Keychain </p>
+                        </div>
+                        <div class="col-sm-3 col-xs-6 perkhex">
+                            <img src="/img/perks/beacon.png">
+                            <p class="perksdescription" style="text-align:center; opacity:0;"> Investor-Exclusive Product </p>
+
+                        </div>
+                        <div class="col-sm-3 col-xs-6 perkhex">
+                            <img src="/img/perks/batteries.png">
+                            <p class="perksdescription" style="text-align:center; opacity:0;"> Extra Battery Pack </p>
+
+                        </div>
+                    </div>
+                </div>
             </div>
 
             <div class="col-sm-12">
-                <hr style="margin-top:35px; margin-bottom: 35px;">
+                <hr style="margin-top:35px; margin-bottom: 55px;">
             </div>
 
-            <div class="col-sm-12 text-center">
-                <a href="/" class="btn btn-lg _btn_buy " style="padding-left: 35px; padding-right: 35px; color:#505050 !important; background-color:transparent !important; border-color:#505050 ;">Back to Home</a>
+            <div class="row" style="margin-top:20px;">
+                <div class="col-sm-12">
+                    <h4 style="font-weight:600; font-size:1.7em; text-align:center;"> Make sure to check your email or mail box for your subscrption agreement! </h4>
+                    <p style="text-align:center"> Please sign your agreement and follow the included instructions! Afterwards, you can go to our investor portal and complete the process! </p>
+                    <p style="text-align:center"> After that, you can visit our perks page to review your benifits and access the investor portal! </p>
+                </div>
+            </div>
+
+            <div class="col-sm-12 text-center" style="margin-top:20px; margin-bottom:20px;">
+                <a href="/" class="btn btn-lg _btn_buy " style="padding-left: 35px; padding-right: 35px; color:#505050 !important; margin-top:10px; background-color:transparent !important; border-color:#505050 ;">Back to Home</a>
+                <a href="/perks" class="btn btn-lg _btn_buy wonky" style="padding-left: 47px; padding-right: 47px; margin-top:10px;">Perks Page</a>
             </div>
 
             <div class="col-sm-12">
-                <hr style="margin-top:35px;">
+                <hr style="margin-top:35px; margin-bottom: 55px;">
             </div>
 
-            <div style="padding-top:60px; font-size: 12px;">
-                <p> SEC Disclaimer and Forward-Looking Statements </p>
-
-                <p> AN OFFERING STATEMENT REGARDING THIS OFFERING HAS BEEN FILED WITH THE SEC. THE SEC HAS QUALIFIED THAT OFFERING STATEMENT, WHICH ONLY MEANS THAT THE COMPANY MAY MAKE SALES OF THE SECURITIES DESCRIBED BY THE OFFERING STATEMENT. IT DOES NOT
-                    MEAN THAT THE SEC HAS APPROVED, PASSED UPON THE MERITS OR PASSED UPON THE ACCURACY OR COMPLETENESS OF THE INFORMATION IN THE OFFERING STATEMENT. YOU MAY OBTAIN A COPY OF THE OFFERING CIRCULAR THAT IS PART OF THAT OFFERING STATEMENT
-                    FROM
-                    <a href="https://goo.gl/oMt3JT" target="_blank"> this link</a>. </p>
-
-                <p>YOU SHOULD READ THE OFFERING CIRCULAR BEFORE MAKING ANY INVESTMENT.</p>
-
-                <p> OFFERING DOCUMENTATION CAN BE FOUND AT <a href=""> www.xyfindables.com/offering. </a></p>
-            </div>
+            <h1 style="text-align:center"> Thank you! </h1>
         </div>
-
-
     </section>
 
 
@@ -323,12 +396,12 @@ src="https://www.facebook.com/tr?id=322839541477444&ev=PageView&noscript=1"
                 </div>
                 <div class="col-sm-6" style="margin-top:7px;">
                     <ul class="pull-right">
-                        <li><a href="/investmentv2/contact-us">Contact Us</a></li>
+                        <li><a href="/contact-us">Contact Us</a></li>
                         <li><a href="http://https://www.xyfindit.com/" target="_blank">Products</a></li>
-                        <li class="text-center"><a href="/investmentv2/our-story">Our Story</a></li>
-                        <li class="text-center"><a href="/investmentv2/gallery">Gallery</a></li>
-                        <li class="text-center"><a href="/investmentv2/team">Team</a></li>
-                        <li class="text-center"><a href="/investmentv2/faq">FAQ</a></li>
+                        <li class="text-center"><a href="/our-story">Our Story</a></li>
+                        <li class="text-center"><a href="/gallery">Gallery</a></li>
+                        <li class="text-center"><a href="/team">Team</a></li>
+                        <li class="text-center"><a href="/faq">FAQ</a></li>
                         <li class="text-center"><a target="_blank" href="https://my.xyfindit.com/">Sign In</a></li>
                     </ul>
                 </div>
