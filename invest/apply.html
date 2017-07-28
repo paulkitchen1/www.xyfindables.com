@@ -1201,29 +1201,7 @@
 
 				<div class="subject-box" ui-view="final" style="display:none">
 					<h4 class="margin-bottom-standard">Finalize Investment</h4>
-
 					<div class="se-input-group row form-group">
-						<div class="col-xs-12">
-							<div class="row">
-								<div class="se-input col-xs-12">
-									<div>
-										<div>
-											<div class="form-control" style="height:auto;border-color:white">
-												<label class="pretty-checkbox-label">
-													<span class="checkbox">
-														<input type="checkbox" name="disclaimer" required="required" value="1">
-													</span>
-													<span class="checkbox-text">I acknowledge that I understand that this investment is at risk and may be lost. I confirm that this purchase price is not more than the greater of 10% of my annual income or net worth (or no more than the greater of 10% of revenue or net assets for a business), unless I am an accredited investor.  I have read and agree to the terms set in the <a href="" data-modal-id="subscription" onclick="openSubAgreement(); return false;">subscription agreement</a>.</span>
-												</label>
-											</div>
-										</div>
-									</div>
-								</div>
-							</div>
-						</div>
-					</div>
-
-					<div class="se-input-group row form-group payment-method">
 						<div class="col-xs-12 col-sm-3 text-left">
 							<label class="control-label">
 								Payment Method*
@@ -1233,9 +1211,10 @@
 						<div class="col-xs-12 col-sm-9">
 							<div class="row">
 								<div class="se-input col-xs-12">
-									<div style="padding:5px">
-										<div class="btn btn-default btn-pay" id="btncredit" data-value="credit">Credit Card</div><div class="btn btn-default btn-pay" id="btnach" data-value="ach">e-Check</div><div class="btn btn-default btn-pay" id="btnpaypal" data-value="paypal"><span style="background: url('https://www.xyfindables.com/img/invest/PP_logo_h_100x26.png') no-repeat; background-position:center; background-size:contain;display:block;width:100%; height:20px"></span></div>
-										<input name="paymentMethod" required="required" type="hidden" />
+									<div>
+										<div class="form-control">
+											<select class="select" name="paymentMethod" required="required"><option value="" selected>Select Payment Method</option><option value="ach">No Cost Online Bank Transfer (ACH Transfer)</option><option value="credit">Credit Card</option><option value="paypal">PayPal</option></select>
+										</div>
 									</div>
 								</div>
 							</div>
@@ -1447,7 +1426,26 @@
 
 				<div class="subject-box" ui-view="subAgreement" style="border-bottom:none;display:none">
 
-
+					<div class="se-input-group row form-group">
+						<div class="col-xs-12">
+							<div class="row">
+								<div class="se-input col-xs-12">
+									<div>
+										<div>
+											<div class="form-control" style="height:auto;border-color:white">
+												<label class="pretty-checkbox-label">
+													<span class="checkbox">
+														<input type="checkbox" name="disclaimer" required="required" value="1">
+													</span>
+													<span class="checkbox-text">I acknowledge that I understand that this investment is at risk and may be lost. I confirm that this purchase price is not more than the greater of 10% of my annual income or net worth (or no more than the greater of 10% of revenue or net assets for a business), unless I am an accredited investor.  I have read and agree to the terms set in the <a href="" data-modal-id="subscription" onclick="openSubAgreement(); return false;">subscription agreement</a>.</span>
+												</label>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
 
 					<div class="form-group submit-wrapper">
 
@@ -1466,6 +1464,11 @@
 										<button type="submit" class="btn continue-btn _btn__invest_color" style="width: 100%">
 											<div>
 												Submit Investment
+											</div>
+										</button>
+										<button type="submit" class="btn continue-pp-btn _btn__invest_color" style="width: 100%; display:none">
+											<div>
+												Complete Paypal Payment
 											</div>
 										</button>
 									</div>
@@ -1517,15 +1520,29 @@
 					if ($(this).val() == "ach") {
 						$("[name=ach-data]").show();
 						$("[name=credit-area]").hide();
+						$(".continue-btn").show();
+						$(".continue-pp-btn").hide();
 					} else if ($(this).val() == "wire") {
 						$("[name=ach-data]").hide();
 						$("[name=credit-area]").hide();
+						$(".continue-btn").show();
+						$(".continue-pp-btn").hide();
 					} else if ($(this).val() == "credit") {
 						$("[name=ach-data]").hide();
 						$("[name=credit-area]").show();
-					} else {
+						$(".continue-btn").show();
+						$(".continue-pp-btn").hide();
+					} else if ($(this).val() == "paypal") {
+						$(".continue-btn").hide();
 						$("[name=ach-data]").hide();
 						$("[name=credit-area]").hide();
+						$(".continue-pp-btn").show();
+					}
+					else {
+						$("[name=ach-data]").hide();
+						$("[name=credit-area]").hide();
+						$(".continue-btn").show();
+						$(".continue-pp-btn").hide();
 					}
 				});
 
@@ -2040,7 +2057,7 @@
 						<li><a href="/contact">Contact Us</a></li>
 						<li><a href="/product">Products</a></li>
 
-						<li><a href="/invest" target="_blank">Invest in XY</a></li>
+						<li><a href="/" target="_blank">Invest in XY</a></li>
 						<li><a href="http://support.xyfindit.com/hc/en-us" target="_blank">Help</a></li>
 						<li><a href="/privacy">Privacy</a></li>
 
@@ -2062,7 +2079,7 @@
 		<input type="hidden" id="visitor_id" name="visitor_id" value="056921e3-27ff-4bb5-a55a-a7c8a5431e67" />
 		<input type="hidden" id="page_id" name="page_id" />
 
-		<input type="hidden" id="url-referrer" name="url-referrer" value="https://www.xyfindit.com/invest" />
+		<input type="hidden" id="url-referrer" name="url-referrer" value="https://www.xyfindables.com" />
 
 	</form>
 
@@ -2098,7 +2115,7 @@
 
 
 			function loadPayPal(data) {
-				var paypalbtn = document.getElementById('btnpaypal');
+				var paypalbtn = document.getElementsByClassName('continue-btn')[0];
 				// Create a Client component
 				braintree.client.create({
 					authorization: data
@@ -2112,73 +2129,70 @@
 					braintree.paypal.create({
 						client: clientInstance
 					}, function (err, paypalInstance) {
-						paypalbtn.addEventListener('click', function () {
-							if (!confirm('Upon Successful completion of PayPal Payment, your investment will be automatically submitted.  Do you want to continue?')) {
-								$("[name=paymentMethod]").val('');
-								return;
-							}
-							if (!checkInputs(".container")) {
-								alert('Please correct errors in red.');
-								return;
-							}
+						paypalbtn.addEventListener('click', function (e) {
+							if ($("[name=paymentMethod]").val() == 'paypal') {
+								e.stopPropagation = true;
+								if (!checkInputs(".container")) {
+									alert('Please correct errors in red.');
+									return;
+								}
 
-							Utils.sendGA('PayPalInstant');
-							// Tokenize here!
-							try {
-								paypalInstance.tokenize({
-									flow: 'checkout', // Required,
-									intent: 'sale',
-									useraction: 'commit',
-									amount: $("[name=numberOfShares]").val(), // Required
-									currency: 'USD', // Required
-									locale: 'en_US',
-									enableShippingAddress: true,
-									shippingAddressEditable: false,
-									shippingAddressOverride: {
-										recipientName: $("[name=first_name]").val() + ' ' + $("[name=last_name]").val(),
-										line1: $("[name=address1]").val(),
-										line2: $("[name=address2]").val(),
-										city: $("[name=city]").val(),
-										countryCode: $("[name=country]").val(),
-										postalCode: $("[name=zipcode]").val().indexOf('-') == 5 ? $("[name=zipcode]").val().substring(0, 5) : $("[name=zipcode]").val(),
-										state: $("[name=state]").val()
-									}
-								}, function (err, tokenizationPayload) {
-									if (err) {
-										$("[name=paymentMethod]").val('');
-										if (err.code === 'PAYPAL_BROWSER_NOT_SUPPORTED') {
-											Utils.sendGA('PAYPAL_BROWSER_NOT_SUPPORTED');
-											alert('PAYPAL_BROWSER_NOT_SUPPORTED');
-											
+								Utils.sendGA('PayPalInstant');
+								// Tokenize here!
+								try {
+									paypalInstance.tokenize({
+										flow: 'checkout', // Required,
+										intent: 'sale',
+										useraction: 'commit',
+										amount: $("[name=numberOfShares]").val(), // Required
+										currency: 'USD', // Required
+										locale: 'en_US',
+										enableShippingAddress: true,
+										shippingAddressEditable: false,
+										shippingAddressOverride: {
+											recipientName: $("[name=first_name]").val() + ' ' + $("[name=last_name]").val(),
+											line1: $("[name=address1]").val(),
+											line2: $("[name=address2]").val(),
+											city: $("[name=city]").val(),
+											countryCode: $("[name=country]").val(),
+											postalCode: $("[name=zipcode]").val().indexOf('-') == 5 ? $("[name=zipcode]").val().substring(0, 5) : $("[name=zipcode]").val(),
+											state: $("[name=state]").val()
 										}
-										else {
-											if (JSON.stringify(err).indexOf('The combination of country and city is invalid') > -1) {
-												alert('PayPal - The combination of shipping country and city is not valid.');
-												Utils.sendGA('/error/instant/?e=displayError' + encodeURIComponent(JSON.stringify(err)));
-											}
-											else if (JSON.stringify(err).indexOf('state') > -1 || JSON.stringify(err).indexOf('city') > -1 || JSON.stringify(err).indexOf('zip') > -1) {
-												alert('PayPal - The combination of shipping city, state, zip is not valid.');
-												Utils.sendGA('/error/instant/?e=displayError' + encodeURIComponent(JSON.stringify(err)));
+									}, function (err, tokenizationPayload) {
+										if (err) {
+											$("[name=paymentMethod]").val('');
+											if (err.code === 'PAYPAL_BROWSER_NOT_SUPPORTED') {
+												Utils.sendGA('PAYPAL_BROWSER_NOT_SUPPORTED');
+												alert('PAYPAL_BROWSER_NOT_SUPPORTED');
+
 											}
 											else {
-												Utils.sendGA('/error/tokenize/?e=' + encodeURIComponent(JSON.stringify(err)));
-											}											
+												if (JSON.stringify(err).indexOf('The combination of country and city is invalid') > -1) {
+													alert('PayPal - The combination of shipping country and city is not valid.');
+													Utils.sendGA('/error/instant/?e=displayError' + encodeURIComponent(JSON.stringify(err)));
+												}
+												else if (JSON.stringify(err).indexOf('state') > -1 || JSON.stringify(err).indexOf('city') > -1 || JSON.stringify(err).indexOf('zip') > -1) {
+													alert('PayPal - The combination of shipping city, state, zip is not valid.');
+													Utils.sendGA('/error/instant/?e=displayError' + encodeURIComponent(JSON.stringify(err)));
+												}
+												else {
+													Utils.sendGA('/error/tokenize/?e=' + encodeURIComponent(JSON.stringify(err)));
+												}
+											}
 										}
-									}
-									else {
-										var senddata = "payload=" + encodeURIComponent(JSON.stringify(tokenizationPayload)) + '&cart_token=' + $("[name=uid]").val() + '&t=' + +new Date();
-										saveInvest(null, senddata);
+										else {
+											var senddata = "payload=" + encodeURIComponent(JSON.stringify(tokenizationPayload)) + '&cart_token=' + $("[name=uid]").val() + '&t=' + +new Date();
+											saveInvest(e, senddata);
 
-									}
-								});
+										}
+									});
+								}
+								catch (err) {
+									Utils.sendGA('/error/paypalSetUp/?e=' + encodeURIComponent(err.message));
+									alert('Paypal can not be processed.  Please try another payment method.');
+								}
+								setTimeout(function () { $("body").hideLoding() }, 12000)
 							}
-							catch (err) {
-								$("[name=paymentMethod]").val('');
-								Utils.sendGA('/error/paypalSetUp/?e=' + encodeURIComponent(err.message));
-								$("#btnpaypal").hide();
-							}
-							setTimeout(function () { $("body").hideLoding() }, 12000)
-
 						});
 					});
 				});
