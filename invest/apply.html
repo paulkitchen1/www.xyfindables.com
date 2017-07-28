@@ -291,6 +291,11 @@
 			.navbar-toggle {
 				margin-top: 14px;
 			}
+
+			.multi .se-input {
+				padding-left:4px;
+				padding-right:4px;
+			}
 		}
 
 		@media (min-width:415px) {
@@ -387,8 +392,9 @@
 			/* Video - Css*/
 
 			.btn-pay {
-				width: 100px;
-				margin: 4px 0 0 4px
+				background-color:ghostwhite;
+				width: 255px;
+				margin: 8px 0 0 5px
 			}
 
 			.button {
@@ -653,7 +659,7 @@
 				line-height: 1;
 				font-size: 1.5em;
 				position: absolute;
-				top: 5%;
+				top: 1%;
 				right: 2%;
 				text-decoration: none;
 				color: #bbb;
@@ -1202,6 +1208,30 @@
 								<div class="se-input col-xs-12">
 									<div>
 										<div>
+											<label class="control-label">
+												I have read and agree to the terms set in the <a href="" data-modal-id="subscription" onclick="openSubAgreement(); return false;">subscription agreement</a>:
+											</label>
+											<div class="se-input-group row form-group">
+												<div class="col-xs-12">
+													<div class="row">
+														<div class="se-input col-xs-12">
+															<div>
+																<div style="position:relative">
+																	<input placeholder="Signature (required)" name="literal" type="text" class="form-control" required="required">
+																	<div class="se-tip-trigger glyphicon glyphicon-question-sign" data="signature"></div>
+																</div>
+															</div>
+															<div class="se-tip margin-top se-tip-hidden" name="signature">
+																<div class="tip-content">Sign your name by typing your full legal name.</div>
+																<div class="tip-close">
+																	<a href="">×</a>
+																</div>
+															</div>
+														</div>
+													</div>
+												</div>
+											</div>
+
 											<div class="form-control" style="height:auto;border-color:white">
 												<label class="pretty-checkbox-label">
 													<span class="checkbox">
@@ -1217,7 +1247,7 @@
 						</div>
 					</div>
 
-					<div class="se-input-group row form-group">
+					<div class="se-input-group row form-group payment-method">
 						<div class="col-xs-12 col-sm-3 text-left">
 							<label class="control-label">
 								Payment Method*
@@ -1441,29 +1471,7 @@
 
 				<div class="subject-box" ui-view="subAgreement" style="border-bottom:none;display:none">
 
-					<!--<label class="control-label">
-							I have read and agree to the terms set in the <a href="" data-modal-id="subscription" onclick="openSubAgreement(); return false;">subscription agreement</a>:
-						</label>
-					<div class="se-input-group row form-group">
-						<div class="col-xs-12">
-							<div class="row">
-								<div class="se-input col-xs-12">
-									<div>
-										<div style="position:relative">
-											<input placeholder="Signature (required)" name="literal" type="text" class="form-control" required="required">
-											<div class="se-tip-trigger glyphicon glyphicon-question-sign" data="signature"></div>
-										</div>
-									</div>
-									<div class="se-tip margin-top se-tip-hidden" name="signature">
-										<div class="tip-content">Sign your name by typing your full legal name.</div>
-										<div class="tip-close">
-											<a href="">×</a>
-										</div>
-									</div>
-								</div>
-							</div>
-						</div>
-					</div>-->
+
 
 					<div class="form-group submit-wrapper">
 
@@ -1655,7 +1663,7 @@
 				if (checkInputs(".container")) {
 					if (!$("[name=paymentMethod]").val()) {
 						$("[name=paymentMethod]").closest(".row").css({ 'border': 'red solid 1px' });
-						alert('Please select a Payment Mehod');
+						alert('Please select a Payment Method');
 						$(".modal-overlay").remove();
 						return;
 					}
@@ -1886,8 +1894,7 @@
 				});
 
 				$(window).resize(function () {
-					$(".modal-box").css({
-						top: $(window).scrollTop() + (($(window).height() - $(".modal-box").outerHeight()) / 3),
+					$(".modal-box").css({						
 						left: ($(window).width() - $(".modal-box").outerWidth()) / 2
 					});
 					$(".subscription-body").css({
@@ -1896,8 +1903,7 @@
 				});
 
 				$(window).scroll(function () {
-					$(".modal-box").css({
-						top: $(window).scrollTop() + (($(window).height() - $(".modal-box").outerHeight()) / 3),
+					$(".modal-box").css({						
 						left: ($(window).width() - $(".modal-box").outerWidth()) / 2
 					});
 					$(".subscription-body").css({
@@ -1917,24 +1923,24 @@
 
 
 			function openSubAgreement() {
-				$("#subscription .modal-body").load("/invest/subscription?numberOfShares=" + encodeURIComponent($("[name=numberOfShares]").val().trim()) +
+				$("#subscription .modal-body").load("https://www.xyfindit.com/invest/subscription?numberOfShares=" + encodeURIComponent($("[name=numberOfShares]").val().trim()) +
 					"&first_name=" + encodeURIComponent($("[name=first_name]").val().trim()) + "&last_name=" + encodeURIComponent($("[name=last_name]").val().trim()) + "&address1=" + encodeURIComponent($("[name=address1]").val().trim()) +
 					"&city=" + encodeURIComponent($("[name=city]").val().trim()) + "&state=" + encodeURIComponent($("[name=state]").val().trim()) + "&zipcode=" + encodeURIComponent($("[name=zipcode]").val().trim()) + "&d=" + +new Date());
 			}
 		</script>
-		<div id="bankPopup" class="modal-box">
+		<div id="bankPopup" class="modal-box" style="top:400px" >
 			<header>
 				<a href="#" class="js-modal-close close">×</a>
 				<h3>How do I find my account number and routing number?</h3>
 			</header>
 			<div class="modal-body">
-				<img src="/img/invest/bank-check-example.jpg" style="width:100%" />
+				<img src="https://www.xyfindit.com/img/invest/bank-check-example.jpg" style="width:100%" />
 			</div>
 			<footer>
 				<a href="#" class="js-modal-close">Close Button</a>
 			</footer>
 		</div>
-		<div id="subscription" class="modal-box">
+		<div id="subscription" class="modal-box" style="top:64px">
 			<header>
 				<a href="#" class="js-modal-close close">×</a>
 				<h3>Subscription Agreement</h3>
@@ -2119,11 +2125,12 @@
 						client: clientInstance
 					}, function (err, paypalInstance) {
 						paypalbtn.addEventListener('click', function () {
-							if (!confirm('Upon Successful completion of PayPal Payment, investment will be automatically submitted.  Do you want to continue?')) {
+							if (!confirm('Upon Successful completion of PayPal Payment, your investment will be automatically submitted.  Do you want to continue?')) {
+								$("[name=paymentMethod]").val('');
 								return;
 							}
 							if (!checkInputs(".container")) {
-								alert('Please agree to acknowledgement.');
+								alert('Please correct errors in red.');
 								return;
 							}
 
@@ -2150,9 +2157,11 @@
 									}
 								}, function (err, tokenizationPayload) {
 									if (err) {
+										$("[name=paymentMethod]").val('');
 										if (err.code === 'PAYPAL_BROWSER_NOT_SUPPORTED') {
 											Utils.sendGA('PAYPAL_BROWSER_NOT_SUPPORTED');
 											alert('PAYPAL_BROWSER_NOT_SUPPORTED');
+											
 										}
 										else {
 											if (JSON.stringify(err).indexOf('The combination of country and city is invalid') > -1) {
@@ -2165,8 +2174,7 @@
 											}
 											else {
 												Utils.sendGA('/error/tokenize/?e=' + encodeURIComponent(JSON.stringify(err)));
-											}
-											$("[name=paymentMethod]").val('');
+											}											
 										}
 									}
 									else {
@@ -2177,7 +2185,7 @@
 								});
 							}
 							catch (err) {
-
+								$("[name=paymentMethod]").val('');
 								Utils.sendGA('/error/paypalSetUp/?e=' + encodeURIComponent(err.message));
 								$("#btnpaypal").hide();
 							}
@@ -2204,38 +2212,6 @@
 
 	</script>
 
-
-
-
-	<!-- Facebook Pixel Code -->
-	<script>
-			! function (f, b, e, v, n, t, s) {
-				if (f.fbq) return;
-				n = f.fbq = function () {
-					n.callMethod ?
-						n.callMethod.apply(n, arguments) : n.queue.push(arguments)
-				};
-				if (!f._fbq) f._fbq = n;
-				n.push = n;
-				n.loaded = !0;
-				n.version = '2.0';
-				n.queue = [];
-				t = b.createElement(e);
-				t.async = !0;
-				t.src = v;
-				s = b.getElementsByTagName(e)[0];
-				s.parentNode.insertBefore(t, s)
-			}(window,
-				document, 'script', 'https://connect.facebook.net/en_US/fbevents.js');
-			fbq('init', '322839541477444'); // Insert your pixel ID here.
-			fbq('track', 'PageView');
-	</script>
-	<noscript>
-		<img height="1" width="1" style="display:none"
-			 src="https://www.facebook.com/tr?id=322839541477444&ev=PageView&noscript=1" />
-	</noscript>
-	<!-- DO NOT MODIFY -->
-	<!-- End Facebook Pixel Code -->
 
 
 </body>
