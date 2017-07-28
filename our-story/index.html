@@ -117,7 +117,13 @@
             width: 100%;
             transition: 0.2s;
             opacity: .95;
-            padding-bottom:30px;
+            padding-bottom: 30px;
+        }
+
+        .navlink {
+            margin-top: 2px !important;
+            padding-left: 15px;
+            margin-bottom: 0px !important;
         }
 
         .galleryimage img:hover {
@@ -128,11 +134,16 @@
             opacity: 1;
         }
 
-        @media (min-width:766px) and (max-width: 1200px){
-          .galleryimage img {
-            padding-left:30px;
-            padding-right:30px;
-          }
+        .active .navlink {
+            background-color: gainsboro;
+            color: black !important;
+        }
+
+        @media (min-width:766px) and (max-width: 1200px) {
+            .galleryimage img {
+                padding-left: 30px;
+                padding-right: 30px;
+            }
         }
 
         @media (min-width:768px) {
@@ -167,13 +178,23 @@
                 width: 90% !important;
                 margin-left: 5% !important;
             }
-
             .galleryimage {
-              text-align: center;
+                text-align: center;
             }
-
             .galleryimage img {
-              padding-right:14px;
+                width: 100% !important;
+            }
+            .sectionslabel {
+                text-align: center;
+            }
+            .navlink {
+                padding-left: 0px;
+            }
+        }
+
+        @media (max-height:570px) {
+            .gps-banner {
+                height: 200px !important;
             }
         }
     </style>
@@ -245,22 +266,27 @@
         <div class="container">
             <div class="row">
                 <div class="col-md-3 col-sm-12">
-                    <div class="col-md-12 col-sm-4">
-                        <a id="overviewlink" href="">
-                            <h4 class="navlink" style="font-weight:600 !important;"> Overview </h4>
-                        </a>
-                    </div>
-                    <div class="col-md-12 col-sm-4 ">
-                        <a id="storylink" href="">
-                            <h4 class="navlink" style="font-weight:600 !important;"> Our Story </h4>
-                        </a>
-                    </div>
-                    <div class="col-md-12 col-sm-4 ">
-                        <a id="timelinelink" href="">
-                            <h4 class="navlink" style="font-weight:600 !important;"> Company Timeline </h4>
-                        </a>
+                    <h2 class="sectionslabel"> Section: </h2>
+                    <div class="desktopSections">
+                        <div class="col-md-12 col-sm-4 ">
+                            <a id="overviewlink" class="sectionlink active" href="">
+                                <h4 class="navlink" style="color:grey; font-weight:600 !important;"> Overview </h4>
+                            </a>
+                        </div>
+                        <div class="col-md-12 col-sm-4">
+                            <a id="storylink" class="sectionlink" href="">
+                                <h4 class="navlink" style="color:grey; font-weight:600 !important;"> Our Story </h4>
+                            </a>
+                        </div>
+                        <div class="col-md-12 col-sm-4">
+                            <a id="timelinelink" class="sectionlink" href="">
+                                <h4 class="navlink" style="color:grey; font-weight:600 !important;"> Company Timeline </h4>
+                            </a>
+                        </div>
                     </div>
                 </div>
+
+
 
                 <hr class="hrlink">
                 <div class="col-sm-12 col-md-9" style="font-size:16px;">
@@ -368,13 +394,15 @@
 
                 <p>YOU SHOULD READ THE OFFERING CIRCULAR BEFORE MAKING ANY INVESTMENT.</p>
 
-                <p> OFFERING DOCUMENTATION CAN BE FOUND AT <a href="../offering" target="_blank"> www.xyfindables.com/offering. </a></p>
+                <p> OFFERING DOCUMENTATION CAN BE FOUND AT <a href="../offering" > www.xyfindables.com/offering. </a></p>
             </div>
         </div>
 
         <script>
             $("#overviewlink").on("click", function(e) {
                 e.preventDefault();
+                $(".sectionlink").removeClass("active");
+                $(this).addClass("active");
                 $("#overviewcontent").show();
                 $("#overviewbanner").show();
                 $("#overviewgallery").show();
@@ -384,10 +412,12 @@
                 $("#timeline").hide();
                 $("#timelineline").show();
                 $("#timelinebanner").hide();
-
             });
+
             $("#storylink").on("click", function(e) {
                 e.preventDefault();
+                $(".sectionlink").removeClass("active");
+                $(this).addClass("active");
                 $("#overviewcontent").hide();
                 $("#overviewgallery").hide();
                 $("#overviewbanner").hide();
@@ -399,8 +429,11 @@
                 $("#timelinebanner").hide();
 
             });
+
             $("#timelinelink").on("click", function(e) {
                 e.preventDefault();
+                $(".sectionlink").removeClass("active");
+                $(this).addClass("active");
                 $("#overviewcontent").hide();
                 $("#overviewgallery").hide();
                 $("#overviewbanner").hide();
@@ -446,9 +479,8 @@
                 <div class="col-sm-6" style="margin-top:7px;">
                     <ul class="pull-right">
                         <li><a href="../contact-us">Contact Us</a></li>
-                        <li><a href="http://https://www.xyfindit.com/" target="_blank">Products</a></li>
+                        <li><a href="http://www.xyfindit.com/" target="_blank">Products</a></li>
                         <li class="text-center"><a href="../our-story">Our Story</a></li>
-                        <li class="text-center"><a href="../Team">Team</a></li>
                         <li class="text-center"><a href="../team">Team</a></li>
                         <li class="text-center"><a href="../faq">FAQ</a></li>
                         <li class="text-center"><a target="_blank" href="https://my.xyfindit.com/">Sign In</a></li>

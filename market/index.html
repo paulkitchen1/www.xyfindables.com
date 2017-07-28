@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>Our Story | XY - The Findables Company™</title>
+    <title>Findables Market | XY - The Findables Company™</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="description" content="Invest in XY The Findables Company today!">
     <meta property="og:title" content="Join the movement and invest in XY The Findables Company - now Reg A+ certified! ">
@@ -132,6 +132,16 @@
             font-size: 18px;
             padding: 15px;
         }
+        .navlink {
+            margin-top: 2px !important;
+            padding-left: 15px;
+            margin-bottom: 0px !important;
+        }
+
+        .active .navlink {
+            background-color: gainsboro;
+            color: black !important;
+        }
 
         @media (min-width:766px) and (max-width: 1200px) {
             .galleryimage img {
@@ -172,8 +182,8 @@
             h1 {
                 text-align: center;
             }
-            .textlink {
-                text-align: center !important;
+            .navlink {
+                text-align: center;
             }
             .timelineimg {
                 width: 90% !important;
@@ -185,6 +195,18 @@
             .galleryimage img {
                 padding-right: 14px;
             }
+            .sectionslabel {
+                text-align: center;
+            }
+            .navlink {
+                padding-left: 0px;
+            }
+        }
+        @media (max-height:570px) {
+          .gps-banner {
+            height: 200px !important;
+            background-position: -350 0px !important;
+          }
         }
     </style>
 
@@ -254,24 +276,29 @@
     <section>
         <div class="container">
             <div class="row">
+                <div class="col-md-3 col-sm-12">
+                    <h2 class="sectionslabel"> Section: </h2>
+                    <div class="desktopSections">
+                        <div class="col-md-12 col-sm-4 ">
+                            <a id="overviewlink" class="sectionlink active" href="">
+                                <h4 class="navlink" style="color:grey; font-weight:600 !important;"> Introduction </h4>
+                            </a>
+                        </div>
+                        <div class="col-md-12 col-sm-4">
+                            <a id="storylink" class="sectionlink" href="">
+                                <h4 class="navlink" style="color:grey; font-weight:600 !important;"> Findables Market</h4>
+                            </a>
+                        </div>
+                        <div class="col-md-12 col-sm-4">
+                            <a id="timelinelink" class="sectionlink" href="">
+                                <h4 class="navlink" style="color:grey; font-weight:600 !important;"> Competitors </h4>
+                            </a>
+                        </div>
+                    </div>
+                </div>
 
-              <div class="col-md-3 col-sm-12 textlink">
-                  <div class="col-md-12 col-sm-4">
-                      <a id="overviewlink" href="">
-                          <h4 style="font-weight:600 !important;"> Introduction </h4>
-                      </a>
-                  </div>
-                  <div class="col-md-12 col-sm-4 ">
-                      <a id="storylink" href="">
-                          <h4 style="font-weight:600 !important;"> Findables Market </h4>
-                      </a>
-                  </div>
-                  <div class="col-md-12 col-sm-4 ">
-                      <a id="timelinelink" href="">
-                          <h4 style="font-weight:600 !important;"> Competitors </h4>
-                      </a>
-                  </div>
-              </div>
+                <hr class="hrlink">
+
 
                 <div class="col-sm-12 col-md-9" style="font-size:16px; margin-top:5px;">
                     <div id="overviewcontent">
@@ -358,9 +385,7 @@
             </div>
 
             <div style="text-align:center; margin-top:20px;">
-                <a href="/" class="btn btn-lg btn-default readmore">Back Home</a>
-                <a href="invest/apply.html" class="btn btn-lg _btn_buy" style="padding-left: 45px; padding-right: 45px; margin-top:5px;">Invest Now</a>
-
+                <a href="/invest/apply.html" class="btn btn-lg _btn_buy" style="padding-left: 50px; padding-right: 50px; margin-top:5px;">Invest Now</a>
             </div>
 
             <hr style="margin-top: 30px; margin-bottom:30px;">
@@ -381,49 +406,55 @@
         </div>
 
         <script>
-            $("#overviewlink").on("click", function(e) {
-                e.preventDefault();
-                $("#overviewcontent").show();
-                $("#overviewbanner").show();
-                $("#overviewgallery").show();
-                $("#storybanner").hide();
-                $("#storycontent").hide();
-                $("#timelinecontent").hide();
-                $("#timeline").hide();
-                $("#timelineline").show();
-                $("#timelinebanner").hide();
-                $("#ready").hide();
+        $("#overviewlink").on("click", function(e) {
+            e.preventDefault();
+            $(".sectionlink").removeClass("active");
+            $(this).addClass("active");
+            $("#overviewcontent").show();
+            $("#overviewbanner").show();
+            $("#overviewgallery").show();
+            $("#storybanner").hide();
+            $("#storycontent").hide();
+            $("#timelinecontent").hide();
+            $("#timeline").hide();
+            $("#timelineline").show();
+            $("#timelinebanner").hide();
+        });
 
-            });
-            $("#storylink").on("click", function(e) {
-                e.preventDefault();
-                $("#overviewcontent").hide();
-                $("#overviewgallery").hide();
-                $("#overviewbanner").hide();
-                $("#storycontent").show();
-                $("#storybanner").show();
-                $("#timelinecontent").hide();
-                $("#timeline").hide();
-                $("#timelineline").hide();
-                $("#timelinebanner").hide();
-                $("#ready").show();
+        $("#storylink").on("click", function(e) {
+            e.preventDefault();
+            $(".sectionlink").removeClass("active");
+            $(this).addClass("active");
+            $("#overviewcontent").hide();
+            $("#overviewgallery").hide();
+            $("#overviewbanner").hide();
+            $("#storycontent").show();
+            $("#storybanner").show();
+            $("#timelinecontent").hide();
+            $("#timeline").hide();
+            $("#timelineline").hide();
+            $("#timelinebanner").hide();
 
-            });
-            $("#timelinelink").on("click", function(e) {
-                e.preventDefault();
-                $("#overviewcontent").hide();
-                $("#overviewgallery").hide();
-                $("#overviewbanner").hide();
-                $("#storybanner").hide();
-                $("#storycontent").hide();
-                $("#timelinecontent").show();
-                $("#timeline").show();
-                $("#timelineline").show();
-                $("#timelinebanner").show();
-                $("#ready").show();
+        });
+
+        $("#timelinelink").on("click", function(e) {
+            e.preventDefault();
+            $(".sectionlink").removeClass("active");
+            $(this).addClass("active");
+            $("#overviewcontent").hide();
+            $("#overviewgallery").hide();
+            $("#overviewbanner").hide();
+            $("#storybanner").hide();
+            $("#storycontent").hide();
+            $("#timelinecontent").show();
+            $("#timeline").show();
+            $("#timelineline").show();
+            $("#timelinebanner").show();
+
+        });
 
 
-            });
+
         </script>
     </section>
 
@@ -456,15 +487,14 @@
                     </a>
                 </div>
                 <div class="col-sm-6" style="margin-top:7px;">
-                    <ul class="pull-right">
-                        <li><a href="../contact-us">Contact Us</a></li>
-                        <li><a href="http://https://www.xyfindit.com/" target="_blank">Products</a></li>
-                        <li class="text-center"><a href="../our-story">Our Story</a></li>
-                        <li class="text-center"><a href="../Team">Team</a></li>
-                        <li class="text-center"><a href="../team">Team</a></li>
-                        <li class="text-center"><a href="../faq">FAQ</a></li>
-                        <li class="text-center"><a target="_blank" href="https://my.xyfindit.com/">Sign In</a></li>
-                    </ul>
+                  <ul class="pull-right">
+                      <li><a href="../contact-us">Contact Us</a></li>
+                      <li><a href="http://www.xyfindit.com/" target="_blank">Products</a></li>
+                      <li class="text-center"><a href="../our-story">Our Story</a></li>
+                      <li class="text-center"><a href="../team">Team</a></li>
+                      <li class="text-center"><a href="../faq">FAQ</a></li>
+                      <li class="text-center"><a target="_blank" href="https://my.xyfindit.com/">Sign In</a></li>
+                  </ul>
                 </div>
             </div>
         </div>
