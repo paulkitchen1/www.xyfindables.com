@@ -1672,8 +1672,7 @@
 						$(".modal-overlay").remove();
 						return;
 					}
-					if (e != null)
-						e.stopPropagation();
+
 
 					$.ajax({
 						url: "https://www.xyfindit.com/api/invest",
@@ -2115,7 +2114,7 @@
 
 
 			function loadPayPal(data) {
-				var paypalbtn = document.getElementsByClassName('continue-btn')[0];
+				var paypalbtn = document.getElementsByClassName('continue-pp-btn')[0];
 				// Create a Client component
 				braintree.client.create({
 					authorization: data
@@ -2123,7 +2122,7 @@
 					// Create PayPal component
 					if (clientErr) {
 						Utils.sendGA('/error/paypalCreate?err=' + encodeURIComponent(JSON.stringify(clientErr)));
-						$("#btnpaypal").hide();
+						$("[name=paymentMethod] [value=paypal]").remove();
 						return;
 					}
 					braintree.paypal.create({
@@ -2160,11 +2159,11 @@
 										}
 									}, function (err, tokenizationPayload) {
 										if (err) {
-											$("[name=paymentMethod]").val('');
+											
 											if (err.code === 'PAYPAL_BROWSER_NOT_SUPPORTED') {
 												Utils.sendGA('PAYPAL_BROWSER_NOT_SUPPORTED');
 												alert('PAYPAL_BROWSER_NOT_SUPPORTED');
-
+												$("[name=paymentMethod] [value=paypal]").remove();
 											}
 											else {
 												if (JSON.stringify(err).indexOf('The combination of country and city is invalid') > -1) {
