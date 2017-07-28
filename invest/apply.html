@@ -701,7 +701,7 @@
 							<h3 style="margin-top: 40px">Invest in XY Findables&trade;</h3>
 						</div>
 					</div>
-					<div class="row text-center" style="margin:15px 30px">
+					<div class="row text-center invest-summary" style="margin:15px 30px">
 						You are only a few steps away from owning your piece of the XY - The Findables&trade; Company. If you are unsure about anything in this application process, please feel free to call at the number in the menu above. We pride ourselves on being very responsive
 						to our customers and investors, and look forward to including you as part of the XY Family.
 					</div>
@@ -1208,36 +1208,12 @@
 								<div class="se-input col-xs-12">
 									<div>
 										<div>
-											<label class="control-label">
-												I have read and agree to the terms set in the <a href="" data-modal-id="subscription" onclick="openSubAgreement(); return false;">subscription agreement</a>:
-											</label>
-											<div class="se-input-group row form-group">
-												<div class="col-xs-12">
-													<div class="row">
-														<div class="se-input col-xs-12">
-															<div>
-																<div style="position:relative">
-																	<input placeholder="Signature (required)" name="literal" type="text" class="form-control" required="required">
-																	<div class="se-tip-trigger glyphicon glyphicon-question-sign" data="signature"></div>
-																</div>
-															</div>
-															<div class="se-tip margin-top se-tip-hidden" name="signature">
-																<div class="tip-content">Sign your name by typing your full legal name.</div>
-																<div class="tip-close">
-																	<a href="">×</a>
-																</div>
-															</div>
-														</div>
-													</div>
-												</div>
-											</div>
-
 											<div class="form-control" style="height:auto;border-color:white">
 												<label class="pretty-checkbox-label">
 													<span class="checkbox">
 														<input type="checkbox" name="disclaimer" required="required" value="1">
 													</span>
-													<span class="checkbox-text">I acknowledge that I understand that this investment is at risk and may be lost. I confirm that this purchase price is not more than the greater of 10% of my annual income or net worth (or no more than the greater of 10% of revenue or net assets for a business), unless I am an accredited investor.</span>
+													<span class="checkbox-text">I acknowledge that I understand that this investment is at risk and may be lost. I confirm that this purchase price is not more than the greater of 10% of my annual income or net worth (or no more than the greater of 10% of revenue or net assets for a business), unless I am an accredited investor.  I have read and agree to the terms set in the <a href="" data-modal-id="subscription" onclick="openSubAgreement(); return false;">subscription agreement</a>.</span>
 												</label>
 											</div>
 										</div>
@@ -1624,17 +1600,24 @@
 				$(".btn-personal").click(function () {
 					if (checkInputs(".container")) {
 						$("[ui-view=personal]").hide();
+						$(".invest-summary").hide();
 						$("[ui-view=amount]").show();
 						$("[ui-view=financial]").show();
+						$(window).scrollTop(45);
 						SaveData();
 						Utils.sendGA('/invest/apply/2');
 						Utils.SendfbEvent('BASIC_INFO')
 					}
+					else {
+						alert("Please correct errors in red.");
+					}
 				})
 				$(".btn-pre-personal").click(function () {
 					$("[ui-view=personal]").show();
+					$(".invest-summary").show();
 					$("[ui-view=amount]").hide();
 					$("[ui-view=financial]").hide();
+					$(window).scrollTop(45);
 				})
 				$(".btn-financial").click(function () {
 					if (checkInputs(".container")) {
@@ -1642,9 +1625,13 @@
 						$("[ui-view=financial]").hide();
 						$("[ui-view=final]").show();
 						$("[ui-view=subAgreement]").show();
+						$(window).scrollTop(45);
 						SaveData();
 						Utils.sendGA('/invest/apply/3');
-						$("body").scrollTop($("[ui-view=amount]").height())
+						//$("body").scrollTop($("[ui-view=amount]").height())
+					}
+					else {
+						alert("Please correct errors in red.");
 					}
 				})
 				$(".btn-pre-financial").click(function () {
@@ -1652,6 +1639,7 @@
 					$("[ui-view=financial]").show();
 					$("[ui-view=final]").hide();
 					$("[ui-view=subAgreement]").hide();
+					$(window).scrollTop(45);
 				})
 
 			});
