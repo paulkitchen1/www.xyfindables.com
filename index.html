@@ -142,7 +142,7 @@
             max-width: 600px;
         }
 
-        .col-lg-8 p {
+        .intro p {
             padding-top: 20px;
         }
 
@@ -166,6 +166,16 @@
         .pstyle {
             margin-left: 10%;
             margin-right: 10%;
+            font-size: 17px;
+            line-height: 24px;
+        }
+
+        .introp {
+            margin-left: 10%;
+            margin-right: 10%;
+            font-size: 17px;
+            line-height: 24px;
+            padding-top:10px;
         }
 
         .innovationPicture:hover {
@@ -229,20 +239,27 @@
             p {
                 text-align: left !important;
             }
-
             .pstyle {
+                margin-right: 7px !important;
+                margin-left: 7px !important;
+            }
+            .introp {
                 margin-right: 7px !important;
                 margin-left: 7px !important;
             }
             .success {
                 margin-top: -20px;
             }
-            .col-lg-8 p {
+            .introp p {
                 padding-top: 5px;
             }
 
-            .perks p{
-              text-align: center !important;
+            .perks p {
+                text-align: center !important;
+            }
+
+            .ourStory {
+              margin-bottom:15px !important;
             }
         }
 
@@ -313,7 +330,7 @@
                         <li class="text-center"><a href="faq">FAQ</a></li>
                         <li class="text-center visible-xs"><a href="contact-us">Contact Us</a></li>
                         <li class="text-center"><a href="offering">SEC Documents</a></li>
-                        <li class="text-center"><a class="btn _btn_buy" href="invest/apply.html"  style="border-color:white; border-radius:6px;">Invest Now</a></li>
+                        <li class="text-center"><a class="btn _btn_buy" href="invest/apply.html" style="border-color:white; border-radius:6px;">Invest Now</a></li>
 
                     </ul>
                 </div>
@@ -343,7 +360,7 @@
                             <div class="col-xs-12">
                                 <div class="carousel-content text-center">
                                     <h1 class="" style="color:white">Invest in the Future of Findability</h1>
-                                    <a href="invest/apply.html"  class="btn btn-lg _btn_buy" style="padding-left: 35px; padding-right: 35px;">Invest Now</a>
+                                    <a href="invest/apply.html" class="btn btn-lg _btn_buy" style="padding-left: 35px; padding-right: 35px;">Invest Now</a>
 
                                 </div>
                             </div>
@@ -357,7 +374,7 @@
                             <div class="col-sm-12">
                                 <div class="carousel-content text-center">
                                     <h1 class="" style="color:white; padding-top:1vh;">XY Devices find anything around the world</h1>
-                                    <a href="invest/apply.html"  class="btn btn-lg _btn_buy" style="padding-left: 35px; padding-right: 35px;">Invest Now</a>
+                                    <a href="invest/apply.html" class="btn btn-lg _btn_buy" style="padding-left: 35px; padding-right: 35px;">Invest Now</a>
                                 </div>
                             </div>
                         </div>
@@ -370,7 +387,7 @@
                             <div class="col-sm-8">
                                 <div class="carousel-content">
                                     <h1 class="text-center" style="color:white; margin-top:-15px;"> Revenue has doubled annually since initial release.</h1>
-                                    <a href="invest/apply.html"  class="btn btn-lg _btn_buy wonky" style="margin-left:42%; padding-left: 35px; padding-right: 35px;">Invest Now</a>
+                                    <a href="invest/apply.html" class="btn btn-lg _btn_buy wonky" style="margin-left:42%; padding-left: 35px; padding-right: 35px;">Invest Now</a>
                                 </div>
                             </div>
                         </div>
@@ -383,7 +400,7 @@
                             <div class="col-sm-8">
                                 <div class="carousel-content ">
                                     <h1 class="text-center" style="color:white; margin-top:-15px;"> First Bluetooth and GPS Hybrid product in market.</h1>
-                                    <a href="invest/apply.html"  class="btn btn-lg _btn_buy wonky" style="margin-left:42%; padding-left: 35px; padding-right: 35px;">Invest Now</a>
+                                    <a href="invest/apply.html" class="btn btn-lg _btn_buy wonky" style="margin-left:42%; padding-left: 35px; padding-right: 35px;">Invest Now</a>
                                 </div>
                             </div>
                         </div>
@@ -396,7 +413,7 @@
                             <div class="col-sm-8">
                                 <div class="carousel-content ">
                                     <h1 class=" text-center" style="color:white; margin-top:-15px;"> Join us as an initial investor before our IPO.</h1>
-                                    <a href="invest/apply.html"  class="btn btn-lg _btn_buy wonky " style="margin-left:42%; padding-left: 35px; padding-right: 35px;">Invest Now</a>
+                                    <a href="invest/apply.html" class="btn btn-lg _btn_buy wonky " style="margin-left:42%; padding-left: 35px; padding-right: 35px;">Invest Now</a>
                                 </div>
                             </div>
                         </div>
@@ -408,7 +425,7 @@
                             <div class="col-sm-12">
                                 <div class="carousel-content text-center">
                                     <h1 class="" style="color:white; padding-top:1vh;"> Keep track of everything.</h1>
-                                    <a href="invest/apply.html"  class="btn btn-lg _btn_buy" style="left:30%; padding-left: 35px; padding-right: 35px;">Invest Now</a>
+                                    <a href="invest/apply.html" class="btn btn-lg _btn_buy" style="left:30%; padding-left: 35px; padding-right: 35px;">Invest Now</a>
                                 </div>
                             </div>
                         </div>
@@ -475,20 +492,18 @@
         <hr style="width:64%; margin-top:4vh;" class="hr-dis">
 
         <div class="row text-center" style="margin-top:30px ; margin-bottom:0px; ">
-            <h2 style="font-size:30px; margin-bottom:0px; padding-bottom: 0px; line-height:22px;"> Our Vision: </h2>
+            <h2 class="ourVision" style="font-size:30px;  padding-bottom: 0px; line-height:22px;"> Our Vision: </h2>
         </div>
         <div class="row text-center" style="margin-top:0px; padding-top:0px;">
             <h4 style="font-size:18px; line-height:20px;"> A world where everything is "FINDABLE" </h4>
         </div>
-        <div class="row text-center" style="margin-bottom:25px;">
-            <p class="col-lg-2"></p>
-            <p class="col-lg-8 pstyle" style="font-size:18px;">By combining Bluetooth, Cellular, GPS, and Wifi, we have created a suite of technologies that enable our users and partners to make everyday items findable.</p>
-            <p class="col-lg-2"></p>
+        <div class="row text-center introp" style="margin-bottom:25px;">
+            <p class=" pstyle" style="font-size:18px;">By combining Bluetooth, Cellular, GPS, and Wifi, we have created a suite of technologies that enable our users and partners to make everyday items findable.</p>
         </div>
 
         <div class="row">
             <div class="col-sm-12 text-center _btn_group_order_now" style="margin-bottom:45px">
-                <a href="invest/apply.html"  class="btn btn-lg _btn_buy" style="padding-left: 35px; padding-right: 35px;">Invest Now</a>
+                <a href="invest/apply.html" class="btn btn-lg _btn_buy" style="padding-left: 35px; padding-right: 35px;">Invest Now</a>
             </div>
         </div>
 
@@ -523,7 +538,7 @@
         <div class="row" style="padding-top:20px;">
             <div class="col-sm-12 text-center _btn_group_order_now" style="margin-bottom:45px">
                 <a href="market" class="btn btn-lg _btn_buy" style="padding-left: 32px; padding-right: 32px; margin-top:10px; color:#505050 !important; background-color:transparent !important; border-color:#505050 ;">Market Info</a>
-                <a href="invest/apply.html"  class="btn btn-lg _btn_buy" style="padding-left: 35px; margin-top:10px; padding-right: 35px;">Invest Now</a>
+                <a href="invest/apply.html" class="btn btn-lg _btn_buy" style="padding-left: 35px; margin-top:10px; padding-right: 35px;">Invest Now</a>
             </div>
         </div>
 
@@ -549,7 +564,7 @@
                         </div>
 
                         <div class="col-sm-12 text-center _btn_group_order_now projectedMargin" style="margin-bottom:25px">
-                            <a  href="offering" class="btn btn-lg _btn_buy secbtn" style="margin-top:15px; padding-left: 45px; padding-right: 45px; color:#505050 !important; background-color:transparent !important; border-color:#505050 ;">SEC Info</a>
+                            <a href="offering" class="btn btn-lg _btn_buy secbtn" style="margin-top:15px; padding-left: 45px; padding-right: 45px; color:#505050 !important; background-color:transparent !important; border-color:#505050 ;">SEC Info</a>
                         </div>
                         <br>
 
@@ -573,8 +588,8 @@
                             <p> Potentially 1000% returns on investment or more!</p>
                         </div>
                         <div class="col-sm-12 text-center _btn_group_order_now" style="margin-bottom:30px; margin-top:10px;">
-                            <a  href="perks" class="btn btn-lg _btn_buy" style="padding-left: 35px; padding-right: 35px; color:#505050 !important; margin-bottom: 5px; background-color:transparent !important; border-color:#505050 ;">Perks Page</a>
-                            <a href="invest/apply.html"  class="btn btn-lg _btn_buy" style="padding-left: 35px; padding-right: 35px; margin-bottom: 5px;">Invest Now</a>
+                            <a href="perks" class="btn btn-lg _btn_buy" style="padding-left: 35px; padding-right: 35px; color:#505050 !important; margin-bottom: 5px; background-color:transparent !important; border-color:#505050 ;">Perks Page</a>
+                            <a href="invest/apply.html" class="btn btn-lg _btn_buy" style="padding-left: 35px; padding-right: 35px; margin-bottom: 5px;">Invest Now</a>
 
                         </div>
                     </div>
@@ -608,7 +623,7 @@
 
         <div class="col-sm-12 text-center _btn_group_order_now" style="margin-bottom: 60px;  margin-toP: 25px;">
             <a target="_blank" href="https://www.xyfindit.com/" class="btn btn-lg btn-default readmore">See Products Page</a>
-            <a href="invest/apply.html"  class="btn btn-lg _btn_buy" style="padding-left: 45px; padding-right: 45px; margin-top:5px;">Invest Now</a>
+            <a href="invest/apply.html" class="btn btn-lg _btn_buy" style="padding-left: 45px; padding-right: 45px; margin-top:5px;">Invest Now</a>
         </div>
 
         <img src="index_files/xy3_banner.jpg" class="img-responsive">
@@ -620,7 +635,7 @@
         </div>
 
         <div class="col-sm-12 text-center" style="padding-top:30px; padding-bottom:10px;">
-            <a href="invest/apply.html"  class="btn btn-lg _btn_buy" style="padding-left:35px; padding-right:35px">Invest Now</a>
+            <a href="invest/apply.html" class="btn btn-lg _btn_buy" style="padding-left:35px; padding-right:35px">Invest Now</a>
         </div>
         <div class="col-sm-12 text-center">
             <hr style="padding:20px;">
@@ -634,7 +649,7 @@
 
             <p>YOU SHOULD READ THE OFFERING CIRCULAR BEFORE MAKING ANY INVESTMENT.</p>
 
-            <p> OFFERING DOCUMENTATION CAN BE FOUND AT <a href="offering" > www.xyfindables.com/offering. </a></p>
+            <p> OFFERING DOCUMENTATION CAN BE FOUND AT <a href="offering"> www.xyfindables.com/offering. </a></p>
         </div>
     </div>
     </div>
