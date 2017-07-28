@@ -1551,6 +1551,7 @@
 						$("[name=credit-area]").hide();
 						$("[name=paymentMethod]").val("ach");
 						Utils.sendGA('PayChecking');
+						investParts();
 					} else if ($(this).attr("data-value") == "wire") {
 						$("[name=ach-data]").hide();
 						$("[name=credit-area]").hide();
@@ -1560,11 +1561,13 @@
 						$("[name=credit-area]").show();
 						$("[name=paymentMethod]").val("credit");
 						Utils.sendGA('PayCredit');
+						investParts();
 					} else {
 						$("[name=ach-data]").hide();
 						$("[name=credit-area]").hide();
 						$("[name=paymentMethod]").val("paypal");
 						Utils.sendGA('PayPayPal');
+						investParts();
 					}
 				});
 
