@@ -508,6 +508,10 @@ input.search-form:hover {
     #main-slider .carousel .item {
         height: 400px;
     }
+
+    .blurb {
+      display:none;
+    }
 }
 
 @media (min-height:900px) {
@@ -532,6 +536,16 @@ input.search-form:hover {
     #main-slider .gps-banner img {
         margin-left: 15px
     }
+
+    .blurb {
+      background-color: #636363 !important;
+    }
+
+    .blurbtext{
+      margin-left:10px !important;
+      margin-right:10px !important;
+    }
+
     .carousel-content {
         text-align: center;
         padding-top: 25px;
