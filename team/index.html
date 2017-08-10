@@ -1,4 +1,5 @@
-﻿<html>
+
+<html>
 
 <head>
     <meta charset="utf-8">
@@ -6,10 +7,9 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>Team | XY - The Findables Company™</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="Invest in XY The Findables Company today!">
-    <meta property="og:title" content="Join the movement and invest in XY The Findables Company - now Reg A+ certified! ">
-    <meta property="og:description" content="XY Findables is going above and beyond by expanding its focus on customer experience and involvement. With past success in crowdfunding, a diverse sales channel mix, and a loyal consumer base, the next step
-     for Findables has arrived in the form of direct investment. Now, you can get an even stronger hand in defining the future of Findables even before we go public! Visit our website to learn more!">
+    <meta name="description" content="Meet the XY The Findables Company team and invest today!">
+    <meta property="og:title" content="Meet the team behind XY The Findables Company - now Reg A+ certified! ">
+    <meta property="og:description" content="See the team behind XY The Findables Company! Our employees have a large variety of skills that have made our company grow and develop to where we are today: ready for investment into IPO. You too can join our team and help us achieve IPO!">
     <meta property="og:image" content="https://www.xyfindables.com/img/share/share_img.jpg">
     </script>
     <script async="" src="https://connect.facebook.net/en_US/fbevents.js"></script>
@@ -269,7 +269,7 @@
                         <li class="text-center"><a href="../faq">FAQ</a></li>
                         <li class="text-center visible-xs"><a href="../contact-us">Contact Us</a></li>
                         <li class="text-center"><a href="../offering">SEC Documents</a></li>
-                        <li class="text-center"><a class="btn _btn_buy" href="/invest/apply.html"  style="border-color:white; border-radius:6px;">Invest Now</a></li>
+                        <li class="text-center"><a class="btn _btn_buy" href="/invest/apply.html" style="border-color:white; border-radius:6px;">Invest Now</a></li>
 
                     </ul>
                 </div>
@@ -343,7 +343,9 @@
             <div class="row text-center">
                 <div class="col-sm-12">
                     <h2> Ready to join us? </h2>
-                    <a href="/invest/apply.html"  class="btn btn-lg _btn_buy" style="padding-left: 45px; padding-right: 45px; margin-top:5px;">Invest Now</a>
+                    <a target="" href="../contact-us" class="callnowdesktop btn btn-lg btn-default readmore">Call An Advisor </a>
+                    <a target="" href="tel:877-210-8620" class="callnowmobile btn btn-lg btn-default readmore">Call An Advisor </a>
+                    <a href="/invest/apply.html" class="btn btn-lg _btn_buy" style="padding-left: 50px; padding-right: 50px; margin-top:5px;">Invest Now</a>
                 </div>
             </div>
 
@@ -361,7 +363,7 @@
 
                 <p>YOU SHOULD READ THE OFFERING CIRCULAR BEFORE MAKING ANY INVESTMENT.</p>
 
-                <p> OFFERING DOCUMENTATION CAN BE FOUND AT <a href="../offering" > www.xyfindables.com/offering. </a></p>
+                <p> OFFERING DOCUMENTATION CAN BE FOUND AT <a href="../offering"> www.xyfindables.com/offering. </a></p>
             </div>
         </div>
     </section>
@@ -389,19 +391,19 @@
             <div class="row">
                 <div class="col-sm-6" style="margin-top:7px;">
                     Copyright © 2017
-                    <a href="http://www.xyfindables.com" >
+                    <a href="http://www.xyfindables.com">
                         <nobr>XY - The Findables Company</nobr>
                     </a>
                 </div>
                 <div class="col-sm-6" style="margin-top:7px;">
-                  <ul class="pull-right">
-                      <li><a href="../contact-us">Contact Us</a></li>
-                      <li><a href="http://www.xyfindit.com/" target="_blank">Products</a></li>
-                      <li class="text-center"><a href="../our-story">Our Story</a></li>
-                      <li class="text-center"><a href="../team">Team</a></li>
-                      <li class="text-center"><a href="../faq">FAQ</a></li>
-                      <li class="text-center"><a target="_blank" href="https://my.xyfindit.com/">Sign In</a></li>
-                  </ul>
+                    <ul class="pull-right">
+                        <li><a href="../contact-us">Contact Us</a></li>
+                        <li><a href="http://www.xyfindit.com/" target="_blank">Products</a></li>
+                        <li class="text-center"><a href="../our-story">Our Story</a></li>
+                        <li class="text-center"><a href="../team">Team</a></li>
+                        <li class="text-center"><a href="../faq">FAQ</a></li>
+                        <li class="text-center"><a target="_blank" href="https://my.xyfindit.com/">Sign In</a></li>
+                    </ul>
                 </div>
             </div>
 
@@ -477,9 +479,9 @@
             if (show) {
                 div.addClass("active");
                 bio.insertAfter($(div.parent().parent().children()[targetPos]));
-				updateBioText(data.team_detailed[num]);
-				bio.fadeIn();
-				Utils.sendGA("/team/" + encodeURIComponent(data.team_detailed[num].name.replace('.','')));
+                updateBioText(data.team_detailed[num]);
+                bio.fadeIn();
+                Utils.sendGA("/team/" + encodeURIComponent(data.team_detailed[num].name.replace('.', '')));
             } else {
                 bio.fadeOut();
             }
@@ -495,8 +497,8 @@
             if (show) {
                 div.addClass("active");
                 bioManagement.insertAfter($(div.parent().parent().children()[targetPos]));
-				updateBioManagement(data.management_detailed[num]);
-				Utils.sendGA("/team/" + encodeURIComponent(data.management_detailed[num].name.replace('.', '')));
+                updateBioManagement(data.management_detailed[num]);
+                Utils.sendGA("/team/" + encodeURIComponent(data.management_detailed[num].name.replace('.', '')));
                 bioManagement.fadeIn();
             } else {
                 bio.fadeOut();
