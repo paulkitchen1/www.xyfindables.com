@@ -214,6 +214,27 @@
             cursor: pointer;
         }
 
+        .nasdaqOverlay {
+          position: absolute;
+          display: block;
+          z-index: 2;
+          margin-top: 28px;
+        }
+
+        .nasdaqOverlayMobile {
+          position:absolute;
+          z-index: 2;
+          width:100%;
+          margin-top:32px;
+        }
+
+        .nasdaqOverlayTablet {
+          position:relative;
+          z-index: 2;
+          width:100%;
+          margin-top:32px;
+        }
+
         .nonresponsive {
             display: inline-block;
         }
@@ -229,6 +250,15 @@
                 font-size: 14px;
                 font-weight: 600;
             }
+
+            .nasdaqOverlay {
+              display:none;
+            }
+
+            .nasdaqOverlayTablet {
+              dispaly:none;
+            }
+
             .facebook-ana {
                 display: none;
             }
@@ -288,6 +318,21 @@
             }
         }
 
+        @media screen and (min-width:500px) and (max-width:770px) {
+          .nasdaqOverlay {
+            display:none;
+          }
+
+          .nasdaqOverlayMobile {
+            display:none;
+          }
+        }
+        @media screen and (max-width:500px) {
+          .nasdaqOverlayTablet {
+            display:none;
+          }
+        }
+
         @media screen and (min-width: 992px) and (max-width: 1198px) {
             .success {
                 padding-top: 0px !important;
@@ -305,6 +350,14 @@
                 Padding-left: 50px !important;
                 padding-right: 50px !important;
                 margin-left: 28px;
+            }
+
+            .nasdaqOverlayMobile {
+              display:none;
+            }
+
+            .nasdaqOverlayTablet {
+              display: none;
             }
             .nothanks {
                 margin-top: 6px;
@@ -373,8 +426,12 @@
                 <li data-target="#main-slider" data-slide-to="4" class=""></li>
                 <li data-target="#main-slider" data-slide-to="5" class=""></li>
             </ol>
+  <img class="nasdaqOverlay" src="/img/banner/NASDAQ_overlay.png">
+  <img class="nasdaqOverlayMobile" src="/img/banner/NASDAQ_overlay_mobile.png">
+  <img class="nasdaqOverlayTablet" src="/img/banner/NASDAQ_overlay_tablet.png">
 
             <div class="carousel-inner">
+
                 <div class="item  active banner-1" style="background-image: url(/img/banner/banner_1.jpg); padding-top:0vh;">
                     <div class="container">
                         <div class="row slide-margin">
