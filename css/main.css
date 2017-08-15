@@ -542,7 +542,7 @@ input.search-form {
 #main-slider .next {
     position: absolute;
     top: 50%;
-    background-color: rgba(90, 167, 43, 0.58);
+    background-color: rgba(90, 167, 43, 0);
     color: #fff;
     display: inline-block;
     margin-top: -25px;
@@ -603,7 +603,7 @@ input.search-form {
         width: 24px;
         height: 24px;
         border-radius: 100%;
-        background: rgb(90, 167, 43);
+        background: rgba(90, 167, 43, 0);
         border: 1px solid rgb(149, 222, 104);
         left: -3px;
         top: -3px;

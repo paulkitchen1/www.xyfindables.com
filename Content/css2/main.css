@@ -18,7 +18,7 @@ body {
     font-family: 'Quicksand', sans-serif;
     color: #4e4e4e;
     line-height: 22px;
-    overflow-y:scroll;
+     overflow-y:scroll;
 }
 
 .carousel-inner>.item {
@@ -609,7 +609,8 @@ input.search-form:hover {
 #main-slider .prev, #main-slider .next {
     position: absolute;
     top: 50%;
-    background-color: rgba(70, 175, 222, 0);    
+    background-color: rgba(70, 175, 222, 0);
+    ;
     color: #fff;
     display: inline-block;
     margin-top: -25px;
