@@ -2714,6 +2714,10 @@ color:#00a9ea;*/
     background: #333;
 }
 
+.navbar-toggle {
+  margin-top: 14px;
+}
+
 .navbar {
     box-shadow: 0 4px 4px -4px #5c5c5c;
 }
