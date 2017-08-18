@@ -438,7 +438,7 @@
             }
 
             #main-slider .carousel .slide-margin {
-                margin-top: 255px;
+                margin-top: 221px;
             }
 
             #main-slider .carousel h2 {
@@ -475,7 +475,7 @@
                 position: absolute;
                 width: 100%;
                 display: block !important;
-                height: 600px;
+                height: 500px;
                 /* change */
                 -webkit-transition: opacity ease-in-out 500ms;
                 -moz-transition: opacity ease-in-out 500ms;
@@ -509,13 +509,13 @@
 
             @media (min-height:900px) {
                 #main-slider .carousel .item {
-                    height: 600px !important;
+                    height: 550px !important;
                 }
                 .carousel-content {
                     margin-top: 40px;
                 }
                 .carousel-inner {
-                    height: 600px !important;
+                    height: 550px !important;
                 }
             }
 
@@ -551,22 +551,30 @@
                     height: 400px !important;
                 }
                 .banner-3 .carousel-content {
-                    margin-top: 0px !important;
+                    margin-top: 72 !important;
                 }
                 .banner-4 {
                     background-image: url(/img/banner/banner_4_mobile.jpg) !important;
                     height: 400px !important;
                 }
+                .banner-4 .carousel-content {
+                  margin-top: 72 !important;
+                }
+
                 .banner-5 {
                     background-image: url(/img/banner/banner_5_mobile.jpg) !important;
                     height: 400px !important;
                 }
+                .banner-5 .carousel-content {
+                  margin-top: 72 !important;
+                }
+
                 .banner-6 {
                     background-image: url(/img/banner/banner_6_mobile.jpg) !important;
                     height: 400px !important;
                 }
                 .banner-6 .carousel-content {
-                    margin-top: 38px !important;
+                    margin-top: 54px !important;
                 }
             }
 
