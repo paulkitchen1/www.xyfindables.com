@@ -592,9 +592,6 @@
                     text-align: center;
                     padding-top: 20px;
                 }
-                .item .col-sm-8 {
-                    margin-top: 65px;
-                }
                 .own-a-piece {
                     margin-top: 10px !important;
                 }
@@ -604,6 +601,12 @@
                 .hr-dis {
                     width: 100% !important;
                 }
+            }
+
+            @media (max-width:766) {
+              .item .col-sm-8 {
+                  margin-top: 65px;
+              }
             }
 
             #main-slider .carousel .item:first-child {
