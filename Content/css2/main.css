@@ -407,6 +407,9 @@
             /*************************
 *******Home Page******
 **************************/
+            .carousel-indicators {
+              display:none;
+            }
 
             .sub-img-container {
                 width: 100%;
