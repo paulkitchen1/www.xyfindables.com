@@ -29,7 +29,7 @@
 		</script>
 		<script src="https://js.braintreegateway.com/web/3.11.1/js/paypal.min.js"></script>
 
-
+		
 		<!-- Facebook Pixel Code -->
 		<script>
 			! function(f, b, e, v, n, t, s) {
@@ -58,7 +58,7 @@
 			 src="https://www.facebook.com/tr?id=322839541477444&ev=PageView&noscript=1" />
 	</noscript>
 		<!-- DO NOT MODIFY -->
-		<!-- End Facebook Pixel Code -->
+		<!-- End Facebook Pixel Code -->		
 
 
 		<script>
@@ -319,12 +319,12 @@
 		<nav class="navbar navbar-inverse" role="banner">
 			<div class="container">
 				<div class="navbar-header">
-					<button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+					<!--<button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
 						<span class="sr-only">Toggle navigation</span>
 						<span class="icon-bar"></span>
 						<span class="icon-bar"></span>
 						<span class="icon-bar"></span>
-					</button>
+					</button>-->
 					<a class="navbar-brand" href=".." style="height:62px;">
 						<img class="desktopLogo" src="/img/XYFindables_Small_Full.png" alt="logo">
 						<img class="mobileLogo" src="/img/XYFindables_Small.png">
@@ -359,10 +359,6 @@
 		<style>
 		.flat-butt {
 				color: rgb(255, 251, 251);
-			}
-
-			.select {
-				border:none;
 			}
 
 			.flat-butt:hover {
@@ -482,10 +478,6 @@
 				-o-transition: border-color ease-in-out .15s, box-shadow ease-in-out .15s;
 				transition: border-color ease-in-out .15s, box-shadow ease-in-out .15s;
 			}
-
-			.form-control:focus { border-color: #66afe9; outline: 0; -webkit-box-shadow: inset 0 1px 1px rgba(0,0,0,.075), 0 0 8px rgba(102,175,233,.6); box-shadow: inset 0 1px 1px rgba(0,0,0,.075), 0 0 8px rgba(102,175,233,.6); }
-
-
 
 			.se-input-group .form-control:not(.ui-select-toggle)>.form-control {
 				padding: 0;
@@ -680,7 +672,7 @@
 							<h3 style="margin-top: 40px">Invest in XY Findables&trade;</h3>
 						</div>
 					</div>
-					<div class="row text-center invest-summary" style="margin:15px 30px">
+					<div class="row text-center invest-summary hidden-xs" style="margin:15px 30px">
 						You are only a few steps away from owning your piece of the XY - The Findables&trade; Company. If you are unsure about anything in this application process, please feel free to call at the number in the menu above. We pride ourselves on being very responsive
 						to our customers and investors, and look forward to including you as part of the XY Family.
 					</div>
@@ -699,8 +691,7 @@
 							</div>
 							<div class="row text-center margin-bottom visible-xs">
 								<div class="price-block col-sm-12">
-									<span>Maximum Investment ($500,000)</span>
-									<br /><br />
+
 									<span>$1.00 Per Share</span><br />
 									<span>Limited Shares Available</span>
 								</div>
@@ -846,8 +837,8 @@
 											</div>
 											<div class="se-input col-xs-6">
 												<div>
-													<div class="">
-														<select class=" form-control select form-group" required="required" name="country">
+													<div class="form-control form-group">
+														<select class="select" required="required" name="country">
 															<option value="">Country</option>
 															<option value="US">United States of America</option>
 															<option value="AF">Afghanistan</option>
@@ -1115,8 +1106,8 @@
 											</div>
 											<div class="se-input col-xs-6 margin-top">
 												<div>
-													<div class="" id="stateControl">
-														<select class="form-control select"   required="required" name="state"><option value="">State</option><option value="AL">Alabama</option><option value="AK">Alaska</option><option value="AZ">Arizona</option><option value="AR">Arkansas</option><option value="AA">Armed Forces Americas</option><option value="AP">Armed Forces Pacific</option><option value="AE">Armed Forces Others</option><option value="CA">California</option><option value="CO">Colorado</option><option value="CT">Connecticut</option><option value="DE">Delaware</option><option value="DC">District Of Columbia</option><option value="FL">Florida</option><option value="GA">Georgia</option><option value="HI">Hawaii</option><option value="ID">Idaho</option><option value="IL">Illinois</option><option value="IN">Indiana</option><option value="IA">Iowa</option><option value="KS">Kansas</option><option value="KY">Kentucky</option><option value="LA">Louisiana</option><option value="ME">Maine</option><option value="MD">Maryland</option><option value="MA">Massachusetts</option><option value="MI">Michigan</option><option value="MN">Minnesota</option><option value="MS">Mississippi</option><option value="MO">Missouri</option><option value="MT">Montana</option><option value="NE">Nebraska</option><option value="NV">Nevada</option><option value="NH">New Hampshire</option><option value="NJ">New Jersey</option><option value="NM">New Mexico</option><option value="NY">New York</option><option value="NC">North Carolina</option><option value="ND">North Dakota</option><option value="OH">Ohio</option><option value="OK">Oklahoma</option><option value="OR">Oregon</option><option value="PA">Pennsylvania</option><option value="PR">Puerto Rico</option><option value="RI">Rhode Island</option><option value="SC">South Carolina</option><option value="SD">South Dakota</option><option value="TN">Tennessee</option><option value="TX">Texas</option><option value="UT">Utah</option><option value="VT">Vermont</option><option value="VA">Virginia</option><option value="WA">Washington</option><option value="WV">West Virginia</option><option value="WI">Wisconsin</option><option value="WY">Wyoming</option></select>
+													<div class="form-control" id="stateControl">
+														<select class="select"   required="required" name="state"><option value="">State</option><option value="AL">Alabama</option><option value="AK">Alaska</option><option value="AZ">Arizona</option><option value="AR">Arkansas</option><option value="AA">Armed Forces Americas</option><option value="AP">Armed Forces Pacific</option><option value="AE">Armed Forces Others</option><option value="CA">California</option><option value="CO">Colorado</option><option value="CT">Connecticut</option><option value="DE">Delaware</option><option value="DC">District Of Columbia</option><option value="FL">Florida</option><option value="GA">Georgia</option><option value="HI">Hawaii</option><option value="ID">Idaho</option><option value="IL">Illinois</option><option value="IN">Indiana</option><option value="IA">Iowa</option><option value="KS">Kansas</option><option value="KY">Kentucky</option><option value="LA">Louisiana</option><option value="ME">Maine</option><option value="MD">Maryland</option><option value="MA">Massachusetts</option><option value="MI">Michigan</option><option value="MN">Minnesota</option><option value="MS">Mississippi</option><option value="MO">Missouri</option><option value="MT">Montana</option><option value="NE">Nebraska</option><option value="NV">Nevada</option><option value="NH">New Hampshire</option><option value="NJ">New Jersey</option><option value="NM">New Mexico</option><option value="NY">New York</option><option value="NC">North Carolina</option><option value="ND">North Dakota</option><option value="OH">Ohio</option><option value="OK">Oklahoma</option><option value="OR">Oregon</option><option value="PA">Pennsylvania</option><option value="PR">Puerto Rico</option><option value="RI">Rhode Island</option><option value="SC">South Carolina</option><option value="SD">South Dakota</option><option value="TN">Tennessee</option><option value="TX">Texas</option><option value="UT">Utah</option><option value="VT">Vermont</option><option value="VA">Virginia</option><option value="WA">Washington</option><option value="WV">West Virginia</option><option value="WI">Wisconsin</option><option value="WY">Wyoming</option></select>
 													</div>
 													<div class="form-group" id="regionControl"  style="display:none">
 														<input placeholder="Region/Province/State" name="region" class="form-control" value="" required="required" autocomplete="region" />
@@ -1193,8 +1184,8 @@
 							<div class="row">
 								<div class="se-input col-xs-12">
 									<div>
-										<div class="">
-											<select class="form-control select" name="paymentMethod" required="required"><option value="" selected>Select Payment Method</option><option value="ach">No Cost Online Bank Transfer (ACH Transfer)</option><option value="credit">Credit Card</option><option value="paypal">PayPal</option></select>
+										<div class="form-control">
+											<select class="select" name="paymentMethod" required="required"><option value="" selected>Select Payment Method</option><option value="ach">No Cost Online Bank Transfer (ACH Transfer)</option><option value="credit">Credit Card</option><option value="paypal">PayPal</option></select>
 										</div>
 									</div>
 								</div>
@@ -1222,8 +1213,8 @@
 								<div class="row">
 									<div class="se-input col-xs-12">
 										<div>
-											<div class="">
-												<select class="form-control select" required name="accountType"><option selected value="checking">Checking</option></select>
+											<div class="form-control">
+												<select class="select" required name="accountType"><option selected value="checking">Checking</option></select>
 											</div>
 										</div>
 									</div>
@@ -2065,47 +2056,8 @@
 	</footer>
 	<!--/#footer-->
 
-	<script src='//cdn.zarget.com/147218/357465.js'></script>
-	<script>
-			window.intercomSettings = {
-					app_id: "hp2hx8ug"
-			};
-	</script>
-	<script>
-			(function() {
-					var w = window;
-					var ic = w.Intercom;
-					if (typeof ic === "function") {
-							ic('reattach_activator');
-							ic('update', intercomSettings);
-					} else {
-							var d = document;
-							var i = function() {
-									i.c(arguments)
-							};
-							i.q = [];
-							i.c = function(args) {
-									i.q.push(args)
-							};
-							w.Intercom = i;
 
-							function l() {
-									var s = d.createElement('script');
-									s.type = 'text/javascript';
-									s.async = true;
-									s.src = 'https://widget.intercom.io/widget/hp2hx8ug';
-									var x = d.getElementsByTagName('script')[0];
-									x.parentNode.insertBefore(s, x);
-							}
 
-							if (w.attachEvent) {
-									w.attachEvent('onload', l);
-							} else {
-									w.addEventListener('load', l, false);
-							}
-					}
-			})()
-	</script>
 
 
 	<div id="preload" style="display:none;"></div>
