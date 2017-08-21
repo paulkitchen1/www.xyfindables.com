@@ -1615,6 +1615,7 @@
 						$(window).scrollTop(45);
 						SaveData();
 						Utils.sendGA('/invest/apply/3');
+						Utils.SendfbEvent('Lead')
 						//$("body").scrollTop($("[ui-view=amount]").height())
 					} else {
 						alert("Please correct errors in red.");
