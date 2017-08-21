@@ -67,6 +67,10 @@
                 border-bottom: 1px solid #fff;
             }
 
+			.select {
+				border: 0px;
+			}
+
             .btn-primary {
                 /*padding: 8px 20px;*/
                 background: rgb(27, 186, 245);
