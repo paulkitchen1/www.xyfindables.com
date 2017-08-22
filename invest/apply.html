@@ -1,4 +1,4 @@
-<html>
+﻿<html>
 
 <head>
 	<meta charset="utf-8" />
@@ -1662,7 +1662,10 @@
 						$(window).scrollTop(45);
 						SaveData();
 						Utils.sendGA('/invest/apply/2');
-						Utils.SendfbEvent('BASIC_INFO')
+						Utils.SendfbEvent('BASIC_INFO');
+						location.hash = '2';
+						window.triggerHeatmapExperiment = window.triggerHeatmapExperiment || [];
+						window.triggerHeatmapExperiment.push("147218_1503352066856");
 					} else {
 						alert("Please correct errors in red.");
 					}
@@ -1679,37 +1682,42 @@
 						var s=d.createElement('script');s.type='text/javascript';s.async=true;s.src='https://widget.intercom.io/widget/hp2hx8ug';var x=d.getElementsByTagName('script')[0];x.parentNode.insertBefore(s,x);}if(w.attachEvent){w.attachEvent('onload',l);}else{w.addEventListener('load',l,false);}}})()
 					});
 				})
-
-			$(".btn-pre-personal").click(function() {
-				$("[ui-view=personal]").show();
-				$(".invest-summary").show();
-				$("[ui-view=amount]").hide();
-				$("[ui-view=financial]").hide();
-				$(window).scrollTop(45);
-			})
-			$(".btn-financial").click(function() {
-				if (checkInputs(".container")) {
+				$(".btn-pre-personal").click(function() {
+					$("[ui-view=personal]").show();
+					$(".invest-summary").show();
 					$("[ui-view=amount]").hide();
 					$("[ui-view=financial]").hide();
-					$("[ui-view=final]").show();
-					$("[ui-view=subAgreement]").show();
+					location.hash = '';
 					$(window).scrollTop(45);
-					SaveData();
-					Utils.sendGA('/invest/apply/3');
-					Utils.SendfbEvent('Lead')
+				})
+				$(".btn-financial").click(function() {
+					if (checkInputs(".container")) {
+						$("[ui-view=amount]").hide();
+						$("[ui-view=financial]").hide();
+						$("[ui-view=final]").show();
+						$("[ui-view=subAgreement]").show();
+						$(window).scrollTop(45);
+						SaveData();
+						location.hash = '3';
+						Utils.sendGA('/invest/apply/3');
+						Utils.SendfbEvent('Lead')
 						//$("body").scrollTop($("[ui-view=amount]").height())
-				} else {
-					alert("Please correct errors in red.");
-				}
-			})
-			$(".btn-pre-financial").click(function() {
-			$("[ui-view=amount]").show();
-			$("[ui-view=financial]").show();
-			$("[ui-view=final]").hide();
-			$("[ui-view=subAgreement]").hide();
-			$(window).scrollTop(45);
-			})
+					} else {
+						alert("Please correct errors in red.");
+					}
+				})
+				$(".btn-pre-financial").click(function() {
+					$("[ui-view=amount]").show();
+					$("[ui-view=financial]").show();
+					$("[ui-view=final]").hide();
+					$("[ui-view=subAgreement]").hide();
+					location.hash = 2;
+					$(window).scrollTop(45);
+				})
 
+				//if (location.hash == '2') {
+				//	$(".btn-personal").click();
+				//}
 			});
 
 			function saveInvest(e, paypal) {
