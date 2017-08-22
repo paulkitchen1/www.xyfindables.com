@@ -1,4 +1,4 @@
-
+﻿
 <html>
 
 <head>
@@ -1610,7 +1610,10 @@
 						$(window).scrollTop(45);
 						SaveData();
 						Utils.sendGA('/invest/apply/2');
-						Utils.SendfbEvent('BASIC_INFO')
+						Utils.SendfbEvent('BASIC_INFO');
+						location.hash = '2';
+						window.triggerHeatmapExperiment = window.triggerHeatmapExperiment || [];
+						window.triggerHeatmapExperiment.push("147218_1503352066856");
 					} else {
 						alert("Please correct errors in red.");
 					}
@@ -1620,6 +1623,7 @@
 					$(".invest-summary").show();
 					$("[ui-view=amount]").hide();
 					$("[ui-view=financial]").hide();
+					location.hash = '';
 					$(window).scrollTop(45);
 				})
 				$(".btn-financial").click(function() {
@@ -1630,6 +1634,7 @@
 						$("[ui-view=subAgreement]").show();
 						$(window).scrollTop(45);
 						SaveData();
+						location.hash = '3';
 						Utils.sendGA('/invest/apply/3');
 						Utils.SendfbEvent('Lead')
 						//$("body").scrollTop($("[ui-view=amount]").height())
@@ -1642,9 +1647,13 @@
 					$("[ui-view=financial]").show();
 					$("[ui-view=final]").hide();
 					$("[ui-view=subAgreement]").hide();
+					location.hash = 2;
 					$(window).scrollTop(45);
 				})
 
+				//if (location.hash == '2') {
+				//	$(".btn-personal").click();
+				//}
 			});
 
 			function saveInvest(e, paypal) {
