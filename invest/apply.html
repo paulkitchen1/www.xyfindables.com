@@ -1634,6 +1634,8 @@
 					}
 				});
 
+				$("[name=paymentMethod]").val('credit').change();
+
 				$("[name=zipcode]").keyup(function() {
 					if ($("[name=country]").val() == "US" && $(this).val().length > 4) {
 						CityState($(this).val())
