@@ -1,4 +1,5 @@
-﻿<html>
+
+<html>
 
 <head>
 	<meta charset="utf-8" />
@@ -29,7 +30,9 @@
 	</script>
 	<script src="https://js.braintreegateway.com/web/3.11.1/js/paypal.min.js"></script>
 
-	<script>X_API_KEY = "VFR1QKS1WP4qZKhK6jRYn44FptPrYw0hamkOcUzM"</script>
+	<script>
+		X_API_KEY = "VFR1QKS1WP4qZKhK6jRYn44FptPrYw0hamkOcUzM"
+	</script>
 	<script src="xy_api.js"></script>
 
 	<script src='//cdn.zarget.com/147218/357465.js'></script>
@@ -87,6 +90,31 @@
 		ga('linker:autoLink', ['www.xyfindables.com', 'xyfindables.com', 'xyfindit.com/invest/start', 'xyfindit.com/invest/apply', 'shopify.com', 'xyproducts.myshopify.com', 'checkout.shopify.com']);
 		ga('send', 'pageview');
 	</script>
+
+
+	<script data-obct type="text/javascript">
+		/** DO NOT MODIFY THIS CODE**/ ! function(_window, _document) {
+			var OB_ADV_ID = '0026246ef4a6160b8ac8ea3fcf9b3e4618';
+			if (_window.obApi) {
+				return;
+			}
+			var api = _window.obApi = function() {
+				api.dispatch ? api.dispatch.apply(api, arguments) : api.queue.push(arguments);
+			};
+			api.version = '1.0';
+			api.loaded = true;
+			api.marketerId = OB_ADV_ID;
+			api.queue = [];
+			var tag = _document.createElement('script');
+			tag.async = true;
+			tag.src = '//amplify.outbrain.com/cp/obtp.js';
+			tag.type = 'text/javascript';
+			var script = _document.getElementsByTagName('script')[0];
+			script.parentNode.insertBefore(tag, script);
+		}(window, document);
+		obApi('track', 'PAGE_VIEW');
+	</script>
+
 
 	<!-- Facebook Pixel Code -->
 	<script>
@@ -287,7 +315,7 @@
 		}
 
 		.form-control {
-			font-size:16px !important;
+			font-size: 16px !important;
 		}
 
 		.form-control:focus {
@@ -341,65 +369,47 @@
 
 
 	<script>
-			window.intercomSettings = {
-					app_id: "hp2hx8ug",
-			};
+		window.intercomSettings = {
+			app_id: "hp2hx8ug",
+		};
 	</script>
 
-	<script data-obct type=“text/javascript”>
-			/** DO NOT MODIFY THIS CODE**/ ! function(_window, _document) {
-					var OB_ADV_ID = '0026246ef4a6160b8ac8ea3fcf9b3e4618';
-					if (_window.obApi) {
-							return;
-					}
-					var api = _window.obApi = function() {
-							api.dispatch ? api.dispatch.apply(api, arguments) : api.queue.push(arguments);
-					};
-					api.version = '1.0';
-					api.loaded = true;
-					api.marketerId = OB_ADV_ID;
-					api.queue = [];
-					var tag = _document.createElement('script');
-					tag.async = true;
-					tag.src = //amplify.outbrain.com/cp/obtp.js’;tag.type = ‘text/javascript’;var script = _document.getElementsByTagName(‘script’)[0];script.parentNode.insertBefore(tag, script);}(window, document);
-							obApi('track', 'PAGE_VIEW');
-			}
-	</script>
+
 
 	<script>
-			(function() {
-					var w = window;
-					var ic = w.Intercom;
-					if (typeof ic === "function") {
-							ic('reattach_activator');
-							ic('update', intercomSettings);
-					} else {
-							var d = document;
-							var i = function() {
-									i.c(arguments)
-							};
-							i.q = [];
-							i.c = function(args) {
-									i.q.push(args)
-							};
-							w.Intercom = i;
+		(function() {
+			var w = window;
+			var ic = w.Intercom;
+			if (typeof ic === "function") {
+				ic('reattach_activator');
+				ic('update', intercomSettings);
+			} else {
+				var d = document;
+				var i = function() {
+					i.c(arguments)
+				};
+				i.q = [];
+				i.c = function(args) {
+					i.q.push(args)
+				};
+				w.Intercom = i;
 
-							function l() {
-									var s = d.createElement('script');
-									s.type = 'text/javascript';
-									s.async = true;
-									s.src = 'https://widget.intercom.io/widget/hp2hx8ug';
-									var x = d.getElementsByTagName('script')[0];
-									x.parentNode.insertBefore(s, x);
-							}
+				function l() {
+					var s = d.createElement('script');
+					s.type = 'text/javascript';
+					s.async = true;
+					s.src = 'https://widget.intercom.io/widget/hp2hx8ug';
+					var x = d.getElementsByTagName('script')[0];
+					x.parentNode.insertBefore(s, x);
+				}
 
-							if (w.attachEvent) {
-									w.attachEvent('onload', l);
-							} else {
-									w.addEventListener('load', l, false);
-							}
-					}
-			})()
+				if (w.attachEvent) {
+					w.attachEvent('onload', l);
+				} else {
+					w.addEventListener('load', l, false);
+				}
+			}
+		})()
 	</script>
 </head>
 
@@ -423,7 +433,7 @@
 
 				<div class="collapse navbar-collapse navbar-right">
 					<ul class="nav navbar-nav">
-					<!--	<li class="text-center"><a href="../">Home</a></li>
+						<!--	<li class="text-center"><a href="../">Home</a></li>
 						<li class="text-center"><a href="../our-story">Our Story</a></li>
 						<li class="text-center"><a href="../team">Team</a></li>
 						<li class="text-center"><a href="../team" >Team</a></li>
@@ -1468,7 +1478,7 @@
 							</div>
 							<div class="col-xs-12 col-sm-9">
 								<div class="row">
-									<div class="se-input col-xs-12" style="padding:0px;" >
+									<div class="se-input col-xs-12" style="padding:0px;">
 										<div>
 											<div>
 												<input class="form-control" type="text" name="cc_zip" autocomplete="postal-code" placeholder="Billing Postal Code" maxlength="12" pattern="[0-9]*" required>
@@ -1527,12 +1537,12 @@
 										</button>
 									</div>
 									<div class="se-input col-xs-6 col-sm-6" style="margin-top:7px; padding-left:2px; padding-right:2px;">
-										<button type="submit" class="btn continue-btn _btn__invest_color" name="final-button" style="width: 100%">
+										<button type="submit" class="btn continue-btn _btn__invest_color completePayment-btn" style="width: 100%">
 											<div>
 												Finish
 											</div>
 										</button>
-										<button type="submit" class="btn continue-pp-btn _btn__invest_color" style="width: 100%; display:none">
+										<button type="submit" class="btn continue-pp-btn _btn__invest_color completePayment-btn" style="width: 100%; display:none">
 											<div>
 												Complete with Paypal
 											</div>
@@ -1639,6 +1649,13 @@
 					}
 				});
 
+				$(".completePayment-btn").click(function() {
+					obApi('track', 'Investment', {
+						orderValue: $("[name=numberOfShares]").val(),
+						currency: 'USD',
+					});
+				})
+
 				$(".btn-pay").click(function() {
 					if ($(this).attr("data-value") == "ach") {
 						$("[name=ach-data]").show();
@@ -1727,17 +1744,47 @@
 					} else {
 						alert("Please correct errors in red.");
 					}
-					XY.API.account.intercom($("[name=email_address]").val(),function(hash){
-					window.intercomSettings = {
-						app_id: "hp2hx8ug",
-						name: $("[name=first_name").val() + " " + $("[name=last_name]").val(), // Full name
-						email: $("[name=email_address]").val(), // Email address
-						phone: $("[name=phone]").val(),
-						user_hash: hash,
-						created_at: Date.now() // Signup date as a Unix timestamp
-					};
-					(function(){var w=window;var ic=w.Intercom;if(typeof ic==="function"){ic('reattach_activator');ic('update',intercomSettings);}else{var d=document;var i=function(){i.c(arguments)};i.q=[];i.c=function(args){i.q.push(args)};w.Intercom=i;function l(){
-						var s=d.createElement('script');s.type='text/javascript';s.async=true;s.src='https://widget.intercom.io/widget/hp2hx8ug';var x=d.getElementsByTagName('script')[0];x.parentNode.insertBefore(s,x);}if(w.attachEvent){w.attachEvent('onload',l);}else{w.addEventListener('load',l,false);}}})()
+					XY.API.account.intercom($("[name=email_address]").val(), function(hash) {
+						window.intercomSettings = {
+							app_id: "hp2hx8ug",
+							name: $("[name=first_name").val() + " " + $("[name=last_name]").val(), // Full name
+							email: $("[name=email_address]").val(), // Email address
+							phone: $("[name=phone]").val(),
+							user_hash: hash,
+							created_at: Date.now() // Signup date as a Unix timestamp
+						};
+						(function() {
+							var w = window;
+							var ic = w.Intercom;
+							if (typeof ic === "function") {
+								ic('reattach_activator');
+								ic('update', intercomSettings);
+							} else {
+								var d = document;
+								var i = function() {
+									i.c(arguments)
+								};
+								i.q = [];
+								i.c = function(args) {
+									i.q.push(args)
+								};
+								w.Intercom = i;
+
+								function l() {
+									var s = d.createElement('script');
+									s.type = 'text/javascript';
+									s.async = true;
+									s.src = 'https://widget.intercom.io/widget/hp2hx8ug';
+									var x = d.getElementsByTagName('script')[0];
+									x.parentNode.insertBefore(s, x);
+								}
+								if (w.attachEvent) {
+									w.attachEvent('onload', l);
+								} else {
+									w.addEventListener('load', l, false);
+								}
+							}
+						})()
 					});
 				})
 				$(".btn-pre-personal").click(function() {
@@ -1759,7 +1806,7 @@
 						location.hash = '3';
 						Utils.sendGA('/invest/apply/3');
 						Utils.SendfbEvent('Lead')
-						//$("body").scrollTop($("[ui-view=amount]").height())
+							//$("body").scrollTop($("[ui-view=amount]").height())
 					} else {
 						alert("Please correct errors in red.");
 					}

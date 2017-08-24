@@ -1,4 +1,5 @@
-﻿<html>
+
+<html>
 
 <head>
     <meta charset="utf-8">
@@ -109,7 +110,8 @@ src="https://www.facebook.com/tr?id=322839541477444&ev=PageView&noscript=1"
         ga('send', 'pageview');
     </script>
 
-    <script data-obct type=“text/javascript”>
+
+    <script data-obct type="text/javascript">
         /** DO NOT MODIFY THIS CODE**/ ! function(_window, _document) {
             var OB_ADV_ID = '0026246ef4a6160b8ac8ea3fcf9b3e4618';
             if (_window.obApi) {
@@ -124,11 +126,14 @@ src="https://www.facebook.com/tr?id=322839541477444&ev=PageView&noscript=1"
             api.queue = [];
             var tag = _document.createElement('script');
             tag.async = true;
-            tag.src = //amplify.outbrain.com/cp/obtp.js’;tag.type = ‘text/javascript’;var script = _document.getElementsByTagName(‘script’)[0];script.parentNode.insertBefore(tag, script);}(window, document);
-                obApi('track', 'PAGE_VIEW');
-                obApi('track','Investment', {orderValue:'$("[name=numberOfShares]").val()',currency:'USD',});
-        }
+            tag.src = '//amplify.outbrain.com/cp/obtp.js';
+            tag.type = 'text/javascript';
+            var script = _document.getElementsByTagName('script')[0];
+            script.parentNode.insertBefore(tag, script);
+        }(window, document);
+        obApi('track', 'PAGE_VIEW');
     </script>
+
 
     <!-- Facebook Pixel Code -->
     <script>
@@ -371,8 +376,8 @@ src="https://www.facebook.com/tr?id=322839541477444&ev=PageView&noscript=1"
                     </div>
                     <div class="col-sm-4">
                         <form id="frmHowHear" style="padding: 10px;">
-							<input type="hidden" name="uid" />
-							<select name="howhear" style="padding: 10px;">
+                            <input type="hidden" name="uid" />
+                            <select name="howhear" style="padding: 10px;">
                               <option value="onlineAd">Online Ad</option>
                               <option value="friend">Through a Friend</option>
                               <option value="advisor">Called an investment Advisor</option>
@@ -546,9 +551,9 @@ src="https://www.facebook.com/tr?id=322839541477444&ev=PageView&noscript=1"
     </script>
 
     <script>
-		if (Utils.getUrlParameter("uid") != undefined) {
-			$("[name=uid]").val(Utils.getUrlParameter("uid"));
-		}
+        if (Utils.getUrlParameter("uid") != undefined) {
+            $("[name=uid]").val(Utils.getUrlParameter("uid"));
+        }
 
         function getcode() {
             $.ajax({
@@ -558,8 +563,7 @@ src="https://www.facebook.com/tr?id=322839541477444&ev=PageView&noscript=1"
                 timeout: 5000,
                 data: $("#frmHowHear").serialize(),
                 dataType: "text",
-                success: function(data) {
-                },
+                success: function(data) {},
             });
         }
 
@@ -569,7 +573,7 @@ src="https://www.facebook.com/tr?id=322839541477444&ev=PageView&noscript=1"
                 data +
                 '"></input></div><p style="margin-bottom:20px"></p><a class="close" style="position:absolute;bottom:4px;right:35px">close</a>'
             );
-          }
+        }
 
         $(".send-code").click(function() {
             getcode();
