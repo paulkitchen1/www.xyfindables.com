@@ -126,7 +126,7 @@ src="https://www.facebook.com/tr?id=322839541477444&ev=PageView&noscript=1"
             tag.async = true;
             tag.src = //amplify.outbrain.com/cp/obtp.js’;tag.type = ‘text/javascript’;var script = _document.getElementsByTagName(‘script’)[0];script.parentNode.insertBefore(tag, script);}(window, document);
                 obApi('track', 'PAGE_VIEW');
-                obApi('track','Investment', orderValue:'350.00',currency:'USD',});
+                obApi('track','Investment', {orderValue:'$("[name=numberOfShares]").val()',currency:'USD',});
         }
     </script>
 
