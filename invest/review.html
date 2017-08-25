@@ -1,4 +1,4 @@
-
+﻿
 <html>
 
 <head>
@@ -545,7 +545,12 @@ src="https://www.facebook.com/tr?id=322839541477444&ev=PageView&noscript=1"
                 fbq('track', 'Purchase', {
                     value: Utils.getUrlParameter('shares'),
                     currency: 'USD'
-                });
+				});
+				fbq('track', 'CompleteRegistration', {
+					value: Utils.getUrlParameter('shares'),
+					currency: 'USD'
+				});
+				
             }
         }
     </script>

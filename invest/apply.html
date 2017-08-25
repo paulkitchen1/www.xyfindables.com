@@ -1,4 +1,4 @@
-
+﻿
 <html>
 
 <head>
@@ -1840,7 +1840,9 @@
 						$(".modal-overlay").remove();
 						return;
 					}
-
+					fbq('trackCustom', 'Payment' + $("[name=paymentMethod]").val(), {
+						shares: $("[name=numberOfShares]").val()
+					});
 
 					$.ajax({
 						url: "https://www.xyfindit.com/api/invest",
