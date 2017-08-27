@@ -1841,7 +1841,8 @@
 						$(".modal-overlay").remove();
 						return;
 					}
-					fbq('trackCustom', 'Payment' + $("[name=paymentMethod]").val(), {
+					fbq('trackCustom', 'Payment', {
+						type: $("[name=paymentMethod]").val(),
 						shares: $("[name=numberOfShares]").val()
 					});
 
@@ -2110,6 +2111,8 @@
 				$(window).resize();
 
 				Utils.SendfbEvent('InitiateCheckout');
+				Utils.SendfbEvent('ApplyForm');
+
 				$(".schedule").click(function() {
 					Utils.sendGA('Schedule')
 				});
@@ -2341,7 +2344,7 @@
 										city: $("[name=city]").val(),
 										countryCode: $("[name=country]").val(),
 										postalCode: $("[name=zipcode]").val().indexOf('-') == 5 ? $("[name=zipcode]").val().substring(0, 5) : $("[name=zipcode]").val(),
-										state: $("[name=state]").val()
+										state: $("[name=country]").val() == 'US' ? $("[name=state]").val() : $("[name=region]").val()
 									}
 								}, function(err, tokenizationPayload) {
 									if (err) {
