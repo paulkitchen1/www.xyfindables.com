@@ -538,10 +538,10 @@ src="https://www.facebook.com/tr?id=322839541477444&ev=PageView&noscript=1"
             }, 5000);
         }
 
-
-        if (!Utils.getCookie('xy-purchase')) {
+		var prevI = Utils.getCookie('xy-purchase');
+		if (prevI != Utils.getUrlParameter('shares')) {
             if (Utils.getUrlParameter('shares') != undefined) {
-                Utils.setCookie('xy-purchase', 'invested', 7);
+				Utils.setCookie('xy-purchase', Utils.getUrlParameter('shares'), 7);
                 fbq('track', 'Purchase', {
                     value: Utils.getUrlParameter('shares'),
                     currency: 'USD'
@@ -550,7 +550,7 @@ src="https://www.facebook.com/tr?id=322839541477444&ev=PageView&noscript=1"
 					value: Utils.getUrlParameter('shares'),
 					currency: 'USD'
 				});
-				
+				Utils.sendGA('Review/' + Utils.getUrlParameter('shares'));
             }
         }
     </script>
@@ -583,7 +583,8 @@ src="https://www.facebook.com/tr?id=322839541477444&ev=PageView&noscript=1"
         $(".send-code").click(function() {
             getcode();
             $(".formstuff").fadeOut();
-            $(".hiddenbtn").fadeIn();
+			$(".hiddenbtn").fadeIn();
+			return false;
         })
     </script>
 
