@@ -1,18 +1,15 @@
-var data = [{
-    "question": "Why can I invest now?",
-    "answer": "Easy answer: Because the government lets us sell you shares! Startups normally go to millionaires, literally a person with at least a 6-figure salary, for investments in their company. We, on the other hand, went through a 6-month audit for qualification to sell our Pre-IPO stock to the public at large. Now, it’s your turn to invest in a startup and see potentially huge returns."
-  },
+var data = [
   {
-    "question": "What does this investment mean for me?",
-    "answer": "This investment is your opportunity to get to the future you’ve always wanted. Ever worried about something in the future? The future of your family? Your kids? Investing in a startup means you can make changes in your financials today that can affect your future forever."
+    "question": "Why can I invest now?",
+    "answer": "Easy answer: Because the government lets us sell you shares! Startups normally go to high net-worth people, called accredited investors, for investments in their company. We, on the other hand, went through a 6-month 3rd party audit as part of the SEC qualification process to sell our pre-IPO stock to the public at large. Now, it’s your turn to invest in a startup at an earlier stage then before."
   },
   {
     "question": "What do I get?",
-    "answer": "When you become an investor, you receive exclusive access to the XY Investor Store, where they can see our newest products and buy them at a reduced cost. You will receive SEC documents by email, as well as a stock certificate with your name in the mail."
+    "answer": "When you become an investor, you receive exclusive access to the XY Investor store, where you can see our newest products and buy them at a reduced cost. You will receive your Subscription Agreement by email, as well as a stock certificate with your name in the mail."
   },
   {
     "question": "How do I make money?",
-    "answer": "Right now, our shares are mini-IPO, meaning they aren’t traded on the public stock market. We are hoping to IPO in the next 2-3 years, and at that point, you’ll be able to sell your stocks on the regulated market. Normally when a company IPOs, the stock can be around $15-$30, which already is a huge return! Sometimes, they can even trade higher!"
+    "answer": "Right now, our shares are mini-IPO, meaning they aren’t traded on the public stock market. We are hoping to pursue an IPO in the next 2-4 years, and at that point, you’ll be able to sell your stocks on the regulated market. In the case of the company being acquired before then, you would receive the share price at which the company was sold."
   },
   {
     "question": "What is Regulation A+ Crowdfunding?",

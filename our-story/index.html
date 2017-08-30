@@ -335,12 +335,11 @@
                                 <span class="bold">double</span>, at
                                 <span class="bold">$3.6 million!</span> Now, we have business deals with Amazon, Target, Walmart, Fry’s, and more!
                             </p>
-                            <p style="padding-top:7px;"> Now we’re on our third generation XY3, and we just expanded our product line to include the XY GPS, a tracking device that can find the things you love around the world. We’re projected to do
-                                <span class="bold">$15 million</span> in revenue this year alone. We want to keep expanding and developing our product line, so we took the next step: investments.
+                            <p style="padding-top:7px;"> Now we’re on our third generation XY3, and we just expanded our product line to include the XY GPS, a tracking device that can find the things you love around the world. We want to keep expanding and developing our product line, so we took the next step: investments.
                             </p>
                             <p style="padding-top:7px;"> We’re in our growth phase and it’s time for us to find investors. Here’s where you come in! Normally, startups go to millionaires like Mark Cuban or Bill Gates. It wasn’t fair, because the everyday
-                                person wasn’t able to get in and invest! However, startups who are qualified by the government can sell pre-public stock to the everyday investor. We’ve been qualified by the
-                                <span class="bold">SEC</span>, the government agency that regulates all publicly traded companies, and we are now able to sell mini-IPO shares to <span class="bold">everyone</span>. We are excited to become a customer-owned company and hope to go public in the next 2-3 years with your help.
+                                person wasn’t able to get in and invest! However, startups who are qualified by the government can sell stock to the everyday investor. We’ve been qualified by the
+                                <span class="bold">SEC</span>, the government agency that regulates all publicly traded companies, and we are now able to sell mini-IPO shares to <span class="bold">everyone</span>. 
                             </p>
                         </div>
                     </div>
@@ -427,9 +426,9 @@
                 e.preventDefault();
                 $(".sectionlink").removeClass("active");
                 $(this).addClass("active");
-                $("#overviewcontent").show();
-                $("#overviewbanner").show();
-                $("#overviewgallery").show();
+                $("#overviewcontent").fadeIn();
+                $("#overviewbanner").fadeIn();
+                $("#overviewgallery").fadeIn();
                 $("#storybanner").hide();
                 $("#storycontent").hide();
                 $("#timelinecontent").hide();
@@ -445,8 +444,8 @@
                 $("#overviewcontent").hide();
                 $("#overviewgallery").hide();
                 $("#overviewbanner").hide();
-                $("#storycontent").show();
-                $("#storybanner").show();
+                $("#storycontent").fadeIn();
+                $("#storybanner").fadeIn();
                 $("#timelinecontent").hide();
                 $("#timeline").hide();
                 $("#timelineline").hide();
@@ -463,10 +462,10 @@
                 $("#overviewbanner").hide();
                 $("#storybanner").hide();
                 $("#storycontent").hide();
-                $("#timelinecontent").show();
-                $("#timeline").show();
-                $("#timelineline").show();
-                $("#timelinebanner").show();
+                $("#timelinecontent").fadeIn();
+                $("#timeline").fadeIn();
+                $("#timelineline").fadeIn();
+                $("#timelinebanner").fadeIn();
 
             });
         </script>

@@ -441,15 +441,14 @@
                 e.preventDefault();
                 $(".sectionlink").removeClass("active");
                 $(this).addClass("active");
-                $("#overviewcontent").show();
-                $("#overviewbanner").show();
+                $("#overviewcontent").fadeIn();
+                $("#overviewbanner").fadeIn();
                 $("#overviewgallery").show();
                 $("#storybanner").hide();
                 $("#storycontent").hide();
                 $("#timelinecontent").hide();
                 $("#timeline").hide();
                 $("#timelineline").show();
-                $("#timelinebanner").hide();
             });
 
             $("#storylink").on("click", function(e) {
@@ -458,13 +457,10 @@
                 $(this).addClass("active");
                 $("#overviewcontent").hide();
                 $("#overviewgallery").hide();
-                $("#overviewbanner").hide();
-                $("#storycontent").show();
-                $("#storybanner").show();
+                $("#storycontent").fadeIn();
                 $("#timelinecontent").hide();
                 $("#timeline").hide();
                 $("#timelineline").hide();
-                $("#timelinebanner").hide();
 
             });
 
@@ -474,13 +470,10 @@
                 $(this).addClass("active");
                 $("#overviewcontent").hide();
                 $("#overviewgallery").hide();
-                $("#overviewbanner").hide();
-                $("#storybanner").hide();
                 $("#storycontent").hide();
-                $("#timelinecontent").show();
-                $("#timeline").show();
-                $("#timelineline").show();
-                $("#timelinebanner").show();
+                $("#timelinecontent").fadeIn();
+                $("#timeline").fadeIn();
+                $("#timelineline").fadeIn();
 
             });
         </script>
