@@ -1,4 +1,4 @@
-
+﻿
 <html>
 
 <head>
@@ -1616,9 +1616,7 @@
 					}
 				});
 
-				$("#frmInvest").find('select, textarea, input').change(function() {
-					investParts()
-				});
+
 
 				$("[name=paymentMethod]").change(function() {
 					if ($(this).val() == "ach") {
@@ -1656,31 +1654,31 @@
 					});
 				})
 
-				$(".btn-pay").click(function() {
-					if ($(this).attr("data-value") == "ach") {
-						$("[name=ach-data]").show();
-						$("[name=credit-area]").hide();
-						$("[name=paymentMethod]").val("ach");
-						Utils.sendGA('PayChecking');
-						investParts();
-					} else if ($(this).attr("data-value") == "wire") {
-						$("[name=ach-data]").hide();
-						$("[name=credit-area]").hide();
-						$("[name=paymentMethod]").val("wire");
-					} else if ($(this).attr("data-value") == "credit") {
-						$("[name=ach-data]").hide();
-						$("[name=credit-area]").show();
-						$("[name=paymentMethod]").val("credit");
-						Utils.sendGA('PayCredit');
-						investParts();
-					} else {
-						$("[name=ach-data]").hide();
-						$("[name=credit-area]").hide();
-						$("[name=paymentMethod]").val("paypal");
-						Utils.sendGA('PayPayPal');
-						investParts();
-					}
-				});
+				//$(".btn-pay").click(function() {
+				//	if ($(this).attr("data-value") == "ach") {
+				//		$("[name=ach-data]").show();
+				//		$("[name=credit-area]").hide();
+				//		$("[name=paymentMethod]").val("ach");
+				//		Utils.sendGA('PayChecking');
+				//		investParts();
+				//	} else if ($(this).attr("data-value") == "wire") {
+				//		$("[name=ach-data]").hide();
+				//		$("[name=credit-area]").hide();
+				//		$("[name=paymentMethod]").val("wire");
+				//	} else if ($(this).attr("data-value") == "credit") {
+				//		$("[name=ach-data]").hide();
+				//		$("[name=credit-area]").show();
+				//		$("[name=paymentMethod]").val("credit");
+				//		Utils.sendGA('PayCredit');
+				//		investParts();
+				//	} else {
+				//		$("[name=ach-data]").hide();
+				//		$("[name=credit-area]").hide();
+				//		$("[name=paymentMethod]").val("paypal");
+				//		Utils.sendGA('PayPayPal');
+				//		investParts();
+				//	}
+				//});
 
 
 				$("[name=dobMonth]").val("");
@@ -1727,6 +1725,9 @@
 					Calendly.showPopupWidget('https://calendly.com/investxy/call/')
 				});
 
+				$("#frmInvest").find('select, textarea, input').change(function () {
+					investParts()
+				});
 
 				$(".btn-personal").click(function() {
 					if (checkInputs(".container")) {
@@ -1840,7 +1841,10 @@
 						$(".modal-overlay").remove();
 						return;
 					}
-
+					fbq('trackCustom', 'Payment', {
+						type: $("[name=paymentMethod]").val(),
+						shares: $("[name=numberOfShares]").val()
+					});
 
 					$.ajax({
 						url: "https://www.xyfindit.com/api/invest",
@@ -1922,19 +1926,25 @@
 					$(".modal-overlay").remove();
 					try {
 						$("[name=credit-error]")[0].scrollIntoView();
-					} catch (ex) {}
+					} catch (ex) { }
 					alert("Please correct errors in red.");
 				} else if (data.o && data.o.ach_authorization) {
 					$(".modal-overlay").remove();
 					if (data.o.ach_authorization.routing_number) {
 						$("[name=routingNumber]").closest(".form-control").addClass('had-error');
-						$("[name=routingNumber]").change(function() {
+						$("[name=routingNumber]").change(function () {
 							$(this).closest(".form-control").removeClass('had-error')
 						});
 						alert("Please correct errors in red.");
 					}
-				} else
-					document.location = '/invest/review.html?shares=' + $("[name=numberOfShares]").val() + "&uid=" + $("[name=uid]").val();
+				} else {
+					fbq('track', 'CompleteRegistration', {
+						value: $("[name=numberOfShares]").val(),
+						currency: 'USD'
+					});
+					setTimeout(1200, document.location = '/invest/review.html?shares=' + $("[name=numberOfShares]").val() + "&uid=" + $("[name=uid]").val() );
+					
+				}
 			}
 
 
@@ -2106,6 +2116,8 @@
 				$(window).resize();
 
 				Utils.SendfbEvent('InitiateCheckout');
+				Utils.SendfbEvent('ApplyForm');
+
 				$(".schedule").click(function() {
 					Utils.sendGA('Schedule')
 				});
@@ -2337,7 +2349,7 @@
 										city: $("[name=city]").val(),
 										countryCode: $("[name=country]").val(),
 										postalCode: $("[name=zipcode]").val().indexOf('-') == 5 ? $("[name=zipcode]").val().substring(0, 5) : $("[name=zipcode]").val(),
-										state: $("[name=state]").val()
+										state: $("[name=country]").val() == 'US' ? $("[name=state]").val() : $("[name=region]").val()
 									}
 								}, function(err, tokenizationPayload) {
 									if (err) {

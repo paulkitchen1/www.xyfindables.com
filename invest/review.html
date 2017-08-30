@@ -1,4 +1,4 @@
-
+﻿
 <html>
 
 <head>
@@ -12,7 +12,7 @@
     <meta property="og:description" content="XY Findables is going above and beyond by expanding its focus on customer experience and involvement. With past success in crowdfunding, a diverse sales channel mix, and a loyal consumer base, the next step
      for Findables has arrived in the form of direct investment. Now, you can get an even stronger hand in defining the future of Findables even before we go public! Visit our website to learn more!">
     <meta property="og:image" content="https://www.xyfindables.com/img/share/share_img.jpg">
-    </script>
+    
     <script async="" src="https://connect.facebook.net/en_US/fbevents.js"></script>
     <script async="" src="https://www.google-analytics.com/analytics.js"></script>
     <script src="/bundles/jquery.js"></script>
@@ -538,14 +538,16 @@ src="https://www.facebook.com/tr?id=322839541477444&ev=PageView&noscript=1"
             }, 5000);
         }
 
-
-        if (!Utils.readCookie('xy-purchase')) {
+		var prevI = Utils.getCookie('xy-purchase');
+		if (prevI != Utils.getUrlParameter('shares')) {
             if (Utils.getUrlParameter('shares') != undefined) {
-                Utils.setCookie('xy-purchase', Utils.getUrlParameter('shares'), 1);
+				Utils.setCookie('xy-purchase', Utils.getUrlParameter('shares'), 7);
                 fbq('track', 'Purchase', {
                     value: Utils.getUrlParameter('shares'),
                     currency: 'USD'
-                });
+				});
+
+				Utils.sendGA('Review/' + Utils.getUrlParameter('shares'));
             }
         }
     </script>
@@ -578,7 +580,8 @@ src="https://www.facebook.com/tr?id=322839541477444&ev=PageView&noscript=1"
         $(".send-code").click(function() {
             getcode();
             $(".formstuff").fadeOut();
-            $(".hiddenbtn").fadeIn();
+			$(".hiddenbtn").fadeIn();
+			return false;
         })
     </script>
 
